@@ -1,0 +1,1131 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+		<title>Rafael San Vidal::Software Developer</title>
+
+		<!--------------->
+		<!--------------->
+		<!-- CSS files -->
+		<!--------------->
+		<!--------------->
+		
+		<link href="web/css/style.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/animate.css" rel="stylesheet" type="text/css">
+		<link href="web/css/navegation.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/timeline.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/shapes.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/qualifications.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/technologies.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/gridGallery.css" rel='stylesheet' type='text/css' />
+		<link href="web/css/popup-box.css" rel="stylesheet" type="text/css" />
+
+		<!------------------------------>
+		<!------------------------------>
+		<!--Javascript & Jquery files -->
+		<!------------------------------>
+		<!------------------------------>
+		
+		<!---- jQuery (necessary for Bootstrap's JavaScript plugins) ---->
+		<script src="web/js/jquery.min.js"></script>
+		
+		<!---- Animated Javascript ---->
+		<script src="web/js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+				
+		<!---- Smoth Scrolling Javascript ---->
+		<script type="text/javascript" src="web/js/move-top.js"></script>
+		<script type="text/javascript" src="web/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		
+		<!---- Technologies Javascript----->
+		<script type="text/javascript" src="web/js/hover_pack.js"></script>
+		<script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="web/js/modernizr.custom.min.js"></script>    
+		<script type="text/javascript">
+			$(function () {
+				var filterList = {
+					init: function () {
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#technologylist').mixitup({
+							targetSelector: '.technology',
+							filterSelector: '.filter',
+							effects: ['fade'],
+							easing: 'snap',
+							
+							// Call the hover effect
+							onMixEnd: filterList.hoverEffect()
+						});				
+					
+					},
+					hoverEffect: function () {
+						// Simple parallax effect
+						$('#technologylist .technology').hover(
+							function () {
+								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+							},
+							function () {
+								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+							}		
+						);				
+					}
+				};
+				// Run the effects into the Technologies
+				filterList.init();
+			});	
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});																			
+			});
+		</script>
+				 
+		<!---- Custom Theme Javascript ---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> 
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		
+		<!---- TopNav Javascript ---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+					
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+					
+	    		});
+			});
+		</script>
+		
+		<!---- Popup Dialog Javascript ---->
+		<script type="text/javascript" src="web/js/jquery.magnific-popup.js" type="text/javascript"></script>
+		
+		<!-- Versions -->
+		<script type="text/javascript">
+			function classicVersion() {
+			
+				// Hidden Elements
+				/* RSV. ANULADO
+				document.getElementsByClassName("top-nav")[0].className = "mfp-hide";
+				document.getElementsByClassName("downloadResume")[0].className = "mfp-hide";
+				document.getElementsByClassName("downloadResume2")[0].className = "mfp-hide"; 
+				document.getElementById("contact-form").className = "mfp-hide";
+				*/
+				
+				document.getElementById("technologies").className = "mfp-hide";
+				
+				// Remove Container Class, except 'about' element
+				/* RSV. ANULADO
+				x = document.getElementsByClassName("container");
+				for (i = 0; i < x.length; i++) {
+					var z = x[i].className.replace("container", "");
+					x[i].className = z;
+				}
+				document.getElementById("about").className = "container about"; */
+				
+				// Visible Elements 
+				var x = document.getElementsByClassName
+				("small-dialog");
+				var i;				
+				for (i = 0; i < x.length; i++) {
+					x[i].className = "grid";
+					i--;
+				}
+			}
+			
+			function normalVersion() { 
+				location.reload(true); 
+			} 
+			
+		</script>
+
+		<!------------------>
+		<!---- WebFonts ---->
+		<!------------------>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+
+		<!-- Download Resume -->
+		<div class="downloadResume"><a href="web\download\CV_Rafael_San_Vidal_English.pdf" target="_blank" class="cbutton">Download Resume</a></div>
+		<div class="downloadResume2"><a href="web\download\CV_Rafael_San_Vidal_English.pdf" target="_blank" class="cbutton">CV</a></div>
+			
+		<!----------------->
+		<!----- Header ---->
+		<!----------------->
+		<div class="bg">
+			<!-- Menu -->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+				<div class="container">			
+					<div class="top-header">
+					
+						<!-- Logo -->
+						<div class="logo">
+						
+						<!-- RSV. ANULADO 
+						<a href="#" onClick="normalVersion()" class="cbutton small">Normal</a>
+						<a href="javascript:classicVersion()" class="cbutton small">Classic</a> -->
+						</div>
+						<!-- Navegation Bar -->
+						<nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#resume" class="scroll">Resume</a></li>
+								<li><a href="#technologies" class="scroll">Technologies</a></li>
+								<li><a href="#about" class="scroll">About me</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+								<!-- RSV. ANULADO <li><a href="http:\\www.rafaelsanvidal.com\wordpress" target="_blank">Blog</a></li> -->
+							</ul>
+							<a href="#" id="pull"><img src="../web/images/menu-icon.png" title="menu" /></a>
+						</nav>
+
+
+						<div class="clearfix"></div>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+						
+			<!---------------->
+			<!---- Banner ---->
+			<!---------------->
+
+			<div class="banner>
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1 class="wow fadeInLeftBig" data-wow-delay="1s">Rafael San Vidal</h1>
+						<br/>
+						<span></span>
+						<p class="wow fadeInRightBig" data-wow-delay="1s">Software Developer </p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!------------------------------>
+		<!--- Qualifications Summary --->
+		<!------------------------------>
+		<div id="resume">
+			<div class="container text-center wow bounceIn" data-wow-delay="0.4s">
+				<h1>Qualifications Summary</h1>
+				<span> </span>
+	
+				<!-- Quality Programming -->
+				<div class="col-md-5">
+					<div class="qualification-grid">
+						<span class="icon1"></span>
+						<h3 class="wow rubberBand" data-wow-delay="1s">Quality Programming</h3>
+						<p>Providing high-performance, reusable, scalable and easily maintained software solutions, expired by clean code with good programming concepts and design patterns</p>
+					</div>
+				</div>
+
+				<!-- Agile Methodologies -->
+				<div class="col-md-5">
+					<div class="qualification-grid">
+						<span class="icon2"></span>
+						<h3 class="wow rubberBand" data-wow-delay="1s">Agile Methodologies</h3>
+						<p>Practicing and chasing new knowledge about agile methodologies, especially Scrum and XP</p>
+					</div>
+				</div>	
+				
+				<!-- New Line -->
+				<div class="clearfix"> </div>
+
+				<!-- Software Development Projects -->
+				<div class="col-md-5">
+					<div class="qualification-grid">
+						<span class="icon3"></span>
+						<h3 class="wow rubberBand" data-wow-delay="1s">Software Development Projects</h3>
+						<ul>
+							<li>Expert in Java and .Net development</li>
+							<li>Actively involved in the process of gathering key business requirements with stakeholders, for designing, developing and implementing large-scale projects</li>
+						</ul>
+					</div>
+				</div>				
+				
+				<!-- Always Learning -->
+				<div class="col-md-5">
+					<div class="qualification-grid">
+						<span class="icon4"></span>
+						<h3 class="wow rubberBand" data-wow-delay="1s">Always Learning</h3>
+						<ul>
+							<p>Attending Software development  events and conferences, and reading Software development books for being updated with the latest trends of this alive and creative science.</p>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			
+			</div>
+		</div>
+		
+		<!-------------------->
+		<!---- Experience ---->
+		<!-------------------->
+		<div class="container">
+			<div class="text-center wow bounceIn" data-wow-delay="0.4s">
+				<h1 >Work Experiences</h1>
+				<span></span>
+			</div>
+						
+			<ul class="tm_timeline">
+	
+				<!----------------------->
+				<!-- Work Experience 1 -->
+				<!----------------------->
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Nov. 2005 - Actually</span>
+						<span>Software Developer</span>
+					</time>
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://www.bd.com/es/" target="_blank"><b style="color: white"> Becton Dickinson S.A. </b></a></div>
+						<p> Involved in agile methodologies (Scrum, XP), Continuous Integration, Clean Code, Good Practice Patterns Design, Testing and Refactoring for providing software solutions to clients related with the Healthcare sector </p>
+						<div><b> Programming Java technology: </b></div>
+						<ul class="character">
+							<li> RCP / RAP (Rich AJAX Platform) </li>
+							<li> IBM Rational </li>	
+							<li> Spring MVC, Spring Boot, Spring Data JPA, Spring Security, JWT, Spring AOP, Thymeleaf Engine, Eureka Netflix, Feign, Ribbon, Hystrix, Gateway Zuul, Spring Cloud Server Config, Flyway </li>
+							<li> Java 8: Lambda Expressions, functional expressions, Stream </li>
+							<li> Angular, Typescript, Socket.io, HTML5, CSS3, Bootstrap </li>
+							<li> Python / Django </li>
+							<li> PureQuery Persistence Framework </li>											
+							<li> SOAP (Apache Axis2, Apache Cxf, WS-*) / RESTFul (Jersey, Apache Cxf) </li>		
+							<li> Maven, Spring, Jenkins, Sonar, Git </li>
+						</ul>
+						<div><b> Programming NET technology: </b></div>
+						<ul class="character">
+							<li> Visual Studio / C# / Net Core </li>
+							<li> DDD / N-Layer </li>
+							<li> ASP.NET MVC / ASP.NET core / Thymeleaf / Razor </li>
+							<li> WPF / Windows Forms WCF </li>
+							<li> Entity Framework </li>
+						</ul>
+						<div><b> Areas: </b></div>
+						<ul class="character">
+							<li> Integrations: Mirth, Symphonia, WebServices/Sockets, ASTM/HL7 Protocols</li>
+							<li> Application Server:  IIS, Apache Tomcat, Wildfly, IBM Websphere, Oracle WebLogic </li>										 
+							<li> Database Design and Management: Oracle, SqlServer, MySql, DB2, Informix </li>
+							<li> Infaimon Common Vision Blox API, Abbyy Technology </li>
+							<li> Business Intelligence: IBM Cognos </li>
+						</ul>
+					</div>
+				</li>
+				
+				<!----------------------->
+				<!-- Work Experience 2 -->
+				<!----------------------->
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Nov. 2014 - Dec. 2015 </span>
+						<span>Software Developer</span>
+					</time>
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://www.bd.com/es/" target="_blank"><b style="color: white"> Omnibona S.L. </b></a></div>
+						<p> Software Development in Startup. Design and development of application (web and mobile) about healty habits, nutrition and exercise in game mode </p>
+						<div><b> Programming NET technology: </b></div>
+						<ul class="character">
+							<li> ASP.NET MVC, HTML5, CSS3, Bootstrap, JQuery, Javascript </li>
+							<li> ORM (Entity Framework Code First pattern) / LINQ / SQL Azure </li>										 
+							<li> Visual Studio 2013, Windows Azure </li>										 
+						</ul>
+					</div>
+				</li>
+				
+				<!----------------------->
+				<!-- Work Experience 3 -->
+				<!----------------------->					
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Aug. 2003 - Oct. 2005</span>
+						<span>Software Developer</span>
+					</time>
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://grupooesia.com" target="_blank"><b style="color: white"> Oesia </b></a></div>						
+						<p> Software Development in Healthcare, Public Services and telecomunications sectors </p>
+						<div><b> Customers: </b></div>
+						<ul class="character">
+							<li> Mercado de Comisi&oacute;n de las Telecomunicaciones (CMT) </li>
+							<li> Telef&oacute;nica M&oacute;viles Espa&ntilde;a (TME) </li>	
+							<li> Hewlett-Packard, Siemens (Healthcare area) </li>
+							<li> Administraciones P&uacute;blicas (Diputaciones y Aytos.)</li>											
+						</ul>
+						<div><b> Technologies: </b></div>
+						<ul class="character">
+							<li> NET (C#) </li>
+							<li> Database Management (Oracle, Informix Dynamic Server, SQL Server, MySQL) </li>										 
+						</ul>
+					</div>
+				</li>
+				
+				<!----------------------->
+				<!-- Work Experience 4 -->
+				<!----------------------->						
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Aug. 2003 - Sep. 2003</span>
+						<span>Support Technical</span>
+					</time>						
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><b> Easynet Espa&ntilde;a S.A. </b></div>
+						<p> Support Technical in telecomunications sector </p>
+					</div>
+				</li>
+
+				<!----------------------->
+				<!-- Work Experience 5 -->
+				<!----------------------->						
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span> Jan. 2002 - Jul. 2003</span>
+						<span>SAP Key Business</span>
+					</time>						
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://www.loreal.es" target="_blank"><b style="color: white"> L'Oreal Spain </b></a></div>
+						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
+						<p> Business Analyst in SAP Project based in FI, CO and MM Modules </p>
+						<div><b> Tasks: </b></div>
+						<ul class="character">
+							<li> Business Analyst in MM module </li>
+							<li> Project Planning, Design and Implementation of this module </li>	
+							<li> Integration with FI and CO Modules </li>											
+							<li> Reports Development, ABAP IV Programming </li>
+						</ul>
+					</div>
+				</li>
+
+				<!----------------------->
+				<!-- Work Experience 6 -->
+				<!----------------------->						
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Jul. 1998 - Dec. 2001</span>
+						<span>Software Developer</span>
+					</time>					
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://www.loreal.es" target="_blank"><b style="color: white"> L'Oreal Spain </b></a></div>
+						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
+						<p> Software Developer in Information Systems Departament with over 20 programmers </p>
+						<div><b> Tasks: </b></div>
+						<ul class="character">
+							<li> Getting requirements with stakeholders </li>
+							<li> Planning, designing and implementing products in the production environment </li>
+							<li> Working in integrations between AS/400 and IBM Aix systems </li>
+							<li> Management Applications (Accounts, Purchasing Department) </li>
+							<li> 2000 Proyect and Euro Project </li>
+							<li> C/C++, RPG ILE, 4GL, AS/400, IBM Aix, Oracle, Ingres </li>
+						</ul>
+					</div>
+				</li>					
+
+				<!----------------------->
+				<!-- Work Experience 7 -->
+				<!----------------------->						
+				<li>
+					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
+						<span>Jan. 1998 - Jun. 1998</span>
+						<span>Software Developer</span>
+					</time>
+					
+					<div class="tm_icon"></div>
+					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
+						<div class="wow shake" data-wow-delay="1s"><a href="http://www.exteriores.gob.es" target="_blank"><b style="color: white"> Ministerio de Asuntos Exteriores de Espa&ntilde;a </b></div>
+						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
+						<p> Designed and built a application to manage diplomatic passports </p>
+						<div><b> Tasks: </b></div>
+						<ul class="character">
+							<li> Passports Management Project </li>
+							<li> 4GL Lenguage / Ingres Database </li>
+						</ul>
+					</div>
+				</li>				
+			</ul>
+			
+		</div>
+		
+		<!------------------->
+		<!---- Education ---->
+		<!------------------->
+		<div id="education" class="education"> 
+			<div class= "container text-center wow bounceIn" data-wow-delay="0.4s">
+				<h1>Education</h1>
+				<span> </span>
+					
+				<!-- University -->
+				<div class="col-md-6">
+					<h3 class="wow rubberBand" data-wow-delay="1s">Technical Engineering in Computer Systems</h3>
+					<a href="http://www.eui.upm.es" target="_blank" title="Escala Universitaria de Inform&aacute;tica, UPM">
+						<p>Universidad Polit&eacute;cnica de Madrid</p>
+						<img src="web/images/UPM.png" alt="Escala Universitaria de Inform&aacute;tica, UPM"/>
+					</a>
+				</div>
+
+				<!-- Language -->
+				<div class="col-md-6">
+					<h3>Languages</h3>
+						<p>Spanish: Native language</p>
+						<p>English: A2 - B1	Level</p>
+					</ul>
+				</div>
+		
+			</div>
+		</div>
+		
+		<!---------------------->
+		<!---- Technologies ---->
+		<!---------------------->		
+		<div id="technologies">
+			<div class= "container text-center wow bounceIn" data-wow-delay="0.4s">
+				<h1>Technologies</h1>
+				<span> </span>
+				
+				<!-- Filtros -->
+				<ul id="filters" class="clearfix">
+					<li><span class="filter active" data-filter="programming mobile repositories environment projects applications">All</span></li>
+					<li><span class="filter" data-filter="programming">Programming</span></li>
+					<li><span class="filter" data-filter="mobile">Web & Mobile</span></li>
+					<li><span class="filter" data-filter="repositories">Repositories</span></li>
+					<li><span class="filter" data-filter="environment">Environment</span></li>
+					<li><span class="filter" data-filter="projects">Projects</span></li>
+					<li><span class="filter" data-filter="applications">Applications</span></li>
+				</ul>				
+				
+				<!-- Technology List -->
+				<div id="technologylist" class="circle">
+					
+					<!-- Programming -->
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog1" class="b-link-stripe b-animate-go popup-with-zoom-anim"> <!-- Link to 'Dialog' Window -->
+							<div class="red"><span>Languages</span></div>	<!-- Circle Image -->
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> <!-- Hover Event (With Eye Icon) -->
+						</a>
+					</div>			
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog2" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>.NET</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog3" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Java MVC Frameworks</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog4" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>Java Persistence Frameworks</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog5" class="b-link-stripe b-animate-go popup-with-zoom-anim"> 
+							<div class="red"><span>Java AOP Frameworks</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>						
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog6" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Spring Framework</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog7" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>Microservices</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog8" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Development Tools</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog9" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>Testing</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog28" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>IoT</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog29" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>Blockchain</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog30" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Message queueing tools</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology programming mix_all" data-cat="programming" >
+						<a href="#small-dialog31" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Automation tools</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>					
+					
+					<!-- Web & Mobile Technology -->
+					<div class="technology mobile mix_all" data-cat="programming" >
+						<a href="#small-dialog10" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Node</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology mobile mix_all" data-cat="programming" >
+						<a href="#small-dialog11" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>JavaScript MVC Frameworks</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
+						</a>
+					</div>
+					<div class="technology mobile mix_all" data-cat="mobile" >
+						<a href="#small-dialog12" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Web Tools</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+					<div class="technology mobile mix_all" data-cat="mobile" >
+						<a href="#small-dialog13" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>Mobile Frameworks</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>						
+					
+					<!-- Repositories -->	
+					<div class="technology repositories mix_all" data-cat="repositories" >
+						<a href="#small-dialog14" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Relational Databases</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+					<div class="technology repositories mix_all" data-cat="repositories" >
+						<a href="#small-dialog15" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>NoSQL Databases</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology repositories mix_all" data-cat="repositories" >
+						<a href="#small-dialog16" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Big Data / BI</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>				
+					<div class="technology repositories mix_all" data-cat="repositories" >
+						<a href="#small-dialog17" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>Cloud Computing</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					
+					<!-- Environments -->
+					<div class="technology environment mix_all" data-cat="environment" >
+						<a href="#small-dialog18" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Environment / OS </span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+					<div class="technology environment mix_all" data-cat="environment" >
+						<a href="#small-dialog19" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span> Applications Servers</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology environment mix_all" data-cat="environment" >
+						<a href="#small-dialog20" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Integrations</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>						
+					<div class="technology projects mix_all" data-cat="projects" >
+						<a href="#small-dialog25" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>Containers / Virtualization</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					
+					<!-- Projects Management -->
+					<div class="technology projects mix_all" data-cat="projects" >
+						<a href="#small-dialog21" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="orange"><span>Methodologies & Specifications</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology projects mix_all" data-cat="projects" >
+						<a href="#small-dialog22" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="green"><span>Continuous Integration</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology projects mix_all" data-cat="projects" >
+						<a href="#small-dialog23" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Source Version</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+					<div class="technology projects mix_all" data-cat="projects" >
+						<a href="#small-dialog24" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>Project Tools</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+
+					<!-- Applications -->
+					<div class="technology applications mix_all" data-cat="applications" >
+						<a href="#small-dialog26" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="blue"><span>Recognition applications</span></div>
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>
+					<div class="technology applications mix_all" data-cat="applications" >
+						<a href="#small-dialog23" class="b-link-stripe b-animate-go popup-with-zoom-anim">
+							<div class="red"><span>OpenSource Applications</span></div>	
+							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
+						</a>
+					</div>	
+				</div>
+				
+			</div>
+		</div>				
+
+		<div>
+		
+		<!---------------------------->
+		<!---- Popup Technologies ---->
+		<!---------------------------->	
+
+</div><div id="small-dialog1" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Languages</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/4gl.png" alt="img01"/></div><figcaption><h3>4gl</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sap.png" alt="img01"/></div><figcaption><h3>Abap IV</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/bootstrap.png" alt="img01"/></div><figcaption><h3>Bootstrap</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/c.png" alt="img01"/></div><figcaption><h3>C++</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/csharp.png" alt="img01"/></div><figcaption><h3>C#</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cobol.png" alt="img01"/></div><figcaption><h3>Cobol</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ecmascript.jpg" alt="img01"/></div><figcaption><h3>ECMAScript</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/erlang.png" alt="img01"/></div><figcaption><h3>Erlang</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/flutter.jpg" alt="img01"/></div><figcaption><h3>Flutter</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/go.png" alt="img01"/></div><figcaption><h3>Go</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/groovy.png" alt="img01"/></div><figcaption><h3>Groovy / Grails</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/haskell.png" alt="img01"/></div><figcaption><h3>Haskell</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/html5.jpg" alt="img01"/></div><figcaption><h3>Html5 / CSS3</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/java.jpg" alt="img01"/></div><figcaption><h3>Java 8</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/javascript.png" alt="img01"/></div><figcaption><h3>Javascript</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jquery.png" alt="img01"/></div><figcaption><h3>Jquery</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/kotlin.png" alt="img01"/></div><figcaption><h3>Kotlin</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/plsql.jpg" alt="img01"/></div><figcaption><h3>Oracle pl/sql</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/pascal.jpg" alt="img01"/></div><figcaption><h3>Pascal</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ruby.jpg" alt="img01"/></div><figcaption><h3>Ruby / RoR</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/php.png" alt="img01"/></div><figcaption><h3>PHP / Laravel / Eloquent / Composer</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/python.jpg" alt="img01"/></div><figcaption><h3>Python / Django / Tastypie</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ibm.png" alt="img01"/></div><figcaption><h3>RPG</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/scala.png" alt="img01"/></div><figcaption><h3>Scala</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/semantic-ui.png" alt="img01"/></div><figcaption><h3>Semantic IU</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/typescript.png" alt="img01"/></div><figcaption><h3>TypeScript</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/zepto.png" alt="img01"/></div><figcaption><h3>Zepto.js</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog2" class="mfp-hide container grid" style="background-color: #FFF">    <h2>.NET</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/asp.net.mvc.png" alt="img01"/></div><figcaption><h3>ASP.NET MVC</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/asp.net.core.png" alt="img01"/></div><figcaption><h3>ASP.NET Core</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/wpf.jpg" alt="img01"/></div><figcaption><h3>WPF / Windows Forms</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/entity-framework.png" alt="img01"/></div><figcaption><h3>Entity Framework</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/wcf.png" alt="img01"/></div><figcaption><h3>WCF</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/xamarin.png" alt="img01"/></div><figcaption><h3>Xamarin</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog3" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Java MVC Frameworks</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring MVC</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jsf.jpg" alt="img01"/></div><figcaption><h3>JSF</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog4" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Java Persistence Frameworks</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/jpa.jpg" alt="img01"/></div><figcaption><h3>Spring Data JPA / HQL / QueryDSL</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/hibernate.png" alt="img01"/></div><figcaption><h3>Hibernate / HQL / Criteria</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mapstruct.png" alt="img01"/></div><figcaption><h3>MapStruct / Dozer</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/purequery.png" alt="img01"/></div><figcaption><h3>IBM PureQuery</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/toplink.gif" alt="img01"/></div><figcaption><h3>Oracle TopLink</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ibatis.jpg" alt="img01"/></div><figcaption><h3>Ibatis SQL Maps</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog5" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Java AOP Frameworks</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring AOP</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jbossaop.png" alt="img01"/></div><figcaption><h3>Jboss AOP</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/aspectj.jpg" alt="img01"/></div><figcaption><h3>AspectJ</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog6" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Spring Framework</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring MVC</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Boot</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Data JPA</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Security</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring AOP</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Cloud Config Server</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Webflux</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog7" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Microservices</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/eureka.png" alt="img01"/></div><figcaption><h3>Eureka Netflix</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-hystrix.jpg" alt="img01"/></div><figcaption><h3>Hystrix</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-ribbon.png" alt="img01"/></div><figcaption><h3>Netflix Ribbon</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-zuul.png" alt="img01"/></div><figcaption><h3>Netflix Zuul</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog8" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Development Tools</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/ibmrational.jpg" alt="img01"/></div><figcaption><h3>IBM Rational </h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/eclipse.png" alt="img01"/></div><figcaption><h3>Eclipse</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/visual-studio.png" alt="img01"/></div><figcaption><h3>Visual Studio</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/visual-code.png" alt="img01"/></div><figcaption><h3>Visual Code</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/atom.png" alt="img01"/></div><figcaption><h3>Atom</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/sublime-text.png" alt="img01"/></div><figcaption><h3>Sublime Text</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog9" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Testing</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/nunit.png" alt="img01"/></div><figcaption><h3>Nunit (.NET)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/nunitforms.png" alt="img01"/></div><figcaption><h3>NUnitForms (.NET)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/rhinomock.png" alt="img01"/></div><figcaption><h3>RhinoMock (Mock .NET)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/typemock.png" alt="img01"/></div><figcaption><h3>TypeMock (Mock .NET)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/moq.png" alt="img01"/></div><figcaption><h3>Moq (Mock .NET)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/junit.png" alt="img01"/></div><figcaption><h3>Junit (Java)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mockito.jpg" alt="img01"/></div><figcaption><h3>Mockito  (Mock Java)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/easymock.png" alt="img01"/></div><figcaption><h3>EasyMock (Mock Java)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jmock.jpg" alt="img01"/></div><figcaption><h3>Jmock (Mock Java)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mocha.png" alt="img01"/></div><figcaption><h3>Mocha (js)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jasmine.png" alt="img01"/></div><figcaption><h3>Jasmine (js)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/protractor.png" alt="img01"/></div><figcaption><h3>Protractor (js)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/istanbul.png" alt="img01"/></div><figcaption><h3>Istanbul (js)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/karma.png" alt="img01"/></div><figcaption><h3>Karma (Browser test runner)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/selenium.png" alt="img01"/></div><figcaption><h3>Selenium</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog10" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Node</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/expressjs.png" alt="img01"/></div><figcaption><h3>Express.js</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/restify.png" alt="img01"/></div><figcaption><h3>Restify.js</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/socketio.jpg" alt="img01"/></div><figcaption><h3>Socket.io</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mongoose.png" alt="img01"/></div><figcaption><h3>Mongoose.js</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mongojs.png" alt="img01"/></div><figcaption><h3>Mongo.js</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/npm.png" alt="img01"/></div><figcaption><h3>Npm</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog11" class="mfp-hide container grid" style="background-color: #FFF">    <h2>JavaScript MVC Frameworks</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/angular.png" alt="img01"/></div><figcaption><h3>Angular / Ionic</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/react.png" alt="img01"/></div><figcaption><h3>React</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/vue.png" alt="img01"/></div><figcaption><h3>Vue</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/backbone.png" alt="img01"/></div><figcaption><h3>Backbone</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ember.png" alt="img01"/></div><figcaption><h3>Ember</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/knockout.png" alt="img01"/></div><figcaption><h3>knockout</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog12" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Web Tools</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/webpack.png" alt="img01"/></div><figcaption><h3>WebPack</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/yeoman.png" alt="img01"/></div><figcaption><h3>YeoMan (Yo, Grunt, Bower)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/gulp.png" alt="img01"/></div><figcaption><h3>Gulp</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jquery-mobile.png" alt="img01"/></div><figcaption><h3>JQuery Mobile</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/alpaca.png" alt="img01"/></div><figcaption><h3>Alpaca Forms</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/h5bt.jpg" alt="img01"/></div><figcaption><h3>H5BT (HTML5Boiler Template)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/stylus.png" alt="img01"/></div><figcaption><h3>Stylus (Preprocessor CSS)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sass.png" alt="img01"/></div><figcaption><h3>Sass (Preprocessor CSS)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/less.png" alt="img01"/></div><figcaption><h3>Less.js (Preprocessor CSS)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/thymeleaf.png" alt="img01"/></div><figcaption><h3>Thymeleaf (HTML Templeate Engine)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>Razor Engine (HTML Templeate Engine)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/handlebars.jpg" alt="img01"/></div><figcaption><h3>Handlebars (HTML Template Engine)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jade.png" alt="img01"/></div><figcaption><h3>Jade (HTML Template Engine)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jinja.png" alt="img01"/></div><figcaption><h3>Jinja (HTML Template Engine)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/polymerjs.png" alt="img01"/></div><figcaption><h3>Polymer</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog13" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Mobile Frameworks</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/phonegap.png" alt="img01"/></div><figcaption><h3>Apache Cordova / Phonegap</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/titanium.png" alt="img01"/></div><figcaption><h3>AppAcelerator Titanium</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sencha.png" alt="img01"/></div><figcaption><h3>Sencha Touch</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/genexus.jpg" alt="img01"/></div><figcaption><h3>GeneXus</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog14" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Relational Databases</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/oracle.png" alt="img01"/></div><figcaption><h3>Oracle</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/sqlserver.png" alt="img01"/></div><figcaption><h3>SQL Server</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mysql.png" alt="img01"/></div><figcaption><h3>MySql</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mariadb.png" alt="img01"/></div><figcaption><h3>MariaDB</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/postgres.png" alt="img01"/></div><figcaption><h3>Postgres</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/db2.png" alt="img01"/></div><figcaption><h3>IBM DB2</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/informix.jpg" alt="img01"/></div><figcaption><h3>Informix Dynamic Server</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ingres.png" alt="img01"/></div><figcaption><h3>CA Ingres  </h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cache.jpg" alt="img01"/></div><figcaption><h3>Intersystems Cache</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sybase.png" alt="img01"/></div><figcaption><h3>Sap Sybase</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sqlite.png" alt="img01"/></div><figcaption><h3>SQLite</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog15" class="mfp-hide container grid" style="background-color: #FFF">    <h2>NoSQL Databases</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/mongodb.png" alt="img01"/></div><figcaption><h3>MongoDB</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cassandra.jpg" alt="img01"/></div><figcaption><h3>Apache Cassandra</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/redis.png" alt="img01"/></div><figcaption><h3>Redis</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/memcached.png" alt="img01"/></div><figcaption><h3>Memcached</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/couchbase.png" alt="img01"/></div><figcaption><h3>Apache CouchDB</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/hbase.png" alt="img01"/></div><figcaption><h3>Apache Hbase</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/db4o.png" alt="img01"/></div><figcaption><h3>DB4O</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog16" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Big Data / BI</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/google-bigquery.jpg" alt="img01"/></div><figcaption><h3>Google Bigquery</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/elasticsearch.png" alt="img01"/></div><figcaption><h3>ElasticSearch</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/hadoop.png" alt="img01"/></div><figcaption><h3>Hadoop / MapReduce</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/apache-sparks.png" alt="img01"/></div><figcaption><h3>Apache Spark</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cognos.png" alt="img01"/></div><figcaption><h3>Ibm Cognos</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/talend.jpg" alt="img01"/></div><figcaption><h3>Talend</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog17" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Cloud Computing</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/azure.png" alt="img01"/></div><figcaption><h3>Windows Azure</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/google-cloud.png" alt="img01"/></div><figcaption><h3>Google Cloud Platform</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/google-firebase.png" alt="img01"/></div><figcaption><h3>Google Firebase</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/heroku.jpg" alt="img01"/></div><figcaption><h3>Heroku</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/nodester.jpg" alt="img01"/></div><figcaption><h3>Nodester</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog18" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Environment / OS</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/windows.png" alt="img01"/></div><figcaption><h3>Windows</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/solaris.gif" alt="img01"/></div><figcaption><h3>Solaris</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ubuntu.png" alt="img01"/></div><figcaption><h3>Ubuntu</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/debian.png" alt="img01"/></div><figcaption><h3>Debian</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/redhat.png" alt="img01"/></div><figcaption><h3>Red Hat</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/suse.png" alt="img01"/></div><figcaption><h3>Suse</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/aix.png" alt="img01"/></div><figcaption><h3>IBM Aix</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/as400.png" alt="img01"/></div><figcaption><h3>AS/400</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/sap.png" alt="img01"/></div><figcaption><h3>SAP R/3</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog19" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Application Servers</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/iis.gif" alt="img01"/></div><figcaption><h3>IIS </h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/apache-tomcat.png" alt="img01"/></div><figcaption><h3>Apache Tomcat</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jboss.png" alt="img01"/></div><figcaption><h3>Wilfly / Jboss</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/websphere.gif" alt="img01"/></div><figcaption><h3>IBM Websphere</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/weblogic.jpg" alt="img01"/></div><figcaption><h3>Oracle WebLogic</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jetty.png" alt="img01"/></div><figcaption><h3>Jetty</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/nginx.png" alt="img01"/></div><figcaption><h3>Nginx</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog20" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Integrations</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mirth.png" alt="img01"/></div><figcaption><h3>Mirth</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/symphonia.png" alt="img01"/></div><figcaption><h3>Symphonia</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/astm.png" alt="img01"/></div><figcaption><h3>ASTM Protocol</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/hl7.png" alt="img01"/></div><figcaption><h3>HL7 Protocol</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/caen-rfid.png" alt="img01"/></div><figcaption><h3>Caen RFID Protocol</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/apache-cxf.png" alt="img01"/></div><figcaption><h3>Apache CXF</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/axis2.png" alt="img01"/></div><figcaption><h3>Apache Axis2</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jersey.png" alt="img01"/></div><figcaption><h3>Jersey </h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/graphql.png" alt="img01"/></div><figcaption><h3>GraphQL</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/apache-mina.jpg" alt="img01"/></div><figcaption><h3>Apache Mina</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/netty.png" alt="img01"/></div><figcaption><h3>JBoss Netty</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog21" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Methodologies & Specifications</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/scrum.jpg" alt="img01"/></div><figcaption><h3>Scrum</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/kanban.jpg" alt="img01"/></div><figcaption><h3>Kanban</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/clean-code.png" alt="img01"/></div><figcaption><h3>Clean code</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>SOLID Principles</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/gofpatterns.png" alt="img01"/></div><figcaption><h3>GOF Patterns</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/drivendesign.jpg" alt="img01"/></div><figcaption><h3>DDD / TDD / BDD</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>UX (User Experience)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>Reactive Programming</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog22" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Continuous Integration</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/tfs.png" alt="img01"/></div><figcaption><h3>TFS</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/maven.png" alt="img01"/></div><figcaption><h3>Maven</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/gradle.png" alt="img01"/></div><figcaption><h3>Gradle</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/jenkins.png" alt="img01"/></div><figcaption><h3> Jenkins</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/travis-ci.png" alt="img01"/></div><figcaption><h3>Travis CI</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/nexus-oss.png" alt="img01"/></div><figcaption><h3>Nexus OSS</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog23" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Source Version</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/git.jpg" alt="img01"/></div><figcaption><h3>Git / Gitbucket / Github / GitLab</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/mercurial.png" alt="img01"/></div><figcaption><h3>Mercurial</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cvs.png" alt="img01"/></div><figcaption><h3>CVS</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/subversion.png" alt="img01"/></div><figcaption><h3>Subversion</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/clearcase.png" alt="img01"/></div><figcaption><h3>IBM Rational ClearCase</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog24" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Project Tools</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/sonar.png" alt="img01"/></div><figcaption><h3>Sonar Qube</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ea.png" alt="img01"/></div><figcaption><h3>Enterprise Architect</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/staruml.png" alt="img01"/></div><figcaption><h3>StarUML</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/jira.png" alt="img01"/></div><figcaption><h3>Attlassian Jira</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/redmine.png" alt="img01"/></div><figcaption><h3>RedMine</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog25" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Containers / Virtualization</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/docker.png" alt="img01"/></div><figcaption><h3>Docker</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/kubernetes.png" alt="img01"/></div><figcaption><h3>Kubernetes</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/vagrant.png" alt="img01"/></div><figcaption><h3>Vagrant</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/vmware.png" alt="img01"/></div><figcaption><h3>VMWare</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/virtual-box.png" alt="img01"/></div><figcaption><h3>Oracle VirtualBox</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog26" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Recognition Applications</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/abbyy.png" alt="img01"/></div><figcaption><h3>Abbyy Technology</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/cvb.png" alt="img01"/></div><figcaption><h3>Infaimon Common Vision Blox</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog27" class="mfp-hide container grid" style="background-color: #FFF">    <h2>OpenSource Applications</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/wordpress.png" alt="img01"/></div><figcaption><h3>Wordpress</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/joomla.jpg" alt="img01"/></div><figcaption><h3>Joomla</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/oscommerce.png" alt="img01"/></div><figcaption><h3>OsCommerce</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog28" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Internet of Things</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/arduino.png" alt="img01"/></div><figcaption><h3>Arduino</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog29" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Blockchain</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/solidity.png" alt="img01"/></div><figcaption><h3>Solidity</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/go-ethereum.png" alt="img01"/></div><figcaption><h3>Go Ethereum & Geth (Go lenguage)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/parity.png" alt="img01"/></div><figcaption><h3>Parity (Rust Language)</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/ganache-cli.png" alt="img01"/></div><figcaption><h3>Ganache-cli / testrpc</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/web3js.jpg" alt="img01"/></div><figcaption><h3>Web3.js </h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/wallets.png" alt="img01"/></div><figcaption><h3>Wallets: Mist, Parity, MyEtherWallet, MetaMask</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/truffle.png" alt="img01"/></div><figcaption><h3>Truffle</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/remix.png" alt="img01"/></div><figcaption><h3>Remix</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog30" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Message-queueing tools</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/activeMQ.jpg" alt="img01"/></div><figcaption><h3>Apache ActiveMQ</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/apache-kafka.png" alt="img01"/></div><figcaption><h3>Apache Kafka</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/nservicebus.png" alt="img01"/></div><figcaption><h3>NServiceBus</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/rabbitMQ.png" alt="img01"/></div><figcaption><h3>RabbitMQ</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog31" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Automation tools</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/ansible.png" alt="img01"/></div><figcaption><h3>Ansible</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/chef.png" alt="img01"/></div><figcaption><h3>Chef</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/puppet.png" alt="img01"/></div><figcaption><h3>Puppet</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/terraform.png" alt="img01"/></div><figcaption><h3>Terraform</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+</div><div id="small-dialog32" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Sin Clasificar</h2><ul><span class="clearfix"></span>
+<li><figure><div class="image"><img src="web/images/logos/facebook-flux.png" alt="img01"/></div><figcaption><h3>Facebook Flux</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/redux.png" alt="img01"/></div><figcaption><h3>Redux</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+<li><figure><div class="image"><img src="web/images/logos/tensor-flow.png" alt="img01"/></div><figcaption><h3>Tensor Flow</h3><p></p></figcaption></figure></li>
+<li><figure><div class="image"><img src="web/images/logos/prometheus.png" alt="img01"/></div><figcaption><h3>Prometheus</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+
+
+		<!--------------->
+		<!---- About ---->
+		<!--------------->
+		
+		</div>
+		
+		<div id="about" class="about">
+			<div class="container wow bounceIn" data-wow-delay="0.4s">
+				<div class="text-center">
+					<h1>About me</h1>
+					<span> </span>
+				
+					<!-- Photo -->
+					<div><img class="photo" src="web/images/perfil.png"/></div>
+					<span class="clearfix">
+				</div>
+				
+				<!-- Information about me -->
+				<p>My hobbie for computers began when my parents gave me a ZX Spectrum 48K computer (I keep it even today), I was only a teenager. OnceI I begun  with the Basic Language in the ZX Spectrum computer, I enrolled in an academy of computer science. And from that time until today, I have not separated from the programming, Uppss!</p>
+				<p>But hey, I'm not a freak, I have common hobbies too: Cinema, Astronomy, Reading, Family, Football, Running and Tracking</p>
+				
+				<!-- Hobbies -->
+				<div class="square">
+					<div class="blue"><p><img src="web/images/hobbies/cinema.png" /><span>Cinema</span></p></div>
+					<div class="red"><p><img src="web/images/hobbies/Astronomy.png" /><span>Astronomy</span></p></div>
+					<div class="orange"><p><img src="web/images/hobbies/book.jpg" /><span>Reading</span></p></div>
+					<div class="purple"><p><img src="web/images/hobbies/family.png" /><span>Family</span></p></div>
+					<div class="blue"><p><img src="web/images/hobbies/football.png" /><span>Football</span></p></div>
+					<div class="red"><p><img src="web/images/hobbies/running.jpg" /><span>Running</span></p></div>
+					<div class="orange"><p><img src="web/images/hobbies/senderismo.png" /><span>Tracking</span></p></div>
+				</div>		
+			</div>
+		</div>		
+					
+		<!----------------->	
+		<!---- Contact ---->
+		<!----------------->
+		
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h1>Contact me</h1>
+							<span> </span>							
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<p><span><img src="web/images/social/email.png"></img><a href="mailto:sanvidal1@gmail.com">sanvidal1@gmail.com</a></span></p>
+										<p><span><img src="web/images/social/twitter.png"></img><a href="https://twitter.com/rsanvidal" target="_blank">@rsanvidal</a></span></p>
+										<p><span><img src="web/images/social/googlePlus.png"></img><a href="https://plus.google.com/103942545285620038581/posts" target="_blank">google+\rsanvidal</a></span></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<p><span><img src="web/images/social/linkedin.png"></img><a href="http://es.linkedin.com/in/rsanvidal" target="_blank">linkedin\rsanvidal</a></span></p>
+										<p><span><img src="web/images/social/facebook.png"></img><a href="https://www.facebook.com/rafael.sanvidal" target="_blank">facebook\rafael.sanvidal</a></span></p>
+										<span/>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div id="contact-form" class="col-md-6">
+						<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
+							<form action="app/contact.php" method="post">
+								<input id="nombre" name="nombre" type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
+								<input id="email" name="email" type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
+								<textarea id="mensaje" name="mensaje" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"> Message...</textarea>
+								<input id="submit" name="submit" class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				
+				<!--- copyright ---->
+				<div class="copy-right text-center">
+					<p>Copyright by <a href="http://www.rafaelsanvidal.com/">www.rafaelsanvidal.com</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										$().UItoTop({ easingType: 'easeOutQuart' });
+									});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>
