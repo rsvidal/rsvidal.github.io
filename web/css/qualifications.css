@@ -1,0 +1,71 @@
+#resume{
+	background:url(../images/about-bg.jpg);
+	padding: 2em 0 2em 0;
+}
+
+/*********/
+/* Image */
+/*********/
+.qualification-grid span{
+	width:33px;
+	height:34px;
+	display:inline-block;
+	background:url(../images/qualifications-icons.png) no-repeat 0px 0px;
+}
+.qualification-grid span.icon1{
+	background-position: -44px 0px;
+}
+.qualification-grid span.icon2{
+	background-position: -87px 0px;
+}
+.qualification-grid span.icon3{
+	background-position: -128px 0px;
+}
+.qualification-grid span.icon4{
+	background-position: 0px 0px;
+}
+
+/*********/
+/* Text  */
+/*********/
+.qualification-grid h3 {
+	color: #222;
+	font-weight: 600;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+.qualification-grid h3 a:hover{
+	color:#F4BB36;
+	text-decoration:none;
+}
+.qualification-grid p {
+	text-align: center;
+}
+.qualification-grid li{
+	text-align: left;
+	padding-bottom: 6px;
+}
+/*********************/
+/* Responsive Design */
+/*********************/
+@media (max-width:768px){
+	.qualifications-grids {
+		padding: 1em 0;
+	}
+	.qualification-grid{
+		margin:0 0 1em 0;
+	}
+	.qualification-grid h3{
+		font-weight: 300;
+		font-size: 1.2em;	
+		margin:0 0 0.3em 0;
+	}
+
+	.qualification-grid p{
+		font-size: 0.9em;
+	}
+	.qualification-grid li{
+		font-size: 0.9em;
+		padding-bottom: 3px;
+	}
+}

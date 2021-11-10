@@ -1,0 +1,182 @@
+/***********/
+/* Filters */
+/***********/
+#filters {
+	margin: 1% 0 3.3%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+#filters li {
+	display:inline-block;
+}
+#filters li span {
+	/* Format */
+	padding: 10px 20px;
+	cursor: pointer;
+	border: 2px solid #666666;
+	
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;	
+	
+	/* Text */	
+	font-size: 1em;
+	color: #666666;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	/* Space between Elements */
+	margin: 10px;
+	
+	display: inline-block;
+}
+#filters li span.active {
+	/* Format */
+	background: #E74C3C;
+	border: 2px solid #E74C3C;
+	
+	/* Text */
+	color: #FFF;
+}
+/**************/
+/* Technology */
+/**************/
+#technologylist .technology {		
+	/* Circle Format */
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	float: left; /* Create elements from left to right */	
+
+	display: none;
+	overflow: hidden;
+}	
+
+/********/
+/* Link */
+/********/
+.b-link-stripe{
+	/* Position */
+	position: relative;
+	vertical-align:top;
+	
+	display: inline-block;
+	overflow: hidden;
+}
+.b-link-stripe .b-wrapper{	
+	/* Position & Size */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	/* Text */
+	text-align: center;
+	color: #FFFFFF;
+	
+	overflow: hidden;
+}
+.b-link-stripe .b-line{
+	/* Circle Format */
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background:rgba(243, 103, 89, 0.1); /* Transparent Red Color */
+	
+	/* Position & Size */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	/* Transition */
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+
+	/* Hidden */
+	opacity: 0; 
+	visibility: hidden; 
+}
+
+.b-link-stripe:hover .b-line{
+	/* Visible */
+	opacity:1; 
+	visibility:visible; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Animation Effects
+/*-----------------------------------------------------------------------------------*/
+.b-animate-go{
+	text-decoration: none;
+}
+.b-animate{
+	/* Transition */
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	
+	/* Text */
+	font-size: 1.1em;
+	font-weight: 700;
+	
+	/* Hidden */
+	visibility: hidden;
+}
+.b-animate img{
+	
+	margin-top: 30%; 
+	max-height: 50%;
+	width: auto;
+	display: -webkit-inline-box;
+}
+.b-animate-go:hover .b-animate{
+	visibility: visible;
+}
+.b-from-left{
+	position: relative;
+	left: -100%;
+}
+.b-animate-go:hover .b-from-left{
+	left: 0;
+}
+
+/************/
+/* LightBox */
+/************/
+
+.light-box-info {
+	padding: 1.8em;
+	box-shadow: none;
+	border-radius: 0;
+}
+.light-box-info h3 {
+	color: #666;
+	font-size: 2em;
+	font-weight: 300;
+}
+.light-box-info p{
+	color: #888888;
+	font-size: 0.96em;
+	line-height: 1.5em;
+}
+
+/*********************/
+/* Responsive Design */
+/*********************/
+@media (max-width:768px){
+	#filters li span {
+		padding: 7.5px 15px;
+		font-size: 0.8em;
+		margin: 3px;
+	}
+	.b-animate img{
+		margin-top: 10%; 
+	}
+}
