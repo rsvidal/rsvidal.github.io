@@ -1,0 +1,409 @@
+RAFAEL SAN VIDAL HIDALGO
+Software Developer
+Nationality: Spain (EU)      
+D.O.B: December 29th 1973      
+Tel: +34 650953905 
+Email: sanvidal1@gmail.com      
+Web: https://rsvidal.github.io/
+LinkedIn: www.linkedin.com/in/rsanvidal/
+
+Professional Experience:
+
+Company: Becton Dickinson and Company Category: Software Developer Nov2005 – Up to now
+
+Products development in healthcare environment from scratch until the implementation in customers (Hospitals in EMEA zone):  Architecture, UI, web and desktop applications (Front and back), security, traceability, persistence, concurrency and testing.
+
+- Technologies: 
+o	Spring Boot (MVC, Data, JPA, Security, AOP), JWT, Thymeleaf 
+o	Websockets, Criteria, JPA & JQPL, Flyway
+o	Java 11: Lambda expressions, functional expressions, Stream, Webflux
+o	CI/CD: Azure Devops (Pipelines design) / Jenkins, Sonar, Git, Nexus
+o	Angular, Typescript, Socket.io
+o	Javascript, JQuery
+o	PHP, Laravel, Element
+o	Python / Django
+o	.NET / C# / ASP.NET Core Blazor WebAssenmbly / WPF / WinForms / Win UI / XAML / EF / Dapper ORM /  LINQ / Autofac / Automapper/  OpenApi SwashBuckle / DDD Architecture / Microsoft Visual Studio
+o	HTML5, CSS3, Bootstrap 
+o	Junit y Mockito (Java) / NUnit, XUnit y Moq (C#) / Selenium (Java y C#)
+o	RCP / RAP (Rich AJAX Platform) / IBM Rational
+o	SOAP (Apache Axis2, Apache Cxf) / RestFul: Spring, Jersey, Apache CXF (Java) / ASP.NET Core API web (C#)
+o	MySQL, SQL Server, Oracle, DB2
+
+- Areas:
+o	Integrations: Mirth, Symphonia, Rest-ws, sockets, ASTM/HL7/RFID Protocols
+o	Application Server: IIS, Apache Tomcat, Wildfly, IBM Websphere, Oracle WebLogic
+o	Database Design and Management: MySQL, Postgres, SQL Server, Oracle, DB2
+o	Abbyy Technologies, Infaimon Common Vision Blox
+o	IBM Cognos
+
+Company: Omnibona S.L Category: Software Developer Nov2014 – Dic 2015
+Part-time in startup company. Design and development of a multi-platform application about healthy habits, nutrition and exercises in game mode.
+- NET technologies:
+o	ASP.NET MVC, Razor, thymeleaf 
+o	Entity Framework / LINQ  
+o	HTML5, CSS3, Bootstrap
+o	JavaScript, JQuery
+o	Microsoft Azure 
+o	Microsoft Visual Studio
+
+Company: Oesia Category: Software Developer. Aug2003 – Oct2005
+- Software Development in Healthcare, Public Services and telecomunications sectors
+- Customers:
+* Mercado de Comisión de las Telecomunicaciones (CMT)
+* Telefónica Móviles España (TME)
+* Hewlett-Packard, Siemens (Healthcare)
+* Administraciones Públicas (Diputaciones y Aytos.)
+- Technologies:
+* NET / C# / Visual Studio
+* Database Management: Oracle, Informix Dynamic Server, SQL Server, MySQL
+
+Company: Easynet España S.A. Category: Support Technical. Aug2003 - Sep 2003
+
+Company: L’Oreal Category: SAP Key Bussiness. Jan2002 - Jul2003
+- Business Analyst in SAP Project based in FI, CO and MM Modules
+- Tasks:
+* Project Planning, Design and Implementation
+* FI, CO and MM
+* Reports Development, ABAP IV Programming
+
+Company: L’Oreal Category: Software Developer. Jul1998 – Dec2001
+- Tasks:
+* C++, RPG, 4GL, AS/400, IBM Aix, Oracle, Ingres
+* 2000 and Euro projects 
+* Requirements from stakeholders
+* Planning, designing and implementing software 
+* Management Applications: Accounts, Purchasing
+* AS/400 and IBM Aix systems integrations
+
+Company: Ministerio de Asuntos Exteriores Category: Software Developer. Jan1998 – Jun1998
+- Design and create an application to manage diplomatic passports
+- Tasks:
+* Passports management project
+* 4GL Lenguage / Ingres Database
+
+Education:
+TECHNICAL ENGINEERING IN COMPUTER SYSTEMS, Universidad Politécnica de Madrid
+Spanish: Native Language
+English: B1 - B2 Level
+
+Qualifications Summary:
+
+QUALITY PROGRAMMING
+- Software Developer, enthusiastic about clean code with good programming concepts and design patterns to develop a high-performance code, reusable, scalable and easy to maintain
+
+AGILE METHODOLOGIES
+- Follower of agile methodologies. Everyday trying to learn more about these methodologies, especially Scrum and XP
+
+SOFTWARE DEVELOPMENT PROJECTS
+- Over 15 years designing, developing and implementing large-scale projects, from conception to completion
+- Discern key business requirements with stakeholders
+- Expert in Java and .NET development
+
+ALWAYS LEARNING
+- Attending events and conferences about software development and his methodologies to know the latest trends
+- Reading Software development books to work with new technologies and expand knowledges
+
+About Me:
+My parents gave me a ZX Spectrum 48K computer (I still have it) when I was just a teenager, and my love for computers and technology began at that time.
+I took my first steps with the Basic programming language on that computer. And then I enrolled in a computer academy when I was 13 years old. I have developed software from that moment until now.
+Other hobbies are cinema, astronomy, soccer and running as well as enjoying time with my family
+
+My hobby for the computers has begun when my parents gifted me my first computer. I was only a teenager when begun to write my first programs in Basic using a ZX Spectrum computer. And then, I enrolled in software development school when I was 13 years old. And from that time until today, I have always been writing programs and developing products.  
+My hobbies are astronomy, movies and sports.
+
+Training:
+* Ionic (app) y Net Core (backend). Udemy
+* Go / Golang desde las bases. Udemy
+* Montar un cluster Hadoop Big Data. Udemy
+* Dart & Flutter. Udemy
+* Laravel y vue.js avanzado. Udemy
+* Vue.js. Udemy
+* React + Redux. Udemy Jul22 
+* NET MAUI con VStudio 2022. Udemy Jul22
+* Devops, Docker Kubernetes, microservices y Azure NET 6. Udemy Jul22
+* Azure Devops. Udemy Jun22
+* AWS. Udemy Jun22
+* Go / Golang. Udemy Ago21
+* TDD - Test driven development con Java y JUnit. Udemy Dic21
+* Patrones de Diseño y principios SOLID. Udemy May21
+* Refactorizar código Java. Udemy Mar21
+* DevOps. Las artes marciales del software. Udemy Jun20
+* Java8. (Funcional y lambda). Udemy Sep19
+* Microservicios con Spring Boot / Netflix Eureka. Udemy Sep19
+* Programación Python para Machine Learning. Udemy Sep19
+* Curso de Python 3. Udemy Ago19
+* Desarrollo de videojuegos con Unity. Udemy Jun19
+* Mi primer videojuego con Unity. Udemy Jun19
+* API RestFul con Laravel. Udemy May19
+* Dominando Laravel. De principiante a expert. Udemy May19
+* Android con Kotlin + Firebase + Google. Udemy Abr19
+* Machine Learning. Udemy Mar19
+* Curso de Django. Udemy Ene19
+* Implementación de soluciones en Microsoft Azure. Udemy Nov18
+* Python + Django. Udemy Jul18
+* Desarrollo de dApps en la blockchain de Ethereum. Udemy Jun18
+* Introducción a blockchain. criptomonedas y Ethereum. Udemy Jun18
+* Xamarin Forms y Azure. Udemy Mar18
+* Angular 6 avanzado. Udemy Ene18
+* Curso avanzado de Docker. Udemy Ene18
+* Spring Framework 5. Udemy Ene18
+* Persistencia de datos con Java. Hibernate + Spring JPA. Udemy Ene18 
+* ASP.NET Core MVC. Udemy Nov17
+* Curso de iniciación a Haskell. Udemy Sep17
+* Xamarin. Build Android and IOS Apps. Udemy May17
+* Servicios con WCF. Udemy Apr17
+* Git + GitHub. Udemy Mar16
+* Desarrollo web Javascript, Angular, Node y MongoDB. Udemy Apr16 
+* SEO para WordPress. Udemy Feb15
+* Aprende a triunfar con SEO. Udemy Feb15
+* Community Manager, Redes sociales. HP Formación May14
+* Marketing 2.0. Grupo Fides21 Mar13
+* Team Building. Gestión de Liderazgo. Fides21 Dec13
+* IBM Rational V7. Clearcase, SOA, Business Modeler Sep06
+* IBM DB2 Sep06
+* Infaimon Sherlock. Vision Artificial May06
+* Infaimon CVB. Vision Artificial May06
+* Gestión De Proyectos. Oesia 160h. Jan05
+* Programación Visual C++. Oesia 40h. May04
+* Administración SQL Server. Sunion Gesfor 40h. Nov03
+* Programación Java. Oesia 40h. Oct03
+* Optimización Oracle 8i. MR Informática 80h. Jun03
+* PL/SQL. Dayfisa 40h. Apr03
+* Xml. IBM Learning 30h. May03
+* Administración Oracle. Dayfisa 40h. May03
+* Macromedia Flash. IBM Learning 30h. Mar03
+* Ingeniería De Software. Sunion Gesfor Jan-Mar03
+* SAP MM. Verificación De Facturas. Sap España 25h. Oct02
+* Programación  Avanzada Java.  IBM Learning 25h. Apr02
+* Administración AIX. IBM Learning 30h. Apr02Programación Avanzada RPG IV  (AS/400). IBM Learning 50h. Feb02
+* Programación Java. Gesein 100h. Feb - Apr01
+* Cobol – CICS – DB2.  Cap Gemini 160h - 99
+* Técnico En Sistemas Unix / Oracle. Sunion  Gesfor 350h - 98
+* Microinformática. Academia Teide 300h - 98
+
+KNOWLEDGE
+Bold: Expert / Used in development environment
+
+* Programming Languages
+4gl / Cobol / Pascal / RPG
+ABAP IV
+C# 
+C++
+Dart / Flutter
+Erlang
+Go 
+Groovy / Grails 
+Haskell
+HTML5 / CSS3 / Bootstrap 
+Java
+JavaScript / TypeScript
+Jquery
+Kotlin 
+Oracle PL/SQL
+React
+Ruby / RoR
+PHP / Laravel / Eloquent / Composer
+Python / Django
+Scala
+
+* .NET
+NET 7 
+C# / XAML 
+WPF / WinForms
+ASP.NET core MVC / Razor pages / Blazor Web assembly
+WinUI / MAUI / Uno Platform
+Electron.NET API
+EF / Dapper ORM
+LINQ
+Polly.NET
+
+* Java Persistence Frameworks
+Spring Data JPA / Criteria
+Hibernate / HQL / QueryDSL
+MapStruct / Mapping Dozer
+IBM PureQuery
+
+* Java AOP Frameworks
+Spring AOP / AspectJ / JBoss AOP
+
+* Spring Framework
+Spring Boot 
+Spring MVC 
+Spring Data JPA
+Spring Security
+Spring AOP
+Spring Webflux
+Thymeleaf
+
+* Netflix
+Hystrix
+Feign
+Ribbon
+Zuul
+
+* IDE
+Visual Studio
+Visual Code
+Eclipse
+IBM Rational
+Sublime Text
+Atom
+
+* Testing
+NUnit / Xunit (.NET)
+Moq / RhinoMoq / TypeMock (Mock .NET)
+Coverlet (.NET)
+Junit (Java) 
+Mockito / EasyMock / JMock (Mock Java) 
+Mocha / Jasmine / Protractor / Istanbul (js)
+Selenium for Java y .NET
+Karma (browser test runner)
+
+* Node
+Npm
+Express.js
+Restify.js
+Socket.io
+Mongoose.js
+Mongo.js
+
+* JavaScript MVC Frameworks
+Angular / Ionic
+React
+Vue
+
+* Web tools
+Handlebars
+Jade
+Alpaca Forms
+Gulp (Javascript task runner)
+Modernizr (browser compatibility)
+Webpack
+Stylus / Sass / Less (Precompiler CSS)
+
+* Project generator
+YeoMan
+HTML5 Boilerplate
+
+* Relational Databases
+Oracle
+SQL Server
+MySql / MariaDB
+IBM DB2
+CA Ingres
+Postgres
+Informix Dynamic Server
+SQLite
+InterSystems Cache
+Sap Sybase
+
+* NoSQL Databases
+MongoDB
+Apache Cassandra
+Redis
+Memcached 
+
+* Big Data / BI 
+IBM Cognos
+Talend
+
+* Cloud Computing
+Microsoft Azure
+AWS
+GCP - Google Cloud Platform
+Google Firebase
+Heroku
+Nodester
+
+* Environment / OS
+Windows
+Ubuntu, Debian, RedHat, Suse
+IBM Aix
+AS/400
+SAP R/3
+
+* Application Servers
+Apache Tomcat
+IIS
+Wildfly
+IBM Websphere
+Oracle WebLogic
+Nginx
+Jetty
+
+* Integrations / Protocols
+ASTM / HL7 / RFID protocols
+Apache CXF / Axis2 
+Jersey 
+GraphQL
+Mirth
+Symphonia
+
+* Methodologies & Specifications
+Scrum / Kanban
+Clean Code
+SOLID principles
+GOF Patterns
+DDD (Domain Driven Design)
+TDD (Test Driven Design)
+BDD (Behavior Driven Design)
+UX (User Experience)
+Reactive Programming
+
+* CI/CD
+Azure Devops
+Jira
+Maven / Gradle
+Jenkins
+Sonar Qube
+Nexus OSS / JFrog
+
+* Source Version
+Git / Github
+CVS / Subversion
+IBM Rational ClearCase
+ 
+* Project Tools
+Enterprise Architect / StarUML
+
+* Containers / Orchestration / Virtualization 
+Docker
+Kubernetes
+Vagrant
+VMWare
+Oracle VirtualBox
+
+* Recognition Applications
+Abbyy Technologies
+Infaimon Common Vision Blox
+
+* OpenSource Applications
+Wordpress
+Joomla
+OsCommerce
+
+* IoT
+Arduino
+
+* Videogames
+Unity
+
+* Blockchain
+Solidity
+Go Ethereum & Geth
+Parity 
+Ganache-cli / Testrpc
+Web3.js
+Wallets: Mist, Parity, MyEtherWallet, MetaMask
+Truffle
+Remix
+
+* Messaging brokers
+Apache Kafka
+RabbitMQ
+
+* Monitoring tools
+Ansible
+Chef
+Puppet
+Terraform
