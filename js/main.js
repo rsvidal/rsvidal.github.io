@@ -418,6 +418,7 @@ class App {
         window.themeManager = new ThemeManager();
         new SmoothScroller();
         new ScrollAnimator();
+        new ScrollToTop();
         new CommandLineSimulator().init();
         new ActiveSectionHighlighter();
         new PerformanceMonitor();
@@ -454,6 +455,55 @@ function copyToClipboard(text) {
     }).catch(err => {
         console.error('Failed to copy:', err);
     });
+}
+
+// ============================================
+// SCROLL TO TOP FUNCTIONALITY
+// ============================================
+class ScrollToTop {
+    constructor() {
+        this.button = document.getElementById('scroll-to-top');
+        this.scrollThreshold = 300; // Show button after scrolling 300px
+        this.init();
+    }
+
+    init() {
+        if (!this.button) return;
+        
+        this.attachEventListeners();
+        this.handleScroll(); // Check initial scroll position
+    }
+
+    attachEventListeners() {
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', debounce(() => {
+            this.handleScroll();
+        }, 10));
+
+        // Scroll to top when button is clicked
+        this.button.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.scrollToTop();
+        });
+    }
+
+    handleScroll() {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        
+        if (scrollY > this.scrollThreshold) {
+            this.button.classList.add('show');
+        } else {
+            this.button.classList.remove('show');
+        }
+    }
+
+    scrollToTop() {
+        // Smooth scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 }
 
 // Export utilities to window for console access
