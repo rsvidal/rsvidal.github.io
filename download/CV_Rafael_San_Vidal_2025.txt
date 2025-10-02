@@ -1,0 +1,375 @@
+RAFAEL SAN VIDAL HIDALGO
+Software Developer
+Nationality: Spain (EU)
+D.O.B: December 29th 1973
+Tel: +34 650953905
+Email: sanvidal1@gmail.com
+Web: https://rsvidal.github.io/
+LinkedIn: www.linkedin.com/in/rsanvidal/
+
+Professional Experience:
+
+Company: Becton Dickinson and Company Category: Software Developer Nov2005 – Up to now
+
+Products development in healthcare environment from scratch until the implementation in customers (Hospitals in EMEA zone): Architecture, UI, web and desktop applications (Front and back), security, traceability, persistence, concurrency and testing.
+
+- Technologies:
+o	.NET 9 / C# 13 / ASP.NET Core 9 / Blazor / WPF / WinForms / WinUI / Uno Platform
+o	Entity Framework Core 9 / Dapper ORM / LINQ
+o	React 18 / TypeScript / Vite
+o	Spring Boot (MVC, Data, JPA, Security, AOP), JWT, Thymeleaf
+o	Websockets, Criteria, JPA & JQPL, Flyway
+o	Java 21: Lambda expressions, functional expressions, Stream, Webflux, Virtual Threads
+o	CI/CD: Azure DevOps (Pipelines, Boards, Repos), Git, GitHub Actions, Jenkins, SonarQube, Nexus
+o	Angular, Socket.io
+o	JavaScript ES6+, jQuery
+o	PHP, Laravel, Element
+o	Python / Django
+o	HTML5, CSS3, Bootstrap 5
+o	Polly.NET, Autofac, Automapper, OpenApi/SwashBuckle
+o	DDD Architecture, SOLID Principles, Clean Architecture
+o	Testing: NUnit, XUnit, Moq (C#) / JUnit, Mockito (Java) / Selenium (Java & C#)
+o	RCP / RAP (Rich AJAX Platform) / IBM Rational
+o	SOAP (Apache Axis2, Apache CXF) / RESTful APIs: Spring, Jersey, Apache CXF (Java) / ASP.NET Core Web API (C#)
+o	MySQL, SQL Server, Oracle, PostgreSQL, DB2
+
+- AI-Assisted Development Tools:
+o	Cursor (Pro License) - AI-powered code editor with vibe coding
+o	Claude Code - CLI-based AI assistant for development
+o	GitHub Copilot - AI pair programming
+o	NotebookLM - AI-powered research and documentation
+o	ChatGPT / Claude - Code generation and problem solving
+
+- Project Management & Collaboration:
+o	Jira / Jira Software / Confluence
+o	Azure DevOps (Boards, Pipelines, Repos, Test Plans)
+o	Git / GitHub / GitLab
+o	Agile/Scrum methodologies
+
+- Areas:
+o	Integrations: Mirth, Symphonia, Rest-ws, sockets, ASTM/HL7/RFID Protocols
+o	Application Server: IIS, Apache Tomcat, Wildfly, IBM Websphere, Oracle WebLogic
+o	Database Design and Management: MySQL, PostgreSQL, SQL Server, Oracle, DB2
+o	Computer Vision: Abbyy Technologies, Infaimon Common Vision Blox
+o	Business Intelligence: IBM Cognos
+
+Company: Omnibona S.L Category: Software Developer Nov2014 – Dic 2015
+Part-time in startup company. Design and development of a multi-platform application about healthy habits, nutrition and exercises in game mode.
+- NET technologies:
+o	ASP.NET MVC, Razor, Thymeleaf
+o	Entity Framework / LINQ
+o	HTML5, CSS3, Bootstrap
+o	JavaScript, jQuery
+o	Microsoft Azure
+o	Microsoft Visual Studio
+
+Company: Oesia Category: Software Developer. Aug2003 – Oct2005
+- Software Development in Healthcare, Public Services and telecommunications sectors
+- Customers:
+* Mercado de Comisión de las Telecomunicaciones (CMT)
+* Telefónica Móviles España (TME)
+* Hewlett-Packard, Siemens (Healthcare)
+* Administraciones Públicas (Diputaciones y Aytos.)
+- Technologies:
+* NET / C# / Visual Studio
+* Database Management: Oracle, Informix Dynamic Server, SQL Server, MySQL
+
+Company: Easynet España S.A. Category: Support Technical. Aug2003 - Sep 2003
+
+Company: L'Oreal Category: SAP Key Business. Jan2002 - Jul2003
+- Business Analyst in SAP Project based in FI, CO and MM Modules
+- Tasks:
+* Project Planning, Design and Implementation
+* FI, CO and MM
+* Reports Development, ABAP IV Programming
+
+Company: L'Oreal Category: Software Developer. Jul1998 – Dec2001
+- Tasks:
+* C++, RPG, 4GL, AS/400, IBM Aix, Oracle, Ingres
+* 2000 and Euro projects
+* Requirements from stakeholders
+* Planning, designing and implementing software
+* Management Applications: Accounts, Purchasing
+* AS/400 and IBM Aix systems integrations
+
+Company: Ministerio de Asuntos Exteriores Category: Software Developer. Jan1998 – Jun1998
+- Design and create an application to manage diplomatic passports
+- Tasks:
+* Passports management project
+* 4GL Language / Ingres Database
+
+Education:
+TECHNICAL ENGINEERING IN COMPUTER SYSTEMS, Universidad Politécnica de Madrid
+Spanish: Native Language
+English: B1 - B2 Level
+
+Qualifications Summary:
+
+AI-ASSISTED DEVELOPMENT
+- Experienced in modern AI-powered development workflows using Cursor Pro, Claude Code, GitHub Copilot, and NotebookLM
+- Practicing "vibe coding" - leveraging AI assistants to accelerate development while maintaining code quality
+- Expert in prompt engineering for code generation and problem-solving
+
+QUALITY PROGRAMMING
+- Software Developer, enthusiastic about clean code with good programming concepts and design patterns to develop high-performance code, reusable, scalable and easy to maintain
+- Strong advocate of SOLID principles, Clean Architecture, and Domain-Driven Design
+
+AGILE METHODOLOGIES
+- Follower of agile methodologies. Everyday trying to learn more about these methodologies, especially Scrum and XP
+- Experienced with Jira, Azure DevOps Boards, and modern collaboration tools
+
+SOFTWARE DEVELOPMENT PROJECTS
+- Over 25 years designing, developing and implementing large-scale projects, from conception to completion
+- Discern key business requirements with stakeholders
+- Expert in Java and .NET development with focus on modern frameworks (.NET 9, Java 21)
+
+ALWAYS LEARNING
+- Attending events and conferences about software development and methodologies to know the latest trends
+- Reading software development books to work with new technologies and expand knowledge
+- Continuously exploring new AI tools and modern development practices
+
+About Me:
+My parents gave me a ZX Spectrum 48K computer (I still have it) when I was just a teenager, and my love for computers and technology began at that time.
+I took my first steps with the Basic programming language on that computer. Then I enrolled in a computer academy when I was 13 years old. I have been developing software from that moment until now.
+
+In recent years, I've embraced AI-assisted development, using tools like Cursor, Claude Code, and GitHub Copilot to enhance productivity while maintaining high code quality standards. I believe in leveraging modern tools to focus on solving complex problems rather than repetitive tasks.
+
+Other hobbies are cinema, astronomy, soccer and running as well as enjoying time with my family.
+
+Training:
+* Cursor AI & AI-Assisted Development. 2024-2025
+* Claude Code CLI. 2025
+* GitHub Copilot Advanced. 2024
+* .NET 9 & C# 13. Udemy 2024
+* Entity Framework Core 9. Udemy 2024
+* React 18 & TypeScript. Udemy 2024
+* Uno Platform Multi-platform Development. Udemy 2024
+* Azure DevOps Complete Guide. Udemy 2024
+* Jira Advanced Administration. Udemy 2024
+* Java 21 Virtual Threads & New Features. Udemy 2023
+* Ionic (app) y .NET Core (backend). Udemy
+* Go / Golang desde las bases. Udemy
+* Montar un cluster Hadoop Big Data. Udemy
+* Dart & Flutter. Udemy
+* Laravel y Vue.js avanzado. Udemy
+* Vue.js. Udemy
+* React + Redux. Udemy Jul22
+* NET MAUI con VStudio 2022. Udemy Jul22
+* DevOps, Docker Kubernetes, microservices y Azure .NET 6. Udemy Jul22
+* Azure DevOps. Udemy Jun22
+* AWS. Udemy Jun22
+* Go / Golang. Udemy Ago21
+* TDD - Test driven development con Java y JUnit. Udemy Dic21
+* Patrones de Diseño y principios SOLID. Udemy May21
+* Refactorizar código Java. Udemy Mar21
+* DevOps. Las artes marciales del software. Udemy Jun20
+* Java8. (Funcional y lambda). Udemy Sep19
+* Microservicios con Spring Boot / Netflix Eureka. Udemy Sep19
+* Programación Python para Machine Learning. Udemy Sep19
+* Curso de Python 3. Udemy Ago19
+* Desarrollo de videojuegos con Unity. Udemy Jun19
+* Mi primer videojuego con Unity. Udemy Jun19
+* API RESTful con Laravel. Udemy May19
+* Dominando Laravel. De principiante a experto. Udemy May19
+* Android con Kotlin + Firebase + Google. Udemy Abr19
+* Machine Learning. Udemy Mar19
+* Curso de Django. Udemy Ene19
+* Implementación de soluciones en Microsoft Azure. Udemy Nov18
+* Python + Django. Udemy Jul18
+* Desarrollo de dApps en la blockchain de Ethereum. Udemy Jun18
+* Introducción a blockchain, criptomonedas y Ethereum. Udemy Jun18
+* Xamarin Forms y Azure. Udemy Mar18
+* Angular 6 avanzado. Udemy Ene18
+* Curso avanzado de Docker. Udemy Ene18
+* Spring Framework 5. Udemy Ene18
+* Persistencia de datos con Java. Hibernate + Spring JPA. Udemy Ene18
+* ASP.NET Core MVC. Udemy Nov17
+* Curso de iniciación a Haskell. Udemy Sep17
+* Xamarin. Build Android and iOS Apps. Udemy May17
+* Servicios con WCF. Udemy Apr17
+* Git + GitHub. Udemy Mar16
+* Desarrollo web JavaScript, Angular, Node y MongoDB. Udemy Apr16
+* SEO para WordPress. Udemy Feb15
+* Aprende a triunfar con SEO. Udemy Feb15
+* Community Manager, Redes sociales. HP Formación May14
+* Marketing 2.0. Grupo Fides21 Mar13
+* Team Building. Gestión de Liderazgo. Fides21 Dec13
+* IBM Rational V7. Clearcase, SOA, Business Modeler Sep06
+* IBM DB2 Sep06
+* Infaimon Sherlock. Vision Artificial May06
+* Infaimon CVB. Vision Artificial May06
+* Gestión De Proyectos. Oesia 160h. Jan05
+* Programación Visual C++. Oesia 40h. May04
+* Administración SQL Server. Sunion Gesfor 40h. Nov03
+* Programación Java. Oesia 40h. Oct03
+* Optimización Oracle 8i. MR Informática 80h. Jun03
+* PL/SQL. Dayfisa 40h. Apr03
+* Xml. IBM Learning 30h. May03
+* Administración Oracle. Dayfisa 40h. May03
+* Macromedia Flash. IBM Learning 30h. Mar03
+* Ingeniería De Software. Sunion Gesfor Jan-Mar03
+* SAP MM. Verificación De Facturas. SAP España 25h. Oct02
+* Programación Avanzada Java. IBM Learning 25h. Apr02
+* Administración AIX. IBM Learning 30h. Apr02
+* Programación Avanzada RPG IV (AS/400). IBM Learning 50h. Feb02
+* Programación Java. Gesein 100h. Feb - Apr01
+* Cobol – CICS – DB2. Cap Gemini 160h - 99
+* Técnico En Sistemas Unix / Oracle. Sunion Gesfor 350h - 98
+* Microinformática. Academia Teide 300h - 98
+
+KNOWLEDGE
+Bold: Expert / Used in development environment
+
+* Programming Languages
+C# 13
+Java 21
+TypeScript / JavaScript ES6+
+Python
+Go
+Kotlin
+Dart / Flutter
+React 18
+PHP / Laravel
+HTML5 / CSS3
+SQL (T-SQL, PL/SQL)
+
+* .NET Ecosystem
+.NET 9 / C# 13
+ASP.NET Core 9 / Blazor / Razor Pages
+WPF / WinForms / WinUI
+Uno Platform / MAUI
+Electron.NET
+Entity Framework Core 9 / Dapper ORM
+LINQ / AutoMapper / Polly.NET
+xUnit / NUnit / Moq / Coverlet
+
+* Java Ecosystem
+Java 21 (Virtual Threads, Records, Pattern Matching)
+Spring Boot 3.x (MVC, Data JPA, Security, AOP, WebFlux)
+Hibernate / JPA / Criteria API
+JUnit 5 / Mockito / AssertJ
+Thymeleaf / JSP
+
+* Frontend
+React 18 / TypeScript
+Angular / Ionic
+Vue.js
+Vite / Webpack
+Bootstrap 5 / Tailwind CSS
+Socket.io / WebSockets
+
+* AI Development Tools
+Cursor (Pro License)
+Claude Code
+GitHub Copilot
+NotebookLM
+ChatGPT / Claude API integration
+
+* IDE & Editors
+Cursor
+Visual Studio Code
+Visual Studio 2022
+JetBrains IntelliJ IDEA
+Eclipse / IBM Rational
+
+* Databases
+SQL Server / MySQL / PostgreSQL
+Oracle / DB2
+MongoDB / Redis
+SQLite / InterSystems Caché
+
+* DevOps & CI/CD
+Azure DevOps (Pipelines, Boards, Repos, Test Plans)
+Git / GitHub / GitLab
+Docker / Kubernetes
+Jenkins / SonarQube
+Nexus / JFrog Artifactory
+
+* Project Management
+Jira / Confluence
+Azure DevOps Boards
+Scrum / Kanban / Agile
+
+* Cloud Platforms
+Microsoft Azure
+AWS
+Google Cloud Platform
+Firebase / Heroku
+
+* Testing
+xUnit / NUnit / MSTest (.NET)
+JUnit / TestNG (Java)
+Moq / NSubstitute (Mocking .NET)
+Mockito / EasyMock (Mocking Java)
+Selenium WebDriver
+Postman / Insomnia
+
+* Architecture & Design
+Clean Architecture
+Domain-Driven Design (DDD)
+SOLID Principles
+Design Patterns (GoF)
+Microservices Architecture
+RESTful API Design
+Event-Driven Architecture
+
+* Methodologies
+Scrum / Kanban
+Test-Driven Development (TDD)
+Behavior-Driven Development (BDD)
+Continuous Integration/Deployment
+Code Review Best Practices
+Pair Programming / Mob Programming
+
+* Application Servers
+IIS / Kestrel
+Apache Tomcat / Wildfly
+nginx / Apache HTTP Server
+IBM WebSphere / Oracle WebLogic
+
+* Integration & Messaging
+RESTful APIs / GraphQL
+SOAP / WCF
+Apache Kafka / RabbitMQ
+SignalR / Socket.io
+Mirth Connect / HL7 / ASTM
+
+* Version Control
+Git / GitHub / GitLab
+Azure Repos
+Subversion / CVS
+IBM Rational ClearCase
+
+* Containers & Orchestration
+Docker / Docker Compose
+Kubernetes
+Vagrant
+VMware / VirtualBox
+
+* Monitoring & Observability
+Application Insights
+Prometheus / Grafana
+ELK Stack (Elasticsearch, Logstash, Kibana)
+Serilog / NLog / Log4j
+
+* Security
+OAuth 2.0 / OpenID Connect
+JWT (JSON Web Tokens)
+SSL/TLS
+OWASP Security Practices
+Azure AD / Identity Server
+
+* Other Technologies
+Raspberry Pi / Arduino (IoT)
+Unity (Game Development)
+WordPress / Joomla
+Blockchain / Solidity / Ethereum
+
+* Soft Skills
+Team Leadership
+Mentoring Junior Developers
+Code Review & Quality Assurance
+Technical Documentation
+Agile/Scrum Ceremonies
+Stakeholder Communication
+Problem Solving & Analytical Thinking

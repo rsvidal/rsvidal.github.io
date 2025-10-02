@@ -1,1075 +1,1089 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
-	<head>
-	
-		<title>Rafael San Vidal::Software Developer</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rafael San Vidal - Software Developer | 25+ years experience in .NET, Java, React, AI-Assisted Development">
+    <meta name="keywords" content="Software Developer, .NET, Java, React, Azure DevOps, AI Development, Cursor, Claude Code, Gemini CLI">
+    <meta name="author" content="Rafael San Vidal">
+    <title>Rafael San Vidal :: Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="../web/images/logo.ico">
+</head>
+<body>
+    <!-- Terminal Header -->
+    <header class="terminal-header">
+        <div class="terminal-controls">
+            <span class="control-btn close"></span>
+            <span class="control-btn minimize"></span>
+            <span class="control-btn maximize"></span>
+        </div>
+        <div class="terminal-title">rafaelsanvidal@developer:~$ portfolio --show</div>
+    </header>
 
-		<!--------------->
-		<!--------------->
-		<!-- CSS files -->
-		<!--------------->
-		<!--------------->
-		
-		<link href="web/css/style.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/animate.css" rel="stylesheet" type="text/css">
-		<link href="web/css/navegation.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/timeline.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/shapes.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/qualifications.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/technologies.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/gridGallery.css" rel='stylesheet' type='text/css' />
-		<link href="web/css/popup-box.css" rel="stylesheet" type="text/css" />
+    <!-- Main Terminal Window -->
+    <main class="terminal-window">
+        <!-- Navigation -->
+        <nav class="terminal-nav">
+            <span class="prompt">rafaelsanvidal@portfolio:~$</span>
+            <ul class="nav-commands">
+                <li><a href="#about" class="nav-link" data-command="cat about.txt">about</a></li>
+                <li><a href="#experience" class="nav-link" data-command="cat experience.log">experience</a></li>
+                <li><a href="#ai-tools" class="nav-link" data-command="which ai-tools">ai-tools</a></li>
+                <li><a href="#skills" class="nav-link" data-command="ls -la skills/">skills</a></li>
+                <li><a href="#methodologies" class="nav-link" data-command="cat methodologies/">methodologies</a></li>
+                <li><a href="#training" class="nav-link" data-command="cat training.log">training</a></li>
+                <li><a href="#ml-projects" class="nav-link" data-command="find ml-projects/">ml-projects</a></li>
+                <li><a href="#projects" class="nav-link" data-command="git log --projects">projects</a></li>
+                <li><a href="#contact" class="nav-link" data-command="echo $CONTACT">contact</a></li>
+            </ul>
+        </nav>
 
-		<!------------------------------>
-		<!------------------------------>
-		<!--Javascript & Jquery files -->
-		<!------------------------------>
-		<!------------------------------>
-		
-		<!---- jQuery (necessary for Bootstrap's JavaScript plugins) ---->
-		<script src="web/js/jquery.min.js"></script>
-		
-		<!---- Animated Javascript ---->
-		<script src="web/js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-				
-		<!---- Smoth Scrolling Javascript ---->
-		<script type="text/javascript" src="web/js/move-top.js"></script>
-		<script type="text/javascript" src="web/js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		
-		<!---- Technologies Javascript----->
-		<script type="text/javascript" src="web/js/hover_pack.js"></script>
-		<script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>
-		<script type="text/javascript" src="web/js/modernizr.custom.min.js"></script>    
-		<script type="text/javascript">
-			$(function () {
-				var filterList = {
-					init: function () {
-						// MixItUp plugin
-						// http://mixitup.io
-						$('#technologylist').mixitup({
-							targetSelector: '.technology',
-							filterSelector: '.filter',
-							effects: ['fade'],
-							easing: 'snap',
-							
-							// Call the hover effect
-							onMixEnd: filterList.hoverEffect()
-						});				
-					
-					},
-					hoverEffect: function () {
-						// Simple parallax effect
-						$('#technologylist .technology').hover(
-							function () {
-								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-							},
-							function () {
-								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-							}		
-						);				
-					}
-				};
-				// Run the effects into the Technologies
-				filterList.init();
-			});	
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-				});																			
-			});
-		</script>
-				 
-		<!---- Custom Theme Javascript ---->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> 
-			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-			function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		
-		<!---- TopNav Javascript ---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-					
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-					
-	    		});
-			});
-		</script>
-		
-		<!---- Popup Dialog Javascript ---->
-		<script type="text/javascript" src="web/js/jquery.magnific-popup.js" type="text/javascript"></script>
-		
-		<!-- Versions -->
-		<script type="text/javascript">
-			function classicVersion() {
-			
-				// Hidden Elements
-				/<li>RSV. ANULADO
-				document.getElementsByClassName("top-nav")[0].className = "mfp-hide";
-				document.getElementsByClassName("downloadResume")[0].className = "mfp-hide";
-				document.getElementsByClassName("downloadResume2")[0].className = "mfp-hide"; 
-				document.getElementById("contact-form").className = "mfp-hide";
-				*/
-				
-				document.getElementById("technologies").className = "mfp-hide";
-				
-				// Remove Container Class, except 'about' element
-				/<li>RSV. ANULADO
-				x = document.getElementsByClassName("container");
-				for (i = 0; i < x.length; i++) {
-					var z = x[i].className.replace("container", "");
-					x[i].className = z;
-				}
-				document.getElementById("about").className = "container about"; */
-				
-				// Visible Elements 
-				var x = document.getElementsByClassName
-				("small-dialog");
-				var i;				
-				for (i = 0; i < x.length; i++) {
-					x[i].className = "grid";
-					i--;
-				}
-			}
-			
-			function normalVersion() { 
-				location.reload(true); 
-			} 
-			
-		</script>
+        <!-- Hero Section -->
+        <section id="hero" class="terminal-section">
+            <div class="typing-effect">
+                <pre class="ascii-art">
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║       ██████╗  █████╗ ███████╗ █████╗ ███████╗██╗            ║
+║       ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝██║            ║
+║       ██████╔╝███████║█████╗  ███████║█████╗  ██║            ║
+║       ██╔══██╗██╔══██║██╔══╝  ██╔══██║██╔══╝  ██║            ║
+║       ██║  ██║██║  ██║██║     ██║  ██║███████╗███████╗       ║
+║       ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝       ║
+║                                                              ║
+║              Software Developer | AI-Powered Coding          ║
+║                  25+ Years of Experience                     ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+                </pre>
+                <div class="terminal-output">
+                    <p><span class="prompt">rafaelsanvidal@portfolio:~$</span> whoami</p>
+                    <p class="output" style="font-size: 0.9em;">Rafael San Vidal</p>
+                    <p class="output">Software Developer | AI-Powered Coding</p>
+                    <p class="output">25+ Years of Experience</p>
+                    <p><span class="prompt">rafaelsanvidal@portfolio:~$</span> <span class="cursor-blink">_</span></p>
+                </div>
+            </div>
+        </section>
 
-		<!------------------>
-		<!---- WebFonts ---->
-		<!------------------>
-		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		
-	</head>
-	<body>
-
-		<!-- Download Resume -->
-		<div class="downloadResume"><a href="web\download\CV_Rafael_San_Vidal.pdf" target="_blank" class="cbutton">Download Resume</a></div>
-		<div class="downloadResume2"><a href="web\download\CV_Rafael_San_Vidal.pdf" target="_blank" class="cbutton">CV</a></div>
-			
-		<!----------------->
-		<!----- Header ---->
-		<!----------------->
-		<div class="bg">
-			<!-- Menu -->
-			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
-				<div class="container">			
-					<div class="top-header">
-					
-						<!-- Logo -->
-						<div class="logo">
-						
-						<!-- RSV. ANULADO 
-						<a href="#" onClick="normalVersion()" class="cbutton small">Normal</a>
-						<a href="javascript:classicVersion()" class="cbutton small">Classic</a> -->
-						</div>
-						<!-- Navegation Bar -->
-						<nav class="top-nav">
-							<ul class="top-nav">
-								<li class="active"><a href="#home" class="scroll">Home</a></li>
-								<li><a href="#resume" class="scroll">Resume</a></li>
-								<li><a href="#technologies" class="scroll">Technologies</a></li>
-								<li><a href="#about" class="scroll">About me</a></li>
-								<li><a href="#contact" class="scroll">Contact</a></li>
-								<!-- RSV. ANULADO <li><a href="http:\\www.rafaelsanvidal.com\wordpress" target="_blank">Blog</a></li> -->
-							</ul>
-							<a href="#" id="pull"><img src="../web/images/menu-icon.png" title="menu" /></a>
-						</nav>
+        <!-- About Section -->
+        <section id="about" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> cat about.txt
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># About Me</p>
+                <p>My journey in software development started with the <span class="highlight">first 8-bit personal computers</span> at age 13.</p>
+                <p>From writing my first BASIC programs to now leveraging cutting-edge AI tools,</p>
+                <p>I've been passionate about technology for over <span class="highlight">25 years</span>.</p>
+                <br>
+                <p class="comment"># Current Focus (2025)</p>
+                <p>→ Building enterprise applications with <span class="highlight">.NET 9</span> and <span class="highlight">Java 21</span></p>
+                <p>→ Embracing <span class="highlight">AI-assisted development</span> with Cursor, Claude Code and Gemini CLI</p>
+                <p>→ Creating <span class="highlight">cross-platform solutions</span></p>
+                <p>→ Implementing <span class="highlight">Clean Architecture</span> and <span class="highlight">DDD</span> patterns</p>
+                <br>
+                <p class="success">✓ 25+ years of professional experience</p>
+                <p class="success">✓ Healthcare domain expert (BD Company since 2005)</p>
+                <p class="success">✓ Full-stack developer (.NET, Java, Spring Boot, Angular, React)</p>
+                <p class="success">✓ AI-powered workflow enthusiast</p>
+            </div>
+        </section>
 
 
-						<div class="clearfix"></div>
+        <!-- Machine Learning Section -->
+        <section id="ml-projects" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> find ./ml-projects -name "*.py" | wc -l
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Machine Learning & Data Science Projects</p>
+                <br>
+                <div class="project-item">
+                    <p class="commit-hash">🐍 python-ml</p>
+                    <p class="project-desc"><span class="highlight">Python Machine Learning</span> | Scikit-learn, Pandas, NumPy projects</p>
+                    <p class="project-tech">
+                        <span class="tag">Python 3</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Jupyter</span>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <p class="commit-hash">🧠 tensorflow-projects</p>
+                    <p class="project-desc"><span class="highlight">Deep Learning</span> | TensorFlow and neural networks</p>
+                    <p class="project-tech">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Keras</span>
+                        <span class="tag">Neural Networks</span>
+                        <span class="tag">Data Preprocessing</span>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <p class="commit-hash">📊 data-analysis</p>
+                    <p class="project-desc"><span class="highlight">Data Analysis Projects</span> | Statistical analysis and visualization</p>
+                    <p class="project-tech">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Statistics</span>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-						
-			<!---------------->
-			<!---- Banner ---->
-			<!---------------->
+        <!-- Experience Section -->
+        <section id="experience" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> cat experience.log | tail -n 20
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Professional Experience</p>
+                <br>
+                <div class="experience-item">
+                    <p class="job-header">
+                        <span class="highlight">Becton Dickinson and Company</span>
+                        <span class="date">Nov 2005 - Present</span>
+                    </p>
+                    <p class="job-title">Senior Software Developer | Healthcare Solutions</p>
+                    <br>
+                    <p class="comment">## Key Responsibilities</p>
+                    <p>→ Full-stack development of healthcare applications (EMEA region)</p>
+                    <p>→ Architecture design, UI/UX, security and database management</p>
+                    <p>→ CI/CD pipeline implementation with Azure DevOps</p>
+                    <p>→ Team mentoring and code review practices</p>
+                    <br>
+                    <p class="comment">## Healthcare Domain Expertise (19+ years)</p>
+                    <p>→ <span class="highlight">HL7/HL7-FHIR</span> protocol implementation</p>
+                    <p>→ <span class="highlight">ASTM standards</span> for laboratory automation</p>
+                    <p>→ <span class="highlight">RFID integration</span> in hospital environments</p>
+                    <p>→ <span class="highlight">Real-time data processing</span> for critical systems</p>
+                    <p>→ <span class="highlight">Mirth Connect</span> healthcare integration platform</p>
+                    <br>
+                    <p class="comment">## Quality & Security Standards</p>
+                    <p>→ <span class="highlight">Fortify OnDemand</span> - Static Application Security Testing (SAST)</p>
+                    <p>→ <span class="highlight">SonarQube</span> - Code quality and security analysis</p>
+                    <p>→ <span class="highlight">OWASP Top 10</span> compliance and vulnerability assessment</p>
+                    <p>→ <span class="highlight">Healthcare security standards</span> (HIPAA, GDPR compliance)</p>
+                    <p>→ <span class="highlight">Penetration testing</span> and security audits</p>
+                    <p>→ <span class="highlight">Code coverage</span> and automated testing pipelines</p>
+                    <br>
+                <p class="comment">## Multi-Database Expertise</p>
+                <p>→ <span class="highlight">Multi-motor support</span> (MySQL, MariaDB, SQL Server, Oracle, DB2)</p>
+                <p>→ <span class="highlight">Database migrations</span> with Flyway</p>
+                <p>→ <span class="highlight">Cross-database compatibility</span> and optimization</p>
+                    <br>
+                    <p class="comment">## Tech Stack</p>
+                    <p><span class="tag">.NET 9</span> <span class="tag">C# 13</span> <span class="tag">Java 21</span> <span class="tag">Spring Boot</span> <span class="tag">Spring Data JPA</span></p>
+                    <p><span class="tag">React</span> <span class="tag">Angular</span> <span class="tag">TypeScript</span> <span class="tag">Blazor</span> <span class="tag">Thymeleaf</span></p>
+                    <p><span class="tag">SQL Server</span> <span class="tag">MySQL</span> <span class="tag">Oracle</span> <span class="tag">IBM DB2</span> <span class="tag">MariaDB</span></p>
+                    <p><span class="tag">Azure DevOps</span> <span class="tag">Docker</span> <span class="tag">Git</span> <span class="tag">Jira</span></p>
+                    <p><span class="tag">Spring Security</span> <span class="tag">SignalR</span> <span class="tag">WebSockets</span> <span class="tag">Socket.io</span></p>
+                    <p><span class="tag">WPF</span> <span class="tag">Uno Platform</span> <span class="tag">RCP / RAP</span></p>
+                </div>
+                <br>
+                <div class="experience-item">
+                    <p class="job-header">
+                        <span class="highlight">Omnibona S.L.</span>
+                        <span class="date">Nov 2014 - Dec 2015</span>
+                    </p>
+                    <p class="job-title">Software Developer (Part-time) | Startup</p>
+                    <p>Multi-platform health & fitness app with gamification</p>
+                    <p><span class="tag">ASP.NET MVC</span> <span class="tag">Entity Framework</span> <span class="tag">Azure</span></p>
+                </div>
+                <br>
+                <div class="experience-item">
+                    <p class="job-header">
+                        <span class="highlight">Oesia</span>
+                        <span class="date">Aug 2003 - Oct 2005</span>
+                    </p>
+                    <p class="job-title">Software Developer | Healthcare, Telecom, Public Services</p>
+                    <p>Clients: Telefónica, Hewlett-Packard, Siemens</p>
+                    <p><span class="tag">.NET</span> <span class="tag">C#</span> <span class="tag">SQL Server</span> <span class="tag">Oracle</span></p>
+                </div>
+                <br>
+                <div class="experience-item">
+                    <p class="job-header">
+                        <span class="highlight">L'Oréal Spain</span>
+                        <span class="date">Jan 2002 - Jul 2003</span>
+                    </p>
+                    <p class="job-title">SAP Key Business | Business Analyst</p>
+                    <br>
+                    <p class="comment">## SAP R/3 Project Leadership</p>
+                    <p>→ <span class="highlight">Business Key</span> for SAP R/3 implementation (FI, CO, MM modules)</p>
+                    <p>→ Project planning, design and implementation of SAP modules</p>
+                    <p>→ Reports development and <span class="highlight">ABAP IV programming</span></p>
+                    <p>→ Business requirements analysis and stakeholder management</p>
+                    <br>
+                    <p class="comment">## Historical Projects</p>
+                    <p>→ <span class="highlight">2000 and Euro Projects</span> - Y2K compliance and Euro currency conversion</p>
+                    <p>→ <span class="highlight">Management Applications</span> - Accounts and Purchasing systems</p>
+                    <p>→ <span class="highlight">AS/400 and IBM AIX</span> systems integrations</p>
+                    <br>
+                    <p class="comment">## Technical Skills</p>
+                    <p><span class="tag">SAP R/3</span> <span class="tag">ABAP IV</span> <span class="tag">C++</span> <span class="tag">RPG</span> <span class="tag">4GL</span> <span class="tag">AS/400</span> <span class="tag">IBM AIX</span> <span class="tag">Oracle</span> <span class="tag">Ingres</span></p>
+                </div>
+            </div>
 
-			<div class="banner>
-				<div class="container">
-					<div class="banner-info text-center">
-						<h1 class="wow fadeInLeftBig" data-wow-delay="1s">Rafael San Vidal</h1>
-						<br/>
-						<span></span>
-						<p class="wow fadeInRightBig" data-wow-delay="1s">Software Developer </p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
-		<!------------------------------>
-		<!--- Qualifications Summary --->
-		<!------------------------------>
-		<div id="resume">
-			<div class="container text-center wow bounceIn" data-wow-delay="0.4s">
-				<h1>Qualifications Summary</h1>
-				<span> </span>
-	
-				<!-- Quality Programming -->
-				<div class="col-md-5">
-					<div class="qualification-grid">
-						<span class="icon1"></span>
-						<h3 class="wow rubberBand" data-wow-delay="1s">Quality Programming</h3>
-						<p>Providing high-performance, reusable, scalable and easily maintained software solutions, expired by clean code with good programming concepts and design patterns</p>
-					</div>
-				</div>
+            <!-- Omnibona S.L Experience -->
+            <div class="experience-item">
+                <p class="company-info">
+                    <span class="highlight">Omnibona S.L</span>
+                    <span class="date">Nov 2014 - Dec 2015</span>
+                </p>
+                <p class="job-title">Software Developer (Part-time)</p>
+                <br>
+                <p class="comment">## Multi-platform Health Application</p>
+                <p>→ Design and development of multi-platform application about healthy habits</p>
+                <p>→ Nutrition and exercises in game mode for startup company</p>
+                <br>
+                <p class="comment">## Technical Skills</p>
+                <p><span class="tag">ASP.NET MVC</span> <span class="tag">Razor</span> <span class="tag">Entity Framework</span> <span class="tag">LINQ</span> <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">Bootstrap</span> <span class="tag">JavaScript</span> <span class="tag">jQuery</span> <span class="tag">Microsoft Azure</span></p>
+            </div>
 
-				<!-- Agile Methodologies -->
-				<div class="col-md-5">
-					<div class="qualification-grid">
-						<span class="icon2"></span>
-						<h3 class="wow rubberBand" data-wow-delay="1s">Agile Methodologies</h3>
-						<p>Practicing and chasing new knowledge about agile methodologies, especially Scrum and XP</p>
-					</div>
-				</div>	
-				
-				<!-- New Line -->
-				<div class="clearfix"> </div>
+            <!-- Oesia Experience -->
+            <div class="experience-item">
+                <p class="company-info">
+                    <span class="highlight">Oesia</span>
+                    <span class="date">Aug 2003 - Oct 2005</span>
+                </p>
+                <p class="job-title">Software Developer</p>
+                <br>
+                <p class="comment">## Healthcare, Public Services & Telecommunications</p>
+                <p>→ Software development in Healthcare, Public Services and telecommunications sectors</p>
+                <p>→ <span class="highlight">Key Customers:</span> CMT, Telefónica Móviles España, Hewlett-Packard, Siemens, Public Administrations</p>
+                <br>
+                <p class="comment">## Technical Skills</p>
+                <p><span class="tag">.NET</span> <span class="tag">C#</span> <span class="tag">Oracle</span> <span class="tag">Informix Dynamic Server</span> <span class="tag">SQL Server</span> <span class="tag">MySQL</span></p>
+            </div>
 
-				<!-- Software Development Projects -->
-				<div class="col-md-5">
-					<div class="qualification-grid">
-						<span class="icon3"></span>
-						<h3 class="wow rubberBand" data-wow-delay="1s">Software Development Projects</h3>
-						<ul>
-							<li>Expert in Java and .Net development</li>
-							<li>Actively involved in the process of gathering key business requirements with stakeholders, for designing, developing and implementing large-scale projects</li>
-						</ul>
-					</div>
-				</div>				
-				
-				<!-- Always Learning -->
-				<div class="col-md-5">
-					<div class="qualification-grid">
-						<span class="icon4"></span>
-						<h3 class="wow rubberBand" data-wow-delay="1s">Always Learning</h3>
-						<ul>
-							<p>Attending Software development  events and conferences, and reading Software development books for being updated with the latest trends of this alive and creative science.</p>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			
-			</div>
-		</div>
-		
-		<!-------------------->
-		<!---- Experience ---->
-		<!-------------------->
-		<div class="container">
-			<div class="text-center wow bounceIn" data-wow-delay="0.4s">
-				<h1 >Work Experiences</h1>
-				<span></span>
-			</div>
-						
-			<ul class="tm_timeline">
-	
-				<!----------------------->
-				<!-- Work Experience 1 -->
-				<!----------------------->
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Nov. 2005 - Up to now</span>
-						<span>Software Developer</span>
-					</time>
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://www.bd.com/es/" target="_blank"><b style="color: white"> Becton Dickinson S.A. </b></a></div>
-						<p> Products development in healthcare environment from scratch until the implementation in customers (Hospitals in EMEA zone):  Architecture, UI, web and desktop applications (Front and back), security, traceability, persistence, concurrency and testing </p>
-						<div><b> Technologies: </b></div>
-						<ul class="character">
-							<li>Spring Boot (MVC, Data, JPA, Security, AOP), JWT, Thymeleaf</li>
-							<li>Websockets, Criteria, JPA & JQPL, Flyway</li>
-							<li>Java 11: Lambda expressions, functional expressions, Stream, Webflux</li>
-							<li>CI/CD: Azure Devops (Pipelines design) / Jenkins, Sonar, Git, Nexus</li>
-							<li>Angular, Typescript, Socket.io</li>
-							<li>Javascript, JQuery</li>
-							<li>PHP, Laravel, Element</li>
-							<li>Python / Django</li>
-							<li>.NET / C# / ASP.NET Core Blazor WebAssenmbly / WPF / WinForms / Win UI / XAML / EF / Dapper ORM /  LINQ / Autofac / Automapper/  OpenApi SwashBuckle / DDD Architecture / Microsoft Visual Studio</li>
-							<li>HTML5, CSS3, Bootstrap</li>
-							<li>Junit y Mockito (Java) / NUnit, XUnit y Moq (C#) / Selenium (Java y C#)</li>
-							<li>RCP / RAP (Rich AJAX Platform) / IBM Rational</li>
-							<li>SOAP (Apache Axis2, Apache Cxf) / RestFul: Spring, Jersey, Apache CXF (Java) / ASP.NET Core API web (C#)</li>
-							<li>MySQL, SQL Server, Oracle, DB2</li>
-							
-						</ul>
-						<div><b> Areas: </b></div>
-						<ul class="character">
-							<li>Integrations: Mirth, Symphonia, Rest-ws, sockets, ASTM/HL7/RFID Protocols</li>
-							<li>Application Server: IIS, Apache Tomcat, Wildfly, IBM Websphere, Oracle WebLogic</li>
-							<li>Database Design and Management: MySQL, Postgres, SQL Server, Oracle, DB2</li>
-							<li>Abbyy Technologies, Infaimon Common Vision Blox</li>
-							<li>IBM Cognos</li>
-						</ul>
-					</div>
-				</li>
-				
-				<!----------------------->
-				<!-- Work Experience 2 -->
-				<!----------------------->
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Nov. 2014 - Dec. 2015 </span>
-						<span>Software Developer</span>
-					</time>
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://www.bd.com/es/" target="_blank"><b style="color: white"> Omnibona S.L. </b></a></div>
-						<p> Part-time in startup company. Design and development of a multi-platform application about healthy habits, nutrition and exercises in game mode </p>
-						<div><b> Programming NET technology: </b></div>
-						<ul class="character">
-							<li>ASP.NET MVC, Razor, thymeleaf</li> 
-							<li>Entity Framework / LINQ</li>  
-							<li>HTML5, CSS3, Bootstrap</li>
-							<li>JavaScript, JQuery</li>
-							<li>Microsoft Azure</li> 
-							<li>Microsoft Visual Studio</li>
-						</ul>
-					</div>
-				</li>
-				
-				<!----------------------->
-				<!-- Work Experience 3 -->
-				<!----------------------->					
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Aug. 2003 - Oct. 2005</span>
-						<span>Software Developer</span>
-					</time>
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://grupooesia.com" target="_blank"><b style="color: white"> Oesia </b></a></div>						
-						<p> Software Development in Healthcare, Public Services and telecomunications sectors </p>
-						<div><b> Customers: </b></div>
-						<ul class="character">
-							<li> Mercado de Comisi&oacute;n de las Telecomunicaciones (CMT) </li>
-							<li> Telef&oacute;nica M&oacute;viles Espa&ntilde;a (TME) </li>	
-							<li> Hewlett-Packard, Siemens (Healthcare area) </li>
-							<li> Administraciones P&uacute;blicas (Diputaciones y Aytos.)</li>											
-						</ul>
-						<div><b> Technologies: </b></div>
-						<ul class="character">
-							<li> NET / C# / Visual Studio </li>
-							<li> Database Management: Oracle, Informix Dynamic Server, SQL Server, MySQL </li>										 
-						</ul>
-					</div>
-				</li>
-				
-				<!----------------------->
-				<!-- Work Experience 4 -->
-				<!----------------------->						
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Aug. 2003 - Sep. 2003</span>
-						<span>Support Technical</span>
-					</time>						
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><b> Easynet Espa&ntilde;a S.A. </b></div>
-						<p> Support Technical in telecomunications sector </p>
-					</div>
-				</li>
+            <!-- Easynet España Experience -->
+            <div class="experience-item">
+                <p class="company-info">
+                    <span class="highlight">Easynet España S.A.</span>
+                    <span class="date">Aug 2003 - Sep 2003</span>
+                </p>
+                <p class="job-title">Support Technical</p>
+                <br>
+                <p class="comment">## Technical Support</p>
+                <p>→ Technical support and customer service</p>
+            </div>
 
-				<!----------------------->
-				<!-- Work Experience 5 -->
-				<!----------------------->						
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span> Jan. 2002 - Jul. 2003</span>
-						<span>SAP Key Business</span>
-					</time>						
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://www.loreal.es" target="_blank"><b style="color: white"> L'Oreal Spain </b></a></div>
-						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
-						<p> Business analyst in SAP Project based in FI, CO and MM Modules </p>
-						<div><b> Tasks: </b></div>
-						<ul class="character">							
-							<li> Project Planning, Design and Implementation of this module </li>	
-							<li> FI, CO and MM </li>											
-							<li> Reports Development, ABAP IV Programming </li>
-						</ul>
-					</div>
-				</li>
+            <!-- Ministerio Asuntos Exteriores Experience -->
+            <div class="experience-item">
+                <p class="company-info">
+                    <span class="highlight">Ministerio de Asuntos Exteriores</span>
+                    <span class="date">Jan 1998 - Jun 1998</span>
+                </p>
+                <p class="job-title">Software Developer</p>
+                <br>
+                <p class="comment">## Diplomatic Passports Management</p>
+                <p>→ Design and create an application to manage diplomatic passports</p>
+                <p>→ Passports management project development</p>
+                <br>
+                <p class="comment">## Technical Skills</p>
+                <p><span class="tag">4GL Language</span> <span class="tag">Ingres Database</span></p>
+            </div>
+            </div>
+        </section>
 
-				<!----------------------->
-				<!-- Work Experience 6 -->
-				<!----------------------->						
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Jul. 1998 - Dec. 2001</span>
-						<span>Software Developer</span>
-					</time>					
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://www.loreal.es" target="_blank"><b style="color: white"> L'Oreal Spain </b></a></div>
-						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
-						<p> Software Developer in Information Systems Departament with over 20 programmers </p>
-						<div><b> Tasks: </b></div>
-						<ul class="character">
-							<li>C++, RPG, 4GL, AS/400, IBM Aix, Oracle, Ingres</li>
-							<li>2000 and Euro projects</li> 
-							<li>Requirements from stakeholders</li>
-							<li>Planning, designing and implementing software</li>
-							<li>Management Applications: Accounts, Purchasing</li>
-							<li>AS/400 and IBM Aix systems integrations</li>
-						</ul>
-					</div>
-				</li>					
+        <!-- AI Tools Section - DESTACADA -->
+        <section id="ai-tools" class="terminal-section highlight-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> which ai-tools --verbose
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># AI-Assisted Development Stack (2024-2025)</p>
+                <br>
+                <div class="ai-tools-grid">
+                    <div class="tool-card">
+                        <p class="tool-name">🤖 <span class="highlight">Cursor Pro</span></p>
+                        <p class="tool-desc">AI-powered code editor with vibe coding</p>
+                        <p class="tool-status success">● INTEGRATED</p>
+                    </div>
+                    <div class="tool-card">
+                        <p class="tool-name">🧠 <span class="highlight">Claude Code</span></p>
+                        <p class="tool-desc">CLI-based AI assistant for development</p>
+                        <p class="tool-status success">● INTEGRATED</p>
+                    </div>
+                    <div class="tool-card">
+                        <p class="tool-name">🔮 <span class="highlight">Gemini CLI</span></p>
+                        <p class="tool-desc">Google's AI assistant for code generation</p>
+                        <p class="tool-status success">● INTEGRATED</p>
+                    </div>
+                    <div class="tool-card">
+                        <p class="tool-name">🚀 <span class="highlight">GitHub Copilot</span></p>
+                        <p class="tool-desc">AI pair programming assistant</p>
+                        <p class="tool-status success">● INTEGRATED</p>
+                    </div>
+                    <div class="tool-card">
+                        <p class="tool-name">📚 <span class="highlight">NotebookLM</span></p>
+                        <p class="tool-desc">AI research and documentation</p>
+                        <p class="tool-status success">● RESEARCH TOOL</p>
+                    </div>
+                </div>
+                <br>
+                <p class="comment"># AI/ML Projects & Experience</p>
+                <div class="ai-project-item">
+                    <p class="commit-hash">🤖 azure-ai-services</p>
+                    <p class="project-desc"><span class="highlight">Azure AI Integration</span> | OpenAI services through Azure AI</p>
+                    <p class="project-tech">
+                        <span class="tag">Azure OpenAI</span>
+                        <span class="tag">Semantic Kernel</span>
+                        <span class="tag">.NET 8</span>
+                        <span class="tag">Function Apps</span>
+                    </p>
+                </div>
+                <div class="ai-project-item">
+                    <p class="commit-hash">🧠 llm-evaluation</p>
+                    <p class="project-desc"><span class="highlight">LLM Evaluation Framework</span> | Custom framework for evaluating language models</p>
+                    <p class="project-tech">
+                        <span class="tag">.NET 8</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">JSON Export</span>
+                        <span class="tag">QA Generation</span>
+                    </p>
+                </div>
+                <div class="ai-project-item">
+                    <p class="commit-hash">⚡ semantic-kernel</p>
+                    <p class="project-desc"><span class="highlight">Semantic Kernel Projects</span> | Microsoft's AI orchestration framework</p>
+                    <p class="project-tech">
+                        <span class="tag">Semantic Kernel</span>
+                        <span class="tag">Plugin Architecture</span>
+                        <span class="tag">Function Calling</span>
+                        <span class="tag">Bing Search</span>
+                    </p>
+                </div>
+                <br>
+                <p class="comment"># Vibe Coding Philosophy</p>
+                <p>Leveraging AI to focus on <span class="highlight">problem-solving</span> and <span class="highlight">architecture</span></p>
+                <p>while accelerating implementation without sacrificing <span class="highlight">code quality</span>.</p>
+            </div>
+        </section>
 
-				<!----------------------->
-				<!-- Work Experience 7 -->
-				<!----------------------->						
-				<li>
-					<time class="tm_time wow fadeInLeft" data-wow-delay="0.4s">
-						<span>Jan. 1998 - Jun. 1998</span>
-						<span>Software Developer</span>
-					</time>
-					
-					<div class="tm_icon"></div>
-					<div class="tm_content wow fadeInRightBig" data-wow-delay="0.4s">
-						<div class="wow shake" data-wow-delay="1s"><a href="http://www.exteriores.gob.es" target="_blank"><b style="color: white"> Ministerio de Asuntos Exteriores de Espa&ntilde;a </b></div>
-						<div class="wow shake" data-wow-delay="1s"><a href="https://www.mrinformatica.es" target="_blank"><b style="color: white"> M.R. Inform&aacute;tica S.L. </b></a></div>
-						<p> Design and create an application to manage diplomatic passports </p>
-						<div><b> Tasks: </b></div>
-						<ul class="character">
-							<li> Passports Management Project </li>
-							<li> 4GL Lenguage / Ingres Database </li>
-						</ul>
-					</div>
-				</li>				
-			</ul>
-			
-		</div>
-		
-		<!------------------->
-		<!---- Education ---->
-		<!------------------->
-		<div id="education" class="education"> 
-			<div class= "container text-center wow bounceIn" data-wow-delay="0.4s">
-				<h1>Education</h1>
-				<span> </span>
-					
-				<!-- University -->
-				<div class="col-md-6">
-					<h3 class="wow rubberBand" data-wow-delay="1s">Technical Engineering in Computer Systems</h3>
-					<a href="http://www.eui.upm.es" target="_blank" title="Escala Universitaria de Inform&aacute;tica, UPM">
-						<p>Universidad Polit&eacute;cnica de Madrid</p>
-						<img src="web/images/UPM.png" alt="Escala Universitaria de Inform&aacute;tica, UPM"/>
-					</a>
-				</div>
+        <!-- Skills Section -->
+        <section id="skills" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> ls -la skills/ --complete-portfolio
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Complete Technology Portfolio - 25+ Years of Experience</p>
+                <br>
+                <div class="skills-grid">
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">backend/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> .NET 9 / C# 13</li>
+                            <li><span class="skill-expert">●</span> Java 21</li>
+                            <li><span class="skill-expert">●</span> Spring Boot 3.x</li>
+                            <li><span class="skill-expert">●</span> ASP.NET Core 9</li>
+                            <li><span class="skill-expert">●</span> Node.js / Express</li>
+                            <li><span class="skill-expert">●</span> Python / Django</li>
+                            <li><span class="skill-expert">●</span> PHP / Laravel</li>
+                            <li><span class="skill-expert">●</span> Erlang / Haskell (Functional)</li>
+                        </ul>
+                    </div>
 
-				<!-- Language -->
-				<div class="col-md-6">
-					<h3>Languages</h3>
-						<p>Spanish: Native language</p>
-						<p>English: B1 level</p>
-					</ul>
-				</div>
-		
-			</div>
-		</div>
-		
-		<!---------------------->
-		<!---- Technologies ---->
-		<!---------------------->		
-		<div id="technologies">
-			<div class= "container text-center wow bounceIn" data-wow-delay="0.4s">
-				<h1>Technologies</h1>
-				<span> </span>
-				
-				<!-- Filtros -->
-				<ul id="filters" class="clearfix">
-					<li><span class="filter active" data-filter="programming mobile repositories environment projects applications">All</span></li>
-					<li><span class="filter" data-filter="programming">Programming</span></li>
-					<li><span class="filter" data-filter="mobile">Web</span></li>
-					<li><span class="filter" data-filter="repositories">Repositories</span></li>
-					<li><span class="filter" data-filter="environment">Environment</span></li>
-					<li><span class="filter" data-filter="projects">Projects</span></li>
-					<li><span class="filter" data-filter="applications">Applications</span></li>
-				</ul>				
-				
-				<!-- Technology List -->
-				<div id="technologylist" class="circle">
-					
-					<!-- Programming -->
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog1" class="b-link-stripe b-animate-go popup-with-zoom-anim"> <!-- Link to 'Dialog' Window -->
-							<div class="red"><span>Languages</span></div>	<!-- Circle Image -->
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> <!-- Hover Event (With Eye Icon) -->
-						</a>
-					</div>			
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog2" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>.NET</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>	
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog4" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>Java Persistence Frameworks</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog5" class="b-link-stripe b-animate-go popup-with-zoom-anim"> 
-							<div class="red"><span>Java AOP Frameworks</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>						
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog6" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Spring Framework</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog7" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>Netflix</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog10" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Node</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>					
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog8" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>IDE</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog9" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="red"><span>Testing</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog29" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>Blockchain</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog30" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Messaging brokers</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology programming mix_all" data-cat="programming" >
-						<a href="#small-dialog31" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Monitoring tools</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>					
-					
-					<!-- Web Technology -->
-					<div class="technology mobile mix_all" data-cat="programming" >
-						<a href="#small-dialog11" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>JavaScript MVC Frameworks</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>
-					<div class="technology mobile mix_all" data-cat="mobile" >
-						<a href="#small-dialog12" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Web Tools</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>	
-					
-					<!-- Repositories -->	
-					<div class="technology repositories mix_all" data-cat="repositories" >
-						<a href="#small-dialog14" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Relational Databases</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>	
-					<div class="technology repositories mix_all" data-cat="repositories" >
-						<a href="#small-dialog15" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>NoSQL Databases</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology repositories mix_all" data-cat="repositories" >
-						<a href="#small-dialog16" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Big Data / BI</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>				
-					<div class="technology repositories mix_all" data-cat="repositories" >
-						<a href="#small-dialog17" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="red"><span>Cloud Computing</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					
-					<!-- Environments -->
-					<div class="technology environment mix_all" data-cat="environment" >
-						<a href="#small-dialog18" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Environment / OS </span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>	
-					<div class="technology environment mix_all" data-cat="environment" >
-						<a href="#small-dialog19" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span> Applications Servers</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology environment mix_all" data-cat="environment" >
-						<a href="#small-dialog20" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Integrations / Protocols</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>						
-					<div class="technology projects mix_all" data-cat="projects" >
-						<a href="#small-dialog25" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="red"><span>Containers & Orchestration & Virtualization</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					
-					<!-- Projects Management -->
-					<div class="technology projects mix_all" data-cat="projects" >
-						<a href="#small-dialog21" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>Methodologies & Specifications</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology projects mix_all" data-cat="projects" >
-						<a href="#small-dialog22" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="green"><span>CI/CD</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology projects mix_all" data-cat="projects" >
-						<a href="#small-dialog23" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Source Version</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>	
-					<div class="technology projects mix_all" data-cat="projects" >
-						<a href="#small-dialog24" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="red"><span>Project Tools</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
+                    <!-- Mobile Development -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">mobile/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Kotlin (Android)</li>
+                            <li><span class="skill-expert">●</span> Android Studio</li>
+                        </ul>
+                    </div>
 
-					<!-- Applications -->
-					<div class="technology applications mix_all" data-cat="applications" >
-						<a href="#small-dialog26" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="blue"><span>Recognition applications</span></div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology applications mix_all" data-cat="applications" >
-						<a href="#small-dialog27" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="red"><span>OpenSource Applications</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div>
-						</a>
-					</div>
-					<div class="technology applications mix_all" data-cat="programming" >
-						<a href="#small-dialog28" class="b-link-stripe b-animate-go popup-with-zoom-anim">
-							<div class="orange"><span>IoT</span></div>	
-							<div class="b-wrapper"><h2 class="b-animate b-from-left"><img src="web/images/link.png" alt=""/></h2></div> 
-						</a>
-					</div>					
-				</div>
-				
-			</div>
-		</div>				
+                    <!-- Soft Skills -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">soft-skills/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Team Leadership</li>
+                            <li><span class="skill-expert">●</span> Mentoring Junior Developers</li>
+                            <li><span class="skill-expert">●</span> Code Review & Quality Assurance</li>
+                            <li><span class="skill-expert">●</span> Technical Documentation</li>
+                            <li><span class="skill-expert">●</span> Stakeholder Communication</li>
+                            <li><span class="skill-expert">●</span> Problem Solving & Analytical Thinking</li>
+                            <li><span class="skill-expert">●</span> Agile/Scrum Ceremonies</li>
+                        </ul>
+                    </div>
 
-		<div>
-		
-		<!---------------------------->
-		<!---- Popup Technologies ---->
-		<!---------------------------->	
+                    <!-- Development Tools -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">dev-tools/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Visual Studio Professional</li>
+                            <li><span class="skill-expert">●</span> Visual Studio Code</li>
+                            <li><span class="skill-expert">●</span> Cursor</li>
+                            <li><span class="skill-expert">●</span> Eclipse</li>
+                            <li><span class="skill-expert">●</span> IntelliJ IDEA</li>
+                            <li><span class="skill-expert">●</span> IBM Rational Suite</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog1" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Languages</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/4gl.png" alt="img01"/></div><figcaption><h3>4gl</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sap.png" alt="img01"/></div><figcaption><h3>Abap IV</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/bootstrap.png" alt="img01"/></div><figcaption><h3>Bootstrap</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/c.png" alt="img01"/></div><figcaption><h3>C++</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/csharp.png" alt="img01"/></div><figcaption><h3>C#</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/cobol.png" alt="img01"/></div><figcaption><h3>Cobol</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/dart.jpg" alt="img01"/></div><figcaption><h3>Dart</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/erlang.png" alt="img01"/></div><figcaption><h3>Erlang</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/flutter.jpg" alt="img01"/></div><figcaption><h3>Flutter</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/go.png" alt="img01"/></div><figcaption><h3>Go</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/groovy.png" alt="img01"/></div><figcaption><h3>Groovy / Grails</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/haskell.png" alt="img01"/></div><figcaption><h3>Haskell</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/html5.jpg" alt="img01"/></div><figcaption><h3>Html5 / CSS3</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/java.jpg" alt="img01"/></div><figcaption><h3>Java</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/javascript.png" alt="img01"/></div><figcaption><h3>Javascript</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jquery.png" alt="img01"/></div><figcaption><h3>Jquery</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/kotlin.png" alt="img01"/></div><figcaption><h3>Kotlin</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/oracle.png" alt="img01"/></div><figcaption><h3>Oracle PL/SQL</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/pascal.jpg" alt="img01"/></div><figcaption><h3>Pascal</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/ruby.jpg" alt="img01"/></div><figcaption><h3>Ruby / RoR</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/php.png" alt="img01"/></div><figcaption><h3>PHP / Laravel / Eloquent / Composer</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/python.jpg" alt="img01"/></div><figcaption><h3>Python / Django</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/ibm.png" alt="img01"/></div><figcaption><h3>RPG</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/scala.png" alt="img01"/></div><figcaption><h3>Scala</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/typescript.png" alt="img01"/></div><figcaption><h3>TypeScript</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Spring Boot Ecosystem -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">spring-boot/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Spring Data JPA</li>
+                            <li><span class="skill-expert">●</span> Spring Security + OAuth2</li>
+                            <li><span class="skill-expert">●</span> Spring MVC / WebFlux</li>
+                            <li><span class="skill-expert">●</span> Thymeleaf</li>
+                            <li><span class="skill-expert">●</span> Spring AOP</li>
+                            <li><span class="skill-expert">●</span> Spring Cloud (Eureka, Hystrix)</li>
+                            <li><span class="skill-expert">●</span> Flyway Migrations</li>
+                            <li><span class="skill-expert">●</span> Spring Boot DevTools</li>
+                            <li><span class="skill-expert">●</span> Spring Validation</li>
+                            <li><span class="skill-expert">●</span> Thymeleaf Security Extensions</li>
+                            <li><span class="skill-expert">●</span> Multi-DB Support (H2, MySQL, MariaDB, SQL Server)</li>
+                            <li><span class="skill-expert">●</span> Apache Kafka</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog2" class="mfp-hide container grid" style="background-color: #FFF">    <h2>.NET</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/net.png" alt="img01"/></div><figcaption><h3>NET 7</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/csharp.png" alt="img01"/></div><figcaption><h3>C# / Xaml</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/wpf.jpg" alt="img01"/></div><figcaption><h3>WPF / Windows Forms</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/asp.net.core.png" alt="img01"/></div><figcaption><h3>ASP.NET Core MVC/ Razor pages / Blazor Web Assembly</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/winui.png" alt="img01"/></div><figcaption><h3>WinUI </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/electron.NET.png" alt="img01"/></div><figcaption><h3>Electron.NET API</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/entity-framework.png" alt="img01"/></div><figcaption><h3>Entity Framework</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/dapper.png" alt="img01"/></div><figcaption><h3>Dapper ORM</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/linq.png" alt="img01"/></div><figcaption><h3>LINQ</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/polly.png" alt="img01"/></div><figcaption><h3>Polly.NET</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Java Ecosystem -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">java-ecosystem/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Hibernate / JPA / Criteria API</li>
+                            <li><span class="skill-expert">●</span> Maven / Gradle</li>
+                            <li><span class="skill-expert">●</span> JUnit / Mockito</li>
+                            <li><span class="skill-expert">●</span> Apache CXF / Jersey</li>
+                            <li><span class="skill-expert">●</span> HikariCP (Connection Pool)</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog4" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Java Persistence Frameworks</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/jpa.jpg" alt="img01"/></div><figcaption><h3>Spring Data JPA / Criteria</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/hibernate.png" alt="img01"/></div><figcaption><h3>Hibernate / HQL / QueryDSL</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/mapstruct.png" alt="img01"/></div><figcaption><h3>MapStruct / Mapping Dozer</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/purequery.png" alt="img01"/></div><figcaption><h3>IBM PureQuery</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- .NET Ecosystem -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">dotnet-ecosystem/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> EF Core / Dapper / LINQ</li>
+                            <li><span class="skill-expert">●</span> NLog / Serilog</li>
+                            <li><span class="skill-expert">●</span> AutoMapper / Polly.NET</li>
+                            <li><span class="skill-expert">●</span> SignalR (Real-time)</li>
+                            <li><span class="skill-expert">●</span> xUnit / nUnit</li>
+                            <li><span class="skill-expert">●</span> Moq (Mocking)</li>
+                            <li><span class="skill-expert">●</span> Hangfire (Background jobs)</li>
+                            <li><span class="skill-expert">●</span> FluentValidation</li>
+                            <li><span class="skill-expert">●</span> MailKit / RabbitMQ</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog5" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Java AOP Frameworks</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring AOP</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jbossaop.png" alt="img01"/></div><figcaption><h3>Jboss AOP</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/aspectj.jpg" alt="img01"/></div><figcaption><h3>AspectJ</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Historical Languages -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">historical-langs/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> ABAP IV (SAP)</li>
+                            <li><span class="skill-expert">●</span> RPG (AS/400)</li>
+                            <li><span class="skill-expert">●</span> 4GL (Ingres)</li>
+                            <li><span class="skill-expert">●</span> COBOL</li>
+                            <li><span class="skill-expert">●</span> Pascal</li>
+                            <li><span class="skill-expert">●</span> C++</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog6" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Spring Framework</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Boot</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring MVC</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Data JPA</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Security</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring AOP</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/spring.png" alt="img01"/></div><figcaption><h3>Spring Webflux</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/thymeleaf.png" alt="img01"/></div><figcaption><h3>Thymeleaf</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">frontend/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> React</li>
+                            <li><span class="skill-expert">●</span> Angular</li>
+                            <li><span class="skill-expert">●</span> TypeScript</li>
+                            <li><span class="skill-expert">●</span> Blazor WebAssembly</li>
+                            <li><span class="skill-expert">●</span> WPF / WinUI</li>
+                            <li><span class="skill-expert">●</span> Uno Platform</li>
+                            <li><span class="skill-expert">●</span> HTML5 / CSS3</li>
+                            <li><span class="skill-expert">●</span> Element UI (Vue.js)</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog7" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Netflix</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-hystrix.jpg" alt="img01"/></div><figcaption><h3>Hystrix</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>Feign</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-ribbon.png" alt="img01"/></div><figcaption><h3>Netflix Ribbon</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/netflix-zuul.png" alt="img01"/></div><figcaption><h3>Netflix Zuul</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- DevOps -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">devops/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Azure DevOps</li>
+                            <li><span class="skill-expert">●</span> Microsoft Azure</li>
+                            <li><span class="skill-expert">●</span> AWS</li>
+                            <li><span class="skill-expert">●</span> Google Cloud Platform</li>
+                            <li><span class="skill-expert">●</span> Docker</li>
+                            <li><span class="skill-expert">●</span> Kubernetes</li>
+                            <li><span class="skill-expert">●</span> Git</li>
+                            <li><span class="skill-expert">●</span> GitHub</li>
+                            <li><span class="skill-expert">●</span> Jenkins</li>
+                            <li><span class="skill-expert">●</span> SonarQube</li>
+                            <li><span class="skill-expert">●</span> GitHub Actions</li>
+                            <li><span class="skill-expert">●</span> Jira</li>
+                            <li><span class="skill-expert">●</span> Confluence</li>
+                            <li><span class="skill-expert">●</span> Subversion / CVS</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog8" class="mfp-hide container grid" style="background-color: #FFF">    <h2>IDE</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/visual-studio.png" alt="img01"/></div><figcaption><h3>Visual Studio</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/visual-code.png" alt="img01"/></div><figcaption><h3>Visual Code</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/eclipse.png" alt="img01"/></div><figcaption><h3>Eclipse</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/ibmrational.jpg" alt="img01"/></div><figcaption><h3>IBM Rational </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sublime-text.png" alt="img01"/></div><figcaption><h3>Sublime Text</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/atom.png" alt="img01"/></div><figcaption><h3>Atom</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Databases -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">databases/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> SQL Server</li>
+                            <li><span class="skill-expert">●</span> MySQL</li>
+                            <li><span class="skill-expert">●</span> PostgreSQL</li>
+                            <li><span class="skill-expert">●</span> Oracle</li>
+                            <li><span class="skill-expert">●</span> IBM DB2</li>
+                            <li><span class="skill-expert">●</span> MongoDB</li>
+                            <li><span class="skill-expert">●</span> Redis</li>
+                            <li><span class="skill-expert">●</span> Cassandra</li>
+                            <li><span class="skill-expert">●</span> InterSystems Caché</li>
+                            <li><span class="skill-expert">●</span> Informix Dynamic Server</li>
+                            <li><span class="skill-expert">●</span> CA Ingres</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog9" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Testing</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/nunit.png" alt="img01"/></div><figcaption><h3>Nunit (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/xunit.png" alt="img01"/></div><figcaption><h3>Xunit (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/moq.png" alt="img01"/></div><figcaption><h3>Moq (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/rhinomock.png" alt="img01"/></div><figcaption><h3>RhinoMock (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/typemock.png" alt="img01"/></div><figcaption><h3>TypeMock (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/coverlet.png" alt="img01"/></div><figcaption><h3>Coverlet (.NET)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/junit.png" alt="img01"/></div><figcaption><h3>Junit (Java)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mockito.jpg" alt="img01"/></div><figcaption><h3>Mockito (Java)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/easymock.png" alt="img01"/></div><figcaption><h3>EasyMock (Java)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jmock.jpg" alt="img01"/></div><figcaption><h3>Jmock ( Java)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/mocha.png" alt="img01"/></div><figcaption><h3>Mocha (js)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jasmine.png" alt="img01"/></div><figcaption><h3>Jasmine (js)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/protractor.png" alt="img01"/></div><figcaption><h3>Protractor (js)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/istanbul.png" alt="img01"/></div><figcaption><h3>Istanbul (js)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/karma.png" alt="img01"/></div><figcaption><h3>Karma (Browser test runner)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/selenium.png" alt="img01"/></div><figcaption><h3>Selenium for Java and .NET</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- AI Tools -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">ai-tools/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Cursor</li>
+                            <li><span class="skill-expert">●</span> Claude Code</li>
+                            <li><span class="skill-expert">●</span> Gemini CLI</li>
+                            <li><span class="skill-expert">●</span> GitHub Copilot</li>
+                            <li><span class="skill-expert">●</span> Azure OpenAI Services</li>
+                            <li><span class="skill-expert">●</span> Semantic Kernel</li>
+                            <li><span class="skill-expert">●</span> NotebookLM</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog10" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Node</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/expressjs.png" alt="img01"/></div><figcaption><h3>Express.js</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/restify.png" alt="img01"/></div><figcaption><h3>Restify.js</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/socketio.jpg" alt="img01"/></div><figcaption><h3>Socket.io</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/mongoose.png" alt="img01"/></div><figcaption><h3>Mongoose.js</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/mongojs.png" alt="img01"/></div><figcaption><h3>Mongo.js</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/npm.png" alt="img01"/></div><figcaption><h3>Npm</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Testing Advanced -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">testing-advanced/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Selenium WebDriver</li>
+                            <li><span class="skill-expert">●</span> Playwright</li>
+                            <li><span class="skill-expert">●</span> Jest / Testing Library</li>
+                            <li><span class="skill-expert">●</span> Mockito</li>
+                            <li><span class="skill-expert">●</span> Postman</li>
+                            <li><span class="skill-expert">●</span> Insomnia</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog11" class="mfp-hide container grid" style="background-color: #FFF">    <h2>JavaScript MVC Frameworks</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/angular.png" alt="img01"/></div><figcaption><h3>Angular / Ionic</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/react.png" alt="img01"/></div><figcaption><h3>React</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/vue.png" alt="img01"/></div><figcaption><h3>Vue</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">cloud-devops/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Azure Functions</li>
+                            <li><span class="skill-expert">●</span> AWS Lambda</li>
+                            <li><span class="skill-expert">●</span> Docker / Kubernetes</li>
+                            <li><span class="skill-expert">●</span> Terraform</li>
+                            <li><span class="skill-expert">●</span> Ansible</li>
+                            <li><span class="skill-expert">●</span> GitHub Actions</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog12" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Web Tools</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/handlebars.jpg" alt="img01"/></div><figcaption><h3>Handlebars (HTML Template Engine)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jade.png" alt="img01"/></div><figcaption><h3>Jade (HTML Template Engine)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/alpaca.png" alt="img01"/></div><figcaption><h3>Alpaca Forms</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/gulp.png" alt="img01"/></div><figcaption><h3>Gulp (Javascript task runner)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/webpack.png" alt="img01"/></div><figcaption><h3>WebPack</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/stylus.png" alt="img01"/></div><figcaption><h3>Stylus (Preprocessor CSS)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sass.png" alt="img01"/></div><figcaption><h3>Sass (Preprocessor CSS)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/less.png" alt="img01"/></div><figcaption><h3>Less.js (Preprocessor CSS)</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Quality & Security -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">quality-security/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Fortify OnDemand (SAST)</li>
+                            <li><span class="skill-expert">●</span> SonarQube</li>
+                            <li><span class="skill-expert">●</span> OWASP Top 10</li>
+                            <li><span class="skill-expert">●</span> Healthcare Security (HIPAA, GDPR)</li>
+                            <li><span class="skill-expert">●</span> Penetration Testing</li>
+                            <li><span class="skill-expert">●</span> Code Coverage Analysis</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog13" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Project generator</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/yeoman.png" alt="img01"/></div><figcaption><h3>YeoMan</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/h5bt.png" alt="img01"/></div><figcaption><h3>HTML5 Boilerplate</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Enterprise Systems -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">enterprise-systems/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> SAP R/3 (FI, CO, MM)</li>
+                            <li><span class="skill-expert">●</span> ABAP IV Programming</li>
+                            <li><span class="skill-expert">●</span> Business Analysis</li>
+                            <li><span class="skill-expert">●</span> Project Management</li>
+                            <li><span class="skill-expert">●</span> AS/400 Systems</li>
+                            <li><span class="skill-expert">●</span> IBM AIX</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog14" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Relational Databases</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/oracle.png" alt="img01"/></div><figcaption><h3>Oracle</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/sqlserver.png" alt="img01"/></div><figcaption><h3>SQL Server</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mysql.png" alt="img01"/></div><figcaption><h3>MySql</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mariadb.png" alt="img01"/></div><figcaption><h3>MariaDB</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/postgres.png" alt="img01"/></div><figcaption><h3>Postgres</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/db2.png" alt="img01"/></div><figcaption><h3>IBM DB2</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/informix.jpg" alt="img01"/></div><figcaption><h3>Informix Dynamic Server</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/ingres.png" alt="img01"/></div><figcaption><h3>CA Ingres  </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/cache.png" alt="img01"/></div><figcaption><h3>Intersystems Cache</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sybase.png" alt="img01"/></div><figcaption><h3>Sap Sybase</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sqlite.png" alt="img01"/></div><figcaption><h3>SQLite</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Big Data & Analytics -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">big-data-analytics/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> IBM Cognos</li>
+                            <li><span class="skill-expert">●</span> Talend ETL</li>
+                            <li><span class="skill-expert">●</span> Apache Hadoop</li>
+                            <li><span class="skill-expert">●</span> Elasticsearch</li>
+                            <li><span class="skill-expert">●</span> Prometheus</li>
+                            <li><span class="skill-expert">●</span> Grafana</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog15" class="mfp-hide container grid" style="background-color: #FFF">    <h2>NoSQL Databases</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/mongodb.png" alt="img01"/></div><figcaption><h3>MongoDB</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/cassandra.jpg" alt="img01"/></div><figcaption><h3>Apache Cassandra</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/redis.png" alt="img01"/></div><figcaption><h3>Redis</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/memcached.png" alt="img01"/></div><figcaption><h3>Memcached</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                    <!-- Specialized Technologies -->
+                    <div class="skill-category">
+                        <p class="category-header">📁 <span class="highlight">specialized-tech/</span></p>
+                        <ul class="skill-list">
+                            <li><span class="skill-expert">●</span> Blockchain & Web3 (Solidity, Ethereum)</li>
+                            <li><span class="skill-expert">●</span> Game Development (Unity 3D, C#)</li>
+                            <li><span class="skill-expert">●</span> IoT (Arduino, Raspberry Pi)</li>
+                            <li><span class="skill-expert">●</span> Computer Vision (Abbyy Technologies, Infaimon CVB)</li>
+                            <li><span class="skill-expert">●</span> Web Frameworks (WordPress, Joomla)</li>
+                        </ul>
+                    </div>
 
-</div><div id="small-dialog16" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Big Data / BI</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/cognos.png" alt="img01"/></div><figcaption><h3>Ibm Cognos</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/talend.jpg" alt="img01"/></div><figcaption><h3>Talend</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
 
-</div><div id="small-dialog17" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Cloud Computing</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/azure.png" alt="img01"/></div><figcaption><h3>Windows Azure</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/aws.png" alt="img01"/></div><figcaption><h3>AWS</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/google-cloud.png" alt="img01"/></div><figcaption><h3>GCP -Google Cloud Platform</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/google-firebase.png" alt="img01"/></div><figcaption><h3>Google Firebase</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/heroku.jpg" alt="img01"/></div><figcaption><h3>Heroku</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/nodester.jpg" alt="img01"/></div><figcaption><h3>Nodester</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                </div>
+                <br>
+            </div>
+        </section>
 
-</div><div id="small-dialog18" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Environment / OS</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/windows.png" alt="img01"/></div><figcaption><h3>Windows</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/ubuntu.png" alt="img01"/></div><figcaption><h3>Ubuntu</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/debian.png" alt="img01"/></div><figcaption><h3>Debian</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/redhat.png" alt="img01"/></div><figcaption><h3>Red Hat</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/suse.png" alt="img01"/></div><figcaption><h3>Suse</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/aix.png" alt="img01"/></div><figcaption><h3>IBM Aix</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/as400.png" alt="img01"/></div><figcaption><h3>AS/400</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sap.png" alt="img01"/></div><figcaption><h3>SAP R/3</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+        <!-- Projects Section -->
+        <section id="projects" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> git log --oneline --all --graph --decorate
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Featured Professional Projects (Becton Dickinson - Healthcare)</p>
+                <p class="comment"># Sample of enterprise projects - 25+ years of professional development</p>
+                <br>
 
-</div><div id="small-dialog19" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Application Servers</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/iis.gif" alt="img01"/></div><figcaption><h3>IIS </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/apache-tomcat.png" alt="img01"/></div><figcaption><h3>Apache Tomcat</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jboss.png" alt="img01"/></div><figcaption><h3>Wilfly / Jboss</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/websphere.gif" alt="img01"/></div><figcaption><h3>IBM Websphere</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/weblogic.jpg" alt="img01"/></div><figcaption><h3>Oracle WebLogic</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jetty.png" alt="img01"/></div><figcaption><h3>Jetty</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/nginx.png" alt="img01"/></div><figcaption><h3>Nginx</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <!-- Project 1: BD RFID System -->
+                <div class="project-item">
+                    <p class="commit-hash">🏥 bd-rfid-system</p>
+                    <p class="project-desc"><span class="highlight">Healthcare RFID Management System</span> | Full-stack enterprise platform for hospital sample tracking</p>
+                    <p class="project-tech">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Thymeleaf</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">TypeScript</span>                        
+                        <span class="tag">.NET</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">IBM DB2</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">WebSockets</span>
+                        <span class="tag">RFID</span>
+                        <span class="tag">DDD</span>                        
+                        <span class="tag">REST API</span>
+                    </p>
+                    <p class="comment">  → Tag Manage: RFID tag management interface</p>
+                    <p class="comment">  → Tag Backend: REST API with multi-database support</p>
+                    <p class="comment">  → SSTSDaemon: Background service for sample tracking</p>
+                    <p class="comment">  → Tag Shipping: PHP/Laravel shipping module</p>
+                    <p class="comment">  → Clean Architecture with Domain-Driven Design</p>
+                    <p class="comment">  → Real-time dashboard with WebSockets (STOMP.js)</p>
+                    <p class="comment">  → JWT authentication & session management</p>
+                    <p class="comment">  → WinUI 3 desktop application</p>
+                    <p class="comment">  → Domain-Driven Design with layered architecture</p>
+                    <p class="comment">  → RFID reader integration (CAEN, Impinj)</p
+                    <p class="comment">  → Distributed caching & high availability</p>
+                </div>
 
-</div><div id="small-dialog20" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Integrations / Protocols</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/astm.png" alt="img01"/></div><figcaption><h3>ASTM Protocol</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/hl7.png" alt="img01"/></div><figcaption><h3>HL7 Protocol</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/caen-rfid.png" alt="img01"/></div><figcaption><h3>Caen RFID Protocol</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/apache-cxf.png" alt="img01"/></div><figcaption><h3>Apache CXF</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/axis2.png" alt="img01"/></div><figcaption><h3>Apache Axis2</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/jersey.png" alt="img01"/></div><figcaption><h3>Jersey </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/graphql.png" alt="img01"/></div><figcaption><h3>GraphQL</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/mirth.png" alt="img01"/></div><figcaption><h3>Mirth</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/symphonia.png" alt="img01"/></div><figcaption><h3>Symphonia</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <!-- Project 3: scanBatch -->
+                <div class="project-item">
+                    <p class="commit-hash">📄 scanbatch-ocr</p>
+                    <p class="project-desc"><span class="highlight">Document Processing System</span> | Batch scanning with OCR and barcode recognition</p>
+                    <p class="project-tech">
+                        <span class="tag">WPF</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Abbyy OCR</span>
+                        <span class="tag">TWAIN</span>
+                        <span class="tag">WIA</span>
+                        <span class="tag">Windows Services</span>                        
+                    </p>
+                    <p class="comment">  → Abbyy FineReader integration</p>
+                    <p class="comment">  → Barcode recognition library</p>
+                    <p class="comment">  → TWAIN scanner driver support</p>                    
+                    <p class="comment">  → Windows Service daemon for background processing</p>
+                </div>
 
-</div><div id="small-dialog21" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Methodologies & Specifications</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/scrum.jpg" alt="img01"/></div><figcaption><h3>Scrum</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/kanban.jpg" alt="img01"/></div><figcaption><h3>Kanban</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/clean-code.png" alt="img01"/></div><figcaption><h3>Clean code</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>SOLID Principles</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/gofpatterns.png" alt="img01"/></div><figcaption><h3>GOF Patterns</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/drivendesign.jpg" alt="img01"/></div><figcaption><h3>DDD / TDD / BDD</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>UX (User Experience)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/transparent.png" alt="img01"/></div><figcaption><h3>Reactive Programming</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <!-- Project 4: BDComponents -->
+                <div class="project-item">
+                    <p class="commit-hash">📦 bd-components</p>
+                    <p class="project-desc"><span class="highlight">Cross-Platform Component Library</span> | Reusable UI components with Uno Platform</p>
+                    <p class="project-tech">
+                        <span class="tag">Uno Platform</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">XAML</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">WebAssembly</span>
+                        <span class="tag">Windows</span>
+                    </p>
+                    <p class="comment">  → Single codebase for Android, iOS, Web, Windows</p>
+                    <p class="comment">  → XAML-based declarative UI</p>
+                    <p class="comment">  → Custom controls library</p>
+                </div>
 
-</div><div id="small-dialog22" class="mfp-hide container grid" style="background-color: #FFF">    <h2>CI/CD</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/azure-devops.png" alt="img01"/></div><figcaption><h3>Azure Devops</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jira.png" alt="img01"/></div><figcaption><h3>Attlassian Jira</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><div class="expert"></div><img src="web/images/logos/maven.png" alt="img01"/></div><figcaption><h3>Maven</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/gradle.png" alt="img01"/></div><figcaption><h3>Gradle</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jenkins.png" alt="img01"/></div><figcaption><h3> Jenkins</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/sonar.png" alt="img01"/></div><figcaption><h3>Sonar Qube</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/nexus-oss.png" alt="img01"/></div><figcaption><h3>Nexus OSS</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/jfrog.png" alt="img01"/></div><figcaption><h3>Jfrog</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <!-- Project 5: DBTransfClient -->
+                <div class="project-item">
+                    <p class="commit-hash">💾 db-transfer-client</p>
+                    <p class="project-desc"><span class="highlight">Database Migration Tool</span> | Cross-database data transfer utility</p>
+                    <p class="project-tech">
+                        <span class="tag">.NET</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Multi-DB</span>
+                        <span class="tag">ETL</span>
+                    </p>
+                    <p class="comment">  → Transfer data between different database engines</p>
+                    <p class="comment">  → Support for SQL Server, Oracle, MySQL, DB2</p>
+                </div>
 
-</div><div id="small-dialog23" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Source Version</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/git.jpg" alt="img01"/></div><figcaption><h3>Git / Github</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/cvs.png" alt="img01"/></div><figcaption><h3>CVS</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/subversion.png" alt="img01"/></div><figcaption><h3>Subversion</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/clearcase.png" alt="img01"/></div><figcaption><h3>IBM Rational ClearCase</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <br>
+                <p class="comment"># Learning & Experimental Projects</p>
+                <p class="comment"># Sample of personal projects - continuous learning and technology exploration</p>
+                <br>
 
-</div><div id="small-dialog24" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Project Tools</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/ea.png" alt="img01"/></div><figcaption><h3>Enterprise Architect</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/staruml.png" alt="img01"/></div><figcaption><h3>StarUML</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <!-- Learning Projects -->
+                <div class="project-item">
+                    <p class="commit-hash">🤖 ai-experiments</p>
+                    <p class="project-desc">AI/ML Projects | OpenAI API, Azure AI, prompt engineering</p>
+                    <p class="project-tech">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">Azure AI</span>
+                        <span class="tag">LangChain</span>
+                    </p>
+                </div>
 
-</div><div id="small-dialog25" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Containers / Orchestration / Virtualization</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/docker.png" alt="img01"/></div><figcaption><h3>Docker</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/kubernetes.png" alt="img01"/></div><figcaption><h3>Kubernetes</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/vagrant.png" alt="img01"/></div><figcaption><h3>Vagrant</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/vmware.png" alt="img01"/></div><figcaption><h3>VMWare</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/virtual-box.png" alt="img01"/></div><figcaption><h3>Oracle VirtualBox</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
 
-</div><div id="small-dialog26" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Recognition Applications</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/abbyy.png" alt="img01"/></div><figcaption><h3>Abbyy Technology</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/cvb.png" alt="img01"/></div><figcaption><h3>Infaimon Common Vision Blox</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <div class="project-item">
+                    <p class="commit-hash">🐳 devops-practice</p>
+                    <p class="project-desc">DevOps & Cloud | Docker, Kubernetes, AWS, Azure pipelines</p>
+                    <p class="project-tech">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">Terraform</span>
+                    </p>
+                </div>
 
-</div><div id="small-dialog27" class="mfp-hide container grid" style="background-color: #FFF">    <h2>OpenSource Applications</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/wordpress.png" alt="img01"/></div><figcaption><h3>Wordpress</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/joomla.jpg" alt="img01"/></div><figcaption><h3>Joomla</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/oscommerce.png" alt="img01"/></div><figcaption><h3>OsCommerce</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <div class="project-item">
+                    <p class="commit-hash">☁️ microservices-netflix</p>
+                    <p class="project-desc"><span class="highlight">Spring Cloud Microservices</span> | Netflix stack implementation</p>
+                    <p class="project-tech">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Eureka</span>
+                        <span class="tag">Hystrix</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                    </p>
+                </div>
 
-</div><div id="small-dialog28" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Internet of Things</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/arduino.png" alt="img01"/></div><figcaption><h3>Arduino</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <div class="project-item">
+                    <p class="commit-hash">⚛️ react-fullstack-complete</p>
+                    <p class="project-desc"><span class="highlight">Full Stack Open Course</span> | Complete React + Node.js + MongoDB</p>
+                    <p class="project-tech">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redux</span>
+                    </p>
+                </div>
 
-</div><div id="small-dialog29" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Blockchain</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/solidity.png" alt="img01"/></div><figcaption><h3>Solidity</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/go-ethereum.png" alt="img01"/></div><figcaption><h3>Go Ethereum & Geth (Go lenguage)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/parity.png" alt="img01"/></div><figcaption><h3>Parity (Rust Language)</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/ganache-cli.png" alt="img01"/></div><figcaption><h3>Ganache-cli / testrpc</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/web3js.jpg" alt="img01"/></div><figcaption><h3>Web3.js </h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/wallets.png" alt="img01"/></div><figcaption><h3>Wallets: Mist, Parity, MyEtherWallet, MetaMask</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/truffle.png" alt="img01"/></div><figcaption><h3>Truffle</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/remix.png" alt="img01"/></div><figcaption><h3>Remix</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <div class="project-item">
+                    <p class="commit-hash">🔧 testing-advanced</p>
+                    <p class="project-desc"><span class="highlight">Advanced Testing</span> | Playwright, Jest, Testing Library, Selenium</p>
+                    <p class="project-tech">
+                        <span class="tag">Selenium</span>
+                        <span class="tag">Playwright</span>
+                        <span class="tag">Jest</span>
+                        <span class="tag">Testing Library</span>
+                        <span class="tag">TDD/BDD</span>
+                    </p>
+                </div>
 
-</div><div id="small-dialog30" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Messaging brokers</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/apache-kafka.png" alt="img01"/></div><figcaption><h3>Apache Kafka</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/rabbitMQ.png" alt="img01"/></div><figcaption><h3>RabbitMQ</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
 
-</div><div id="small-dialog31" class="mfp-hide container grid" style="background-color: #FFF">    <h2>Monitoring tools</h2><ul><span class="clearfix"></span>
-<li><figure><div class="image"><img src="web/images/logos/ansible.png" alt="img01"/></div><figcaption><h3>Ansible</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/chef.png" alt="img01"/></div><figcaption><h3>Chef</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/puppet.png" alt="img01"/></div><figcaption><h3>Puppet</h3><p></p></figcaption></figure></li>
-<li><figure><div class="image"><img src="web/images/logos/terraform.png" alt="img01"/></div><figcaption><h3>Terraform</h3><p></p></figcaption></figure></li></ul><span class="clearfix"></span>
+                <div class="project-item">
+                    <p class="commit-hash">☁️ cloud-functions</p>
+                    <p class="project-desc"><span class="highlight">Serverless Computing</span> | Azure Functions, AWS Lambda</p>
+                    <p class="project-tech">
+                        <span class="tag">.NET 9</span>
+                        <span class="tag">Azure Functions</span>
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">Serverless</span>
+                    </p>
+                </div>
 
-		<!--------------->
-		<!---- About ---->
-		<!--------------->
-		
-		</div>
-		
-		<div id="about" class="about">
-			<div class="container wow bounceIn" data-wow-delay="0.4s">
-				<div class="text-center">
-					<h1>About me</h1>
-					<span> </span>
-				
-					<!-- Photo -->
-					<div><img class="photo" src="web/images/perfil.png"/></div>
-					<span class="clearfix">
-				</div>
-				
-				<!-- About me -->
-				<p>My hobby for the computers has begun when my parents gifted me my first computer. I was only a teenager when begun to write my first programs in Basic using a ZX Spectrum computer. And then, I enrolled in software development school when I was 13 years old. And from that time until today, I have always been writing programs and developing products.</p>
+                <div class="project-item">
+                    <p class="commit-hash">📱 kotlin-android</p>
+                    <p class="project-desc"><span class="highlight">Android Development</span> | Kotlin mobile applications</p>
+                    <p class="project-tech">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Android Studio</span>
+                        <span class="tag">Mobile UI</span>
+                    </p>
+                </div>
 
-				<!-- Hobbies -->
-				<div class="square">
-					<div class="blue"><p><img src="web/images/hobbies/cinema.png" /><span>Cinema</span></p></div>
-					<div class="red"><p><img src="web/images/hobbies/Astronomy.png" /><span>Astronomy</span></p></div>
-					<div class="blue"><p><img src="web/images/hobbies/football.png" /><span>Football</span></p></div>
-					<div class="red"><p><img src="web/images/hobbies/running.jpg" /><span>Running</span></p></div>					
-					<div class="purple"><p><img src="web/images/hobbies/family.png" /><span>Family</span></p></div>					
-				</div>		
-			</div>
-		</div>		
-					
-		<!----------------->	
-		<!---- Contact ---->
-		<!----------------->
-		
-		<div id="contact" class="contact">
-			<div class="container">
-				<div class="contact-grids">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
-							<h1>Contact me</h1>							
-							<div>
-								<div class="col-md-6">
-									<div class="contact-left-grid">
-										<p><span><img src="web/images/social/email.png"></img><a href="mailto:sanvidal1@gmail.com">sanvidal1@gmail.com</a></span></p>										
-										<p><span><img src="web/images/social/linkedin.png"></img><a href="http://es.linkedin.com/in/rsanvidal" target="_blank">linkedin\rsanvidal</a></span></p>										
-										<p><span><img src="web/images/social/twitter.png"></img><a href="https://twitter.com/rsanvidal" target="_blank">@rsanvidal</a></span></p>
-										<span/>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-					</div>
+                <div class="project-item">
+                    <p class="commit-hash">🤖 azure-ai-integration</p>
+                    <p class="project-desc"><span class="highlight">Azure AI Services</span> | OpenAI SDK, Semantic Kernel, LLM evaluation</p>
+                    <p class="project-tech">
+                        <span class="tag">.NET 8</span>
+                        <span class="tag">Azure OpenAI</span>
+                        <span class="tag">Semantic Kernel</span>
+                        <span class="tag">Microsoft Extensions AI</span>
+                    </p>
+                </div>
 
-					<!-- RSV. ANULADO
-					<div id="contact-form" class="col-md-6">
-						<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
-							<form action="app/contact.php" method="post">
-								<input id="nombre" name="nombre" type="text" class="text" value="Name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
-								<input id="email" name="email" type="text" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
-								<textarea id="mensaje" name="mensaje" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"> Message...</textarea>
-								<input id="submit" name="submit" class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
-							</form>
-						</div>
-					</div> -->
-					<div class="clearfix"> </div>
-				</div>
-				
-				<!--- copyright ---->
-				<div class="copy-right text-center">
-					<p>Copyright by <a href="http://www.rafaelsanvidal.com/">www.rafaelsanvidal.com</a></p>
-					<script type="text/javascript">
-									$(document).ready(function() {
-										$().UItoTop({ easingType: 'easeOutQuart' });
-									});
-					</script>
-					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-				</div>
-				
-			</div>
-		</div>
-		
-	</div>
-	</body>
+                <div class="project-item">
+                    <p class="commit-hash">🌐 arduino-iot</p>
+                    <p class="project-desc"><span class="highlight">IoT Projects</span> | Arduino + Bluetooth + Android, Ethernet Shield, CoAP</p>
+                    <p class="project-tech">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Netduino</span>
+                        <span class="tag">CoAP Protocol</span>
+                        <span class="tag">aREST API</span>
+                        <span class="tag">Bluetooth HC-05</span>
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <p class="commit-hash">📱 mobile-iot</p>
+                    <p class="project-desc"><span class="highlight">Mobile + IoT Integration</span> | Xamarin + Arduino, Android + Bluetooth</p>
+                    <p class="project-tech">
+                        <span class="tag">Xamarin</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Bluetooth</span>
+                    </p>
+                </div>
+
+                <br>
+                <p class="comment"># Portfolio & Open Source</p>
+                <p>🌐 Portfolio: <a href="https://rsvidal.github.io" target="_blank" class="link">https://rsvidal.github.io</a></p>
+                <p>💻 GitHub: <a href="https://github.com/rsvidal" target="_blank" class="link">github.com/rsvidal</a></p>
+            </div>
+        </section>
+
+
+
+
+        <!-- Methodologies & Principles Section -->
+        <section id="methodologies" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> cat methodologies.txt
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Development Methodologies & Software Engineering Principles</p>
+                <br>
+                <div class="tech-explored-grid">
+                    <div class="tech-col">
+                        <p class="tech-header">🔄 <span class="highlight">Agile Methodologies</span></p>
+                        <p>→ Scrum (Sprint Planning, Daily Standups, Retrospectives)</p>
+                        <p>→ Kanban (Continuous Flow, Work in Progress)</p>
+                        <p>→ XP (Extreme Programming)</p>
+                        <p>→ Lean Software Development</p>
+                    </div>
+
+                    <div class="tech-col">
+                        <p class="tech-header">🏗️ <span class="highlight">Architecture Patterns</span></p>
+                        <p>→ Clean Architecture</p>
+                        <p>→ Domain-Driven Design (DDD)</p>
+                        <p>→ Microservices Architecture</p>
+                        <p>→ Event-Driven Architecture</p>
+                        <p>→ SOA (Service Oriented Architecture)</p>
+                    </div>
+
+                    <div class="tech-col">
+                        <p class="tech-header">⚡ <span class="highlight">SOLID Principles</span></p>
+                        <p>→ Single Responsibility Principle</p>
+                        <p>→ Open/Closed Principle</p>
+                        <p>→ Liskov Substitution Principle</p>
+                        <p>→ Interface Segregation Principle</p>
+                        <p>→ Dependency Inversion Principle</p>
+                    </div>
+
+                    <div class="tech-col">
+                        <p class="tech-header">🧪 <span class="highlight">Testing Methodologies</span></p>
+                        <p>→ TDD (Test-Driven Development)</p>
+                        <p>→ BDD (Behavior-Driven Development)</p>
+                        <p>→ ATDD (Acceptance Test-Driven Development)</p>
+                        <p>→ Unit Testing</p>
+                        <p>→ Integration Testing</p>
+                    </div>
+
+                    <div class="tech-col">
+                        <p class="tech-header">📋 <span class="highlight">Design Patterns</span></p>
+                        <p>→ Gang of Four (GoF) Patterns</p>
+                        <p>→ Creational Patterns (Factory, Builder, Singleton)</p>
+                        <p>→ Structural Patterns (Adapter, Decorator, Facade)</p>
+                        <p>→ Behavioral Patterns (Observer, Strategy, Command)</p>
+                    </div>
+
+                    <div class="tech-col">
+                        <p class="tech-header">📚 <span class="highlight">Code Quality</span></p>
+                        <p>→ Clean Code Principles</p>
+                        <p>→ Code Review Practices</p>
+                        <p>→ Refactoring Techniques</p>
+                        <p>→ Technical Debt Management</p>
+                        <p>→ Documentation Standards</p>
+                    </div>
+                </div>
+                <br>
+                <p class="comment"># 25+ years applying software engineering best practices</p>
+                <p class="success">✓ Expert in modern development methodologies and architectural patterns</p>
+                <p class="success">✓ Strong advocate for clean code and quality engineering practices</p>
+            </div>
+        </section>
+
+        <!-- Training & Certifications Section -->
+        <section id="training" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> cat training_history.log | grep -E "2024|2025"
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Recent Training & Courses (2024-2025)</p>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2024-2025</span></p>
+                    <p>→ <span class="tag">Cursor AI & AI-Assisted Development</span> - Vibe Coding practices</p>
+                    <p>→ <span class="tag">Claude Code CLI</span> - AI assistant integration</p>
+                    <p>→ <span class="tag">Gemini CLI</span> - Google AI code generation</p>
+                    <p>→ <span class="tag">GitHub Copilot Advanced</span> - AI pair programming</p>
+                    <p>→ <span class="tag">NotebookLM</span> - AI research and documentation</p>
+                    <p>→ <span class="tag">.NET 9 & C# 13</span> - Latest features (Udemy)</p>
+                    <p>→ <span class="tag">Blazor Development</span> - YouTube course</p>
+                    <p>→ <span class="tag">Dapper ORM</span> - YouTube course</p>
+                    <p>→ <span class="tag">DDD Microsoft Microservices</span> - Advanced patterns</p>
+                    <p>→ <span class="tag">Sistema de ventas real</span> - C# + Angular + Xamarin (YouTube)</p>
+                    <p>→ <span class="tag">ASP.NET Core Advanced</span> - Udemy course</p>
+                    <p>→ <span class="tag">.NET MAUI Cross-platform</span> - Udemy course</p>
+                    <p>→ <span class="tag">Entity Framework Core</span> - ORM modern practices</p>
+                    <p>→ <span class="tag">React & TypeScript</span> - Modern frontend (Udemy)</p>
+                    <p>→ <span class="tag">Uno Platform Multi-platform</span> - Cross-platform development</p>
+                    <p>→ <span class="tag">Azure DevOps Complete Guide</span> - CI/CD pipelines (Udemy)</p>
+                    <p>→ <span class="tag">Jira Advanced Administration</span> - Project management</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2023</span></p>
+                    <p>→ <span class="tag">Java 21 Virtual Threads</span> - Concurrency improvements (Udemy)</p>
+                    <p>→ <span class="tag">Spring Boot 3.x Microservices</span> - Cloud-native architecture</p>
+                    <p>→ <span class="tag">Docker & Kubernetes Advanced</span> - Container orchestration</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2021-2022</span></p>
+                    <p>→ <span class="tag">React + Redux</span> (Udemy, Jul 2022)</p>
+                    <p>→ <span class="tag">.NET MAUI con Visual Studio 2022</span> (Udemy, Jul 2022)</p>
+                    <p>→ <span class="tag">DevOps, Docker, Kubernetes, Microservices y Azure .NET 6</span> (Udemy, Jul 2022)</p>
+                    <p>→ <span class="tag">Azure DevOps</span> (Udemy, Jun 2022)</p>
+                    <p>→ <span class="tag">AWS Cloud Practitioner</span> (Udemy, Jun 2022)</p>
+                    <p>→ <span class="tag">TDD - Test Driven Development con Java y JUnit</span> (Udemy, Dic 2021)</p>
+                    <p>→ <span class="tag">Patrones de Diseño y principios SOLID</span> (Udemy, May 2021)</p>
+                    <p>→ <span class="tag">Refactorizar código Java</span> (Udemy, Mar 2021)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2019-2020</span></p>
+                    <p>→ <span class="tag">Java 8 Funcional y Lambda</span> (Udemy, Sep 2019)</p>
+                    <p>→ <span class="tag">Microservicios con Spring Boot / Netflix Eureka</span> (Udemy, Sep 2019)</p>
+                    <p>→ <span class="tag">Python para Machine Learning</span> (Udemy, Sep 2019)</p>
+                    <p>→ <span class="tag">Curso de Python 3</span> (Udemy, Ago 2019)</p>
+                    <p>→ <span class="tag">Desarrollo de videojuegos con Unity</span> (Udemy, Jun 2019)</p>
+                    <p>→ <span class="tag">API RESTful con Laravel</span> (Udemy, May 2019)</p>
+                    <p>→ <span class="tag">Android con Kotlin + Firebase + Google</span> (Udemy, Abr 2019)</p>
+                    <p>→ <span class="tag">Machine Learning</span> (Udemy, Mar 2019)</p>
+                    <p>→ <span class="tag">DevOps: Las artes marciales del software</span> (Udemy, Jun 2020)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2017-2018</span></p>
+                    <p>→ <span class="tag">Angular 6 Avanzado</span> (Udemy, Ene 2018)</p>
+                    <p>→ <span class="tag">Curso avanzado de Docker</span> (Udemy, Ene 2018)</p>
+                    <p>→ <span class="tag">Spring Framework 5</span> (Udemy, Ene 2018)</p>
+                    <p>→ <span class="tag">Persistencia de datos con Java: Hibernate + Spring JPA</span> (Udemy, Ene 2018)</p>
+                    <p>→ <span class="tag">ASP.NET Core MVC</span> (Udemy, Nov 2017)</p>
+                    <p>→ <span class="tag">Xamarin: Build Android and iOS Apps</span> (Udemy, May 2017)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2016-2018</span></p>
+                    <p>→ <span class="tag">Git + GitHub</span> (Udemy, Mar 2016)</p>
+                    <p>→ <span class="tag">Desarrollo web JavaScript, Angular, Node y MongoDB</span> (Udemy, Abr 2016)</p>
+                    <p>→ <span class="tag">SEO para WordPress</span> (Udemy, Feb 2015)</p>
+                    <p>→ <span class="tag">Community Manager, Redes sociales</span> (HP Formación, May 2014)</p>
+                    <p>→ <span class="tag">Marketing 2.0</span> (Grupo Fides21, Mar 2013)</p>
+                    <p>→ <span class="tag">Team Building. Gestión de Liderazgo</span> (Fides21, Dec 2013)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2003-2006</span></p>
+                    <p>→ <span class="tag">IBM Rational V7. Clearcase, SOA, Business Modeler</span> (Sep 2006)</p>
+                    <p>→ <span class="tag">IBM DB2</span> (Sep 2006)</p>
+                    <p>→ <span class="tag">Infaimon Sherlock. Visión Artificial</span> (May 2006)</p>
+                    <p>→ <span class="tag">Infaimon CVB. Visión Artificial</span> (May 2006)</p>
+                    <p>→ <span class="tag">Gestión De Proyectos</span> (Oesia, 160h, Jan 2005)</p>
+                    <p>→ <span class="tag">Programación Visual C++</span> (Oesia, 40h, May 2004)</p>
+                    <p>→ <span class="tag">Administración SQL Server</span> (Sunion Gesfor, 40h, Nov 2003)</p>
+                    <p>→ <span class="tag">Programación Java</span> (Oesia, 40h, Oct 2003)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">2002-2003</span></p>
+                    <p>→ <span class="tag">Optimización Oracle 8i</span> (MR Informática, 80h, Jun 2003)</p>
+                    <p>→ <span class="tag">PL/SQL</span> (Dayfisa, 40h, Abr 2003)</p>
+                    <p>→ <span class="tag">XML</span> (IBM Learning, 30h, May 2003)</p>
+                    <p>→ <span class="tag">Administración Oracle</span> (Dayfisa, 40h, May 2003)</p>
+                    <p>→ <span class="tag">Macromedia Flash</span> (IBM Learning, 30h, Mar 2003)</p>
+                    <p>→ <span class="tag">Ingeniería De Software</span> (Sunion Gesfor, Jan-Mar 2003)</p>
+                    <p>→ <span class="tag">SAP MM. Verificación De Facturas</span> (SAP España, 25h, Oct 2002)</p>
+                    <p>→ <span class="tag">Programación Avanzada Java</span> (IBM Learning, 25h, Abr 2002)</p>
+                    <p>→ <span class="tag">Administración AIX</span> (IBM Learning, 30h, Abr 2002)</p>
+                    <p>→ <span class="tag">Programación Avanzada RPG IV (AS/400)</span> (IBM Learning, 50h, Feb 2002)</p>
+                </div>
+                <br>
+                <div class="training-item">
+                    <p class="training-year">📅 <span class="highlight">1998-2001</span></p>
+                    <p>→ <span class="tag">Programación Java</span> (Gesein, 100h, Feb-Abr 2001)</p>
+                    <p>→ <span class="tag">Cobol - CICS - DB2</span> (Cap Gemini, 160h, 1999)</p>
+                    <p>→ <span class="tag">Técnico En Sistemas Unix / Oracle</span> (Sunion Gesfor, 350h, 1998)</p>
+                    <p>→ <span class="tag">Microinformática</span> (Academia Teide, 300h, 1998)</p>
+                </div>
+                <br>
+                <p class="comment"># Total courses completed: 80+ | Platforms: Udemy, IBM Learning, Oesia, Cap Gemini, Academia Teide</p>
+                <p class="comment"># Active learner since 1998 (25+ years of continuous training)</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="terminal-section">
+            <h2 class="section-title">
+                <span class="prompt">$</span> echo $CONTACT_INFO
+            </h2>
+            <div class="terminal-output">
+                <p class="comment"># Contact Information</p>
+                <br>
+                <p>📧 Email: <a href="mailto:sanvidal1@gmail.com" class="link">sanvidal1@gmail.com</a></p>
+                <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/rsanvidal/" target="_blank" class="link">linkedin.com/in/rsanvidal</a></p>
+                <p>🌐 GitHub: <a href="https://github.com/rsvidal" target="_blank" class="link">github.com/rsvidal</a></p>
+                <p>🌍 Location: <span class="highlight">Madrid, Spain (EU)</span></p>
+                <br>
+                <p class="comment"># Download CV</p>
+                <p>📄 <a href="../web/download/CV_Rafael_San_Vidal_2025.txt" download class="link">CV_Rafael_San_Vidal_2025.txt</a></p>
+                <p>📄 <a href="../web/download/CV_Rafael_San_Vidal.pdf" download class="link">CV_Rafael_San_Vidal.pdf</a></p>
+                <br>
+                <p class="success">✓ Available for new opportunities and collaborations</p>
+                <p class="success">✓ Open to remote/hybrid work arrangements</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            <p class="prompt">rafaelsanvidal@portfolio:~$ <span class="cursor-blink">_</span></p>
+            <p class="footer-text">
+                © 2025 Rafael San Vidal | Built with ❤️ and AI assistance |
+                <a href="#" id="theme-toggle" class="link">Toggle Theme</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
