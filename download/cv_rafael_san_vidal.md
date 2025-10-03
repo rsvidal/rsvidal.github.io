@@ -411,13 +411,6 @@ Tech stack: Selenium, Playwright, Jest, Testing Library, TDD/BDD
 
 Tech stack: .NET 9, Azure Functions, AWS Lambda, Serverless
 
-### 🏢 Enterprise Legacy
-- SAP R/3, AS/400, IBM AIX projects
-- SAP R/3 implementation (FI, CO, MM modules)
-- AS/400 systems development
-- IBM AIX server administration
-
-Tech stack: SAP R/3, ABAP IV, AS/400, IBM AIX, RPG, 4GL
 
 ### 📱 Kotlin Android
 - Native Android development
