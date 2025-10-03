@@ -4,6 +4,7 @@ Portfolio estático moderno con estética de terminal/código para desarrollador
 
 ## 🚀 Características
 
+### Portfolio Web
 - **✨ Diseño Terminal/Developer**: Estética de terminal con sintaxis highlighting
 - **🌓 Dark Mode**: Tema oscuro por defecto (con opción de cambio a light)
 - **📱 100% Responsive**: Mobile-first, optimizado para todos los dispositivos
@@ -14,35 +15,46 @@ Portfolio estático moderno con estética de terminal/código para desarrollador
 - **🧩 JavaScript ES6+**: Sin jQuery, vanilla JS moderno
 - **🤖 Sección AI Tools**: Destacada con Cursor, Claude Code, GitHub Copilot
 
+### CV HTML Mejorado
+- **📄 Optimizado para PDF**: Estilos de impresión profesionales
+- **🎨 Diseño moderno**: Colores y tipografía actualizados
+- **📊 Contenido actualizado**: 25+ años de experiencia, 19+ años en healthcare
+- **🤖 AI Tools destacados**: Sección especial para herramientas de IA
+- **📱 Responsive**: Se adapta a diferentes tamaños de pantalla
+- **🖨️ Print-friendly**: Configuración optimizada para impresión
+
 ## 📁 Estructura
 
 ```
 portfolio-terminal/
-├── index.html              # Página principal
+├── index.html                    # Portfolio web interactivo
 ├── css/
-│   └── style.css          # Estilos con variables CSS
+│   └── style.css                # Estilos con variables CSS
 ├── js/
-│   └── main.js            # JavaScript vanilla ES6+
+│   └── main.js                  # JavaScript vanilla ES6+
+├── download/
+│   └── cv_rafael_san_vidal.html # CV HTML optimizado para PDF
 ├── assets/
-│   └── images/            # Imágenes (opcional)
-└── README.md              # Este archivo
+│   └── images/                  # Imágenes (opcional)
+└── README.md                    # Este archivo
 ```
 
 ## 🎯 Tecnologías Destacadas
 
-### AI-Assisted Development
-- Cursor Pro (Licencia activa)
-- Claude Code (Uso diario)
-- GitHub Copilot
-- NotebookLM
+### AI-Assisted Development (2024-2025)
+- 🤖 **Cursor Pro** - AI-powered code editor con vibe coding
+- 🧠 **Claude Code** - CLI-based AI assistant
+- 🔮 **Gemini CLI** - Google AI code generation
+- 🚀 **GitHub Copilot** - AI pair programming
+- 📚 **NotebookLM** - AI research and documentation
 
 ### Stack Principal
-- .NET 9 / C# 13
-- Java 21 (Virtual Threads)
-- React 18 / TypeScript
-- Spring Boot 3.x
-- Azure DevOps / Jira
-- Entity Framework Core 9
+- **Backend**: .NET 9 / C# 13, Java 21 (Virtual Threads), Spring Boot 3.x
+- **Frontend**: React 18 / TypeScript, Angular, Blazor WebAssembly
+- **Mobile**: Uno Platform, .NET MAUI, Kotlin Android
+- **Cloud**: Azure DevOps, AWS, Docker, Kubernetes
+- **Databases**: SQL Server, MySQL, Oracle, IBM DB2, PostgreSQL, MongoDB
+- **Healthcare**: HL7/HL7-FHIR, ASTM standards, RFID integration
 
 ## 🎨 Personalización
 
@@ -110,37 +122,51 @@ php -S localhost:8000
 - Safari (últimas 2 versiones)
 - Mobile browsers (iOS Safari, Chrome Android)
 
-## 📝 Actualizar CV
+## 📝 CV y Documentación
 
-El CV está en dos formatos:
+### CV HTML Mejorado
+- **Ubicación**: `download/cv_rafael_san_vidal.html`
+- **Características**:
+  - ✨ Diseño moderno optimizado para PDF
+  - 🤖 Sección destacada de AI Tools (2024-2025)
+  - 📊 Contenido actualizado con 25+ años de experiencia
+  - 🏥 Experiencia especializada en healthcare (19+ años)
+  - 🎨 Estilos de impresión optimizados
+  - 📱 Diseño responsive y profesional
 
-1. **HTML**: Edita directamente las secciones en `index.html`
-2. **TXT/PDF**: Los archivos descargables están en `../web/download/`
+### Cómo generar PDF
+1. Abre `download/cv_rafael_san_vidal.html` en tu navegador
+2. Presiona `Ctrl+P` (Windows) o `Cmd+P` (Mac)
+3. Selecciona "Guardar como PDF"
+4. Configuración recomendada:
+   - Márgenes: Mínimos
+   - Gráficos de fondo: Habilitado
+   - Escala: 100%
+
+### Otros formatos
+- **Portfolio Web**: `index.html` - Versión interactiva con terminal
+- **Archivos descargables**: `../web/download/`
 
 ## 🛠️ Características Técnicas
 
-### CSS Moderno
-- CSS Variables para theming
-- CSS Grid para layouts
-- Flexbox para componentes
-- Media queries para responsive
-- Print styles
-- Accessibility support
+### Portfolio Web
+- **CSS Moderno**: Variables CSS, Grid, Flexbox, Media queries
+- **JavaScript ES6+**: Classes, Modules, Arrow functions, Promises
+- **HTML5**: Semantic markup, ARIA labels, Meta tags optimizados
+- **Performance**: < 1s carga inicial, < 100KB total, Lighthouse 95+
 
-### JavaScript ES6+
-- Classes y Modules
-- Arrow functions
-- Template literals
-- Promises y async/await
-- Intersection Observer API
-- Local Storage API
-- Console commands
+### CV HTML
+- **Diseño Responsive**: Se adapta a diferentes tamaños de pantalla
+- **Print Styles**: Optimizado para impresión en PDF
+- **Tipografía Moderna**: Segoe UI, jerarquía visual clara
+- **Colores Profesionales**: Paleta azul/gris corporativa
+- **Layout Grid**: Organización eficiente del contenido
+- **AI Tools Section**: Destacado especial para herramientas de IA
 
-### HTML5
-- Semantic markup
-- ARIA labels
-- Meta tags optimizados
-- Open Graph para redes sociales
+### Características Compartidas
+- **Accesibilidad**: WCAG 2.1 compliant
+- **SEO**: Meta tags y estructura semántica
+- **Cross-browser**: Compatible con todos los navegadores modernos
 
 ## 📄 Licencia
 
@@ -152,6 +178,23 @@ El CV está en dos formatos:
 - 💼 LinkedIn: [linkedin.com/in/rsanvidal](https://www.linkedin.com/in/rsanvidal/)
 - 🌐 GitHub: [github.com/rsvidal](https://github.com/rsvidal)
 
+## 🎨 Mejoras Recientes (2025)
+
+### CV HTML Actualizado
+- ✅ **Contenido sincronizado** con el portfolio web
+- ✅ **Sección AI Tools** destacada (2024-2025)
+- ✅ **Diseño moderno** con colores profesionales
+- ✅ **Estilos de impresión** optimizados para PDF
+- ✅ **Experiencia actualizada** (25+ años, 19+ en healthcare)
+- ✅ **Proyectos destacados** con descripciones detalladas
+- ✅ **Formación completa** (80+ cursos desde 1998)
+
+### Portfolio Web
+- ✅ **Terminal interactivo** con navegación fluida
+- ✅ **AI Tools section** con herramientas actuales
+- ✅ **Responsive design** para todos los dispositivos
+- ✅ **Performance optimizada** sin dependencias externas
+
 ---
 
-**Construido con ❤️ y asistencia de AI** (Cursor Pro, Claude Code)
+**Construido con ❤️ y asistencia de AI** (Cursor Pro, Claude Code, Gemini CLI)
