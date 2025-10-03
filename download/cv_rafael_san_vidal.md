@@ -448,11 +448,9 @@ Tech stack: Azure, AWS, .NET 8, Spring Boot, DDD, TDD, Azure Functions, AWS Elas
 - Arduino, Ethernet Shield, Bluetooth, Web Services, Mobile Integration
 - IoT system with Arduino and Ethernet Shield
 - Web Services for remote communication
+- CoAP and REST protocols for IoT
 - Bluetooth integration for mobile devices
 - Xamarin mobile app for remote control
-- CoAP and REST protocols for IoT
-- Cross-platform mobile development
-- IoT integration with mobile apps
 
 Tech stack: Arduino, Netduino, C++, Ethernet Shield, Bluetooth HC-05, CoAP Protocol, aREST API, Xamarin, Android, Web Services
 
