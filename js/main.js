@@ -175,8 +175,8 @@ class TypingEffect {
 class ScrollAnimator {
     constructor() {
         this.options = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0, // trigger as soon as element touches viewport
+            rootMargin: '0px 0px -10px 0px'
         };
         this.init();
     }
@@ -204,13 +204,29 @@ class ScrollAnimator {
 
     observeElements() {
         const elements = document.querySelectorAll('.terminal-section');
+        const isSmallScreen = window.innerWidth <= 768;
+
         elements.forEach((el, index) => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = `opacity 0.5s ease ${index * CONFIG.ANIMATION_DELAY}ms,
-                                   transform 0.5s ease ${index * CONFIG.ANIMATION_DELAY}ms`;
+            // On small screens, don't pre-hide to avoid blank frames during fast scroll
+            if (!isSmallScreen) {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `opacity 0.5s ease ${index * CONFIG.ANIMATION_DELAY}ms, transform 0.5s ease ${index * CONFIG.ANIMATION_DELAY}ms`;
+            }
             this.observer.observe(el);
         });
+
+        // Safety fallback: reveal any section that might remain hidden after initial load/scroll bursts
+        setTimeout(() => {
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isNearViewport = rect.top < window.innerHeight + 50 && rect.bottom > -50;
+                if (isNearViewport && getComputedStyle(el).opacity === '0') {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        }, 800);
     }
 }
 

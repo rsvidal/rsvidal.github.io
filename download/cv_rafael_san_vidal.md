@@ -30,7 +30,7 @@ Senior Software Developer with 25+ years of professional experience in enterpris
 
 ### Senior Software Developer | Healthcare Solutions  
 **Becton Dickinson and Company**  
-Nov 2005 - Present
+2005 - Present
 
 **Key Responsibilities**
 - Full-stack development of healthcare applications (EMEA region)
@@ -68,7 +68,7 @@ Nov 2005 - Present
 
 ### Software Developer (Part-time)  
 **Omnibona S.L**  
-Nov 2014 - Dec 2015
+2014 - 2015
 
 **Multi-platform Health Application**
 - Design and development of multi-platform application about healthy habits
@@ -82,7 +82,7 @@ Nov 2014 - Dec 2015
 
 ### Software Developer | Healthcare, Telecom, Public Services  
 **Oesia**  
-Aug 2003 - Oct 2005
+2003 - 2005
 
 Clients: Telefónica, Hewlett-Packard, Siemens  
 Technologies: .NET, C#, SQL Server, Oracle
@@ -91,7 +91,7 @@ Technologies: .NET, C#, SQL Server, Oracle
 
 ### Support Technical  
 **Easynet España S.A.**  
-Aug 2003 - Sep 2003
+2003
 
 **Technical Support**
 - Technical support and customer service
@@ -100,7 +100,7 @@ Aug 2003 - Sep 2003
 
 ### SAP Key Business | Business Analyst  
 **L'Oréal Spain**  
-Jan 2002 - Jul 2003
+1998 - 2003
 
 **SAP R/3 Project Leadership**
 - Business Key for SAP R/3 implementation (FI, CO, MM modules)
@@ -120,7 +120,7 @@ Jan 2002 - Jul 2003
 
 ### Software Developer  
 **Ministerio de Asuntos Exteriores**  
-Jan 1998 - Jun 1998
+1998
 
 **Diplomatic Passports Management**
 - Design and create an application to manage diplomatic passports
@@ -169,8 +169,11 @@ Jan 1998 - Jun 1998
 - Agile/Scrum Ceremonies
 
 ### Development Tools
-- Visual Studio Professional, Visual Studio Code, Cursor, Eclipse, IntelliJ IDEA
+- Visual Studio Professional, Visual Studio Code, Cursor, Eclipse
 - IBM Rational Suite, Postman, Insomnia
+
+### Application Servers
+- Apache Tomcat, Microsoft IIS, Oracle WebLogic, WildFly, IBM WebSphere
 
 ### Spring Boot Ecosystem
 - Spring Data JPA, Spring Security + OAuth2, Spring MVC / WebFlux, Thymeleaf
