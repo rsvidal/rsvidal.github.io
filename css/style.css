@@ -60,13 +60,16 @@
     --bg-tertiary: #e0e0e0;
     --text-primary: #2d3748;
     --text-secondary: #4a5568;
-    --text-highlight: #059669;
+    --text-highlight: #047857;
     --text-comment: #718096;
-    --accent-primary: #059669;
+    --accent-primary: #047857;
     --accent-secondary: #0284c7;
+    --accent-success: #047857;
     --terminal-header-bg: #e0e0e0;
     --terminal-window-bg: #ffffff;
     --terminal-border: #cbd5e0;
+    --prompt-color: #047857;
+    --cursor-color: #047857;
 }
 
 /* ============================================
@@ -497,8 +500,8 @@ body {
 
 @media (max-width: 768px) {
     :root {
-        --font-size-base: 14px;
-        --font-size-xl: 20px;
+        --font-size-base: 15px;
+        --font-size-xl: 22px;
     }
 
     .terminal-window {
