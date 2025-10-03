@@ -192,7 +192,7 @@ Technologies: .NET, C#, SQL Server, Oracle
 
 ### Frontend
 - React, Angular, TypeScript, Blazor WebAssembly, WPF / WinForms
-- Uno Platform / WinUI, HTML5 / CSS3, Element UI (Vue.js)
+- Uno Platform / WinUI, HTML5 / CSS3, Vue.js
 
 ### Cloud Platforms
 - Microsoft Azure, AWS
@@ -437,28 +437,65 @@ Tech stack: .NET 8, Azure OpenAI, Semantic Kernel, Microsoft Extensions AI
 
 ### ☁️ Cloud Architecture
 - Azure + AWS deployment, DDD, TDD, IA integration
-- AzureWebAppDemo - Azure deployment with .NET 8
-- RSVFunctionApp - Azure Functions serverless
-- SpringWebAppDemo - AWS deployment with Spring Boot
+- Azure deployment with .NET 8
+- Azure Functions serverless
+- AWS deployment with Spring Boot
 - Cloud architecture patterns and best practices
 
 Tech stack: Azure, AWS, .NET 8, Spring Boot, DDD, TDD, Azure Functions, AWS Elastic Beanstalk
 
-### 🌐 Arduino IoT
-- Arduino + Bluetooth + Android, Ethernet Shield, CoAP
-- IoT device development
-- Bluetooth communication protocols
-- CoAP protocol implementation
-
-Tech stack: Arduino, Netduino, CoAP Protocol, aREST API, Bluetooth HC-05
-
-### 📱 Mobile + IoT
-- Xamarin + Arduino, Android + Bluetooth
+### 🔌 IoT & Embedded Systems Suite
+- Arduino, Ethernet Shield, Bluetooth, Web Services, Mobile Integration
+- IoT system with Arduino and Ethernet Shield
+- Web Services for remote communication
+- Bluetooth integration for mobile devices
+- Xamarin mobile app for remote control
+- CoAP and REST protocols for IoT
 - Cross-platform mobile development
 - IoT integration with mobile apps
-- Bluetooth communication
 
-Tech stack: Xamarin, Android, Arduino, Bluetooth
+Tech stack: Arduino, Netduino, C++, Ethernet Shield, Bluetooth HC-05, CoAP Protocol, aREST API, Xamarin, Android, Web Services
+
+### 🚀 Blockchain/Web3 Development Suite
+- Solidity, Web3.js, Truffle, Ethereum, Smart Contracts
+- Token ICO (Deka Token) with complete functionality
+- Smart contracts for token management
+- Ethereum testnet integration
+- Web3 frontend for contract interaction
+- Wallet integration system
+
+Tech stack: Solidity, Web3.js, Truffle, Ethereum, Smart Contracts, JavaScript
+
+### 📱 Android/Kotlin Mobile Development
+- Native Android development with Kotlin
+- Native Android application development
+- Firebase authentication with Google OAuth
+- UI/UX with ConstraintLayout
+- Testing with JUnit and Espresso
+
+Tech stack: Kotlin, Android Studio, Firebase Auth, Google Sign-In, JUnit, Espresso
+
+### 🎮 Unity Game Development
+- 2D game development with Unity 2020.3
+- Complete 2D game with Unity
+- Interactive text adventure game
+- Dialogue and narrative system
+- Game mechanics implementation
+- Custom assets and sprites
+
+Tech stack: Unity 2020.3, C#, Game Development, 2D Graphics
+
+### ☁️ DevOps & Microservices Architecture
+- Kubernetes, Docker, .NET Core, Ocelot Gateway
+- Complete microservices architecture
+- API Gateway with Ocelot
+- Docker containers for each service
+- Kubernetes orchestration
+- Multiple databases (MongoDB + SQL Server)
+- Services: Gateway, Library, Security
+
+Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microservices
+
 
 ---
 
