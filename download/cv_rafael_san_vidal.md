@@ -213,7 +213,7 @@ Technologies: .NET, C#, SQL Server, Oracle
 - Azure OpenAI Services, Semantic Kernel, NotebookLM
 
 ### Testing Tools
-- Selenium WebDriver, Playwright, Jest, Jasmine + Karma
+- Selenium WebDriver, Playwright, Jest, Vitest, Jasmine + Karma
 
 ### Quality & Security
 - Fortify OnDemand (SAST), SonarQube, OWASP Top 10
@@ -309,7 +309,7 @@ Tech stack: Pandas, Matplotlib, Seaborn, Statistics
 - Complete technical documentation (30+ detailed docs)
 - Background jobs with Hangfire + Real-time notifications with SignalR
 
-Tech stack: .NET 9, C# 13, Clean Architecture, DDD, CQRS, MediatR, Multi-DB, JWT, RBAC, EF Core 9, Minimal APIs, Swagger, AutoMapper, FluentValidation, Hangfire, SignalR, Uno Platform, React, TypeScript, XAML, Android, iOS, WebAssembly, Windows, macOS, Linux
+Tech stack: .NET 9, C# 13, Clean Architecture, DDD, CQRS, MediatR, Multi-DB, JWT, RBAC, EF Core 9, Minimal APIs, Swagger, AutoMapper, FluentValidation, Hangfire, SignalR, Uno Platform, React, TypeScript, XAML, Android, iOS, WebAssembly, Windows, macOS, Linux, Vitest, Playwright, xUnit, Moq
 
 ### 📄 ScanBatch OCR - Document Processing System
 - Batch scanning with OCR and barcode recognition
@@ -396,12 +396,12 @@ Tech stack: Spring Boot, Eureka, Hystrix, Docker, Kubernetes
 Tech stack: React, TypeScript, Node.js, Express, MongoDB, Redux
 
 ### 🔧 Testing Advanced
-- Playwright, Jest, Testing Library, Selenium
+- Playwright, Jest, Vitest, Testing Library, Selenium
 - End-to-end testing automation
 - Unit and integration testing
 - TDD/BDD methodologies
 
-Tech stack: Selenium, Playwright, Jest, Testing Library, TDD/BDD
+Tech stack: Selenium, Playwright, Jest, Vitest, Testing Library, TDD/BDD
 
 ### ☁️ Cloud Functions
 - Serverless Computing
