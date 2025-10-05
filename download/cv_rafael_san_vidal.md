@@ -55,7 +55,7 @@ Senior Software Developer with 25+ years of professional experience in enterpris
 
 **Multi-Database Expertise**
 - Multi-motor support (MySQL, MariaDB, SQL Server, Oracle, DB2)
-- Database migrations with Flyway
+- Database migrations, Flyway y migraciones de Entity Framework (EF Core)
 - Cross-database compatibility and optimization
 
 **Technical Skills**
@@ -136,7 +136,7 @@ Technologies: .NET, C#, SQL Server, Oracle
 - 🤖 Cursor Pro — AI-powered code editor with vibe coding practices — **INTEGRATED**
 - 🧠 Claude Code — CLI-based AI assistant for development — **INTEGRATED**
 - 🔮 Gemini CLI — Google's AI assistant for code generation — **INTEGRATED**
-- 🤖 ChatGPT5 Codex — OpenAI's advanced AI coding assistant — **INTEGRATED**
+- 🤖 GPT5 Codex — OpenAI's advanced AI coding assistant — **INTEGRATED**
 - 🚀 GitHub Copilot — AI pair programming assistant — **INTEGRATED**
 - 📚 NotebookLM — AI research and documentation tool — **RESEARCH TOOL**
 
@@ -161,7 +161,7 @@ Technologies: .NET, C#, SQL Server, Oracle
 - Uno Platform / WinUI, HTML5 / CSS3, Vue.js
 
 ### Mobile Development
-- Kotlin (Android)
+- Kotlin
 - Android Studio
 
 ### Databases
@@ -170,11 +170,12 @@ Technologies: .NET, C#, SQL Server, Oracle
 
 ### .NET Ecosystem
 - EF Core / Dapper / LINQ, NLog / Serilog, AutoMapper, Polly.NET
-- SignalR (Real-time), xUnit / nUnit, Moq, Hangfire, MediatR, FluentValidation, MailKit
+- SignalR, xUnit / nUnit, Moq, Hangfire, MediatR, FluentValidation, MailKit
 
 ### Java Ecosystem
 - Hibernate / JPA / Criteria API, Maven / Gradle, JUnit / Mockito
-- Apache CXF / Jersey
+- REST (Spring MVC/WebFlux, JAX-RS/Jersey)
+- SOAP (JAX-WS, Apache CXF)
 
 ### Spring Boot Ecosystem
 - Spring Data JPA, Spring Security + OAuth2, Spring MVC / WebFlux, Thymeleaf
@@ -191,14 +192,14 @@ Technologies: .NET, C#, SQL Server, Oracle
 - Apache Tomcat, Microsoft IIS, Oracle WebLogic, WildFly, IBM WebSphere
 
 ### Testing Tools
-- Selenium WebDriver, Playwright, Jest, Vitest, Jasmine + Karma
+- Selenium WebDriver, Playwright, Jest, Vitest, Jasmine / Karma
 
 ### Quality & Security
 - Fortify OnDemand (SAST), SonarQube, OWASP Top 10
 - Healthcare Security (HIPAA, GDPR), Penetration Testing, Code Coverage Analysis
 
 ### AI Tools
-- Cursor, Claude Code, Gemini CLI, ChatGPT5 Codex, GitHub Copilot
+- Cursor, Claude Code, Gemini CLI, GPT5 Codex, GitHub Copilot
 - Azure OpenAI Services, Semantic Kernel, NotebookLM
 
 ### Development Tools
@@ -531,8 +532,7 @@ Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microser
 - Go / Golang desde las bases - Udemy
 - Big Data Fundamentals - Udemy
 - Dart & Flutter - Udemy
-- Laravel y vue.js avanzado - Udemy
-- Vue.js - Udemy
+- Vue.js avanzado - Udemy
 
 ### 2022
 - React + Redux - Udemy
@@ -551,7 +551,7 @@ Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microser
 - DevOps. Las artes marciales del software - Udemy
 
 ### 2019
-- Java8. (Funcional y lambda) - Udemy
+- Java8 (Functional and lambda expr.) - Udemy
 - Microservicios con Spring Boot / Netflix Eureka - Udemy
 - Programación Python para Machine Learning - Udemy
 - Curso de Python 3 - Udemy
