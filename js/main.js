@@ -440,6 +440,10 @@ class App {
         new PerformanceMonitor();
         new EasterEgg();
 
+        // Initialize Geek Effects
+        window.geekEffects = new GeekEffects();
+        window.geekEffects.init();
+
         console.log('%c✓ Portfolio Terminal ready!', 'color: #50fa7b; font-size: 14px;');
     }
 }
@@ -519,6 +523,336 @@ class ScrollToTop {
             top: 0,
             behavior: 'smooth'
         });
+    }
+}
+
+// ============================================
+// GEEK EFFECTS - Pure JavaScript (No CSS animations)
+// ============================================
+
+// Floating Code Particles - Pure JS Animation
+class CodeParticles {
+    constructor() {
+        this.container = null;
+        this.particles = [];
+        this.symbols = [
+            '.NET 9', '.NET Core', 'ASP.NET', 'C#', 'Java', 'Spring Boot', 'Spring Framework',
+            'React', 'Angular', 'Vue.js', 'TypeScript', 'JavaScript', 'Node.js', 'Express',
+            'Docker', 'Kubernetes', 'GitLab CI', 'CI/CD',
+            'SQL Server', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch',
+            'REST API', 'CQRS',
+            'Entity Framework', 'Hibernate', 'Dapper', 'JPA',
+            'Python', 'FastAPI', 'Django', 'Flask',
+            'Git', 'Linux', 'Nginx', 'Kafka', 'SignalR',
+            'Blazor', 'Razor', 'HTML5', 'CSS3', 'Sass', 'Bootstrap', 'Tailwind',
+            'xUnit', 'NUnit', 'JUnit', 'Jest', 'Mocha', 'TDD',
+            'OAuth', 'JWT', 'IdentityServer', 'Keycloak', 'SOLID', 'Design Patterns'
+        ];
+        this.particleCount = 25;
+        this.animationId = null;
+    }
+
+    init() {
+        // Create container
+        this.container = document.createElement('div');
+        this.container.id = 'code-particles';
+        this.container.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        `;
+        document.body.appendChild(this.container);
+
+        this.createParticles();
+        this.animate();
+
+        console.log('✓ Code particles created');
+    }
+
+    createParticles() {
+        for (let i = 0; i < this.particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.textContent = this.symbols[Math.floor(Math.random() * this.symbols.length)];
+
+            // Style
+            particle.style.cssText = `
+                position: absolute;
+                font-family: var(--font-mono);
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--accent-primary);
+                text-shadow: 0 0 8px var(--accent-primary);
+            `;
+
+            // Initial position and physics
+            const data = {
+                element: particle,
+                x: Math.random() * 100, // percentage
+                y: Math.random() * 100,
+                speedY: 0.01 + Math.random() * 0.02, // % per frame
+                speedX: -0.01 + Math.random() * 0.02,
+                opacity: 0.15 + Math.random() * 0.1 // More transparent: 0.15 to 0.25
+            };
+
+            particle.style.left = data.x + '%';
+            particle.style.top = data.y + '%';
+            particle.style.opacity = data.opacity;
+
+            this.container.appendChild(particle);
+            this.particles.push(data);
+        }
+    }
+
+    animate() {
+        this.particles.forEach(p => {
+            // Update position
+            p.y += p.speedY;
+            p.x += p.speedX;
+
+            // Wrap around
+            if (p.y > 100) p.y = -5;
+            if (p.y < -5) p.y = 100;
+            if (p.x > 100) p.x = -5;
+            if (p.x < -5) p.x = 100;
+
+            // Apply to DOM
+            p.element.style.top = p.y + '%';
+            p.element.style.left = p.x + '%';
+        });
+
+        // Continue animation
+        this.animationId = requestAnimationFrame(() => this.animate());
+    }
+
+    destroy() {
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+        }
+        if (this.container) {
+            this.container.remove();
+            this.container = null;
+        }
+        this.particles = [];
+        console.log('✓ Code particles removed');
+    }
+}
+
+// Hacker Scan Line - Pure JS Animation
+class HackerScan {
+    constructor() {
+        this.scanLine = null;
+        this.animationId = null;
+        this.nextScanTime = Date.now() + 2000; // First scan in 2 seconds
+        this.scanDuration = 3000; // 3 seconds to cross screen
+        this.scanInterval = 10000; // Scan every 10 seconds
+        this.scanning = false;
+    }
+
+    init() {
+        // Create scan line
+        this.scanLine = document.createElement('div');
+        this.scanLine.style.cssText = `
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                #00ff9f 50%,
+                transparent 100%);
+            box-shadow: 0 0 20px #00ff9f;
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0;
+            top: -10px;
+        `;
+        document.body.appendChild(this.scanLine);
+
+        this.animate();
+        console.log('✓ Hacker scan initialized');
+    }
+
+    animate() {
+        const now = Date.now();
+
+        if (!this.scanning && now >= this.nextScanTime) {
+            // Start a new scan
+            this.scanning = true;
+            this.scanStartTime = now;
+        }
+
+        if (this.scanning) {
+            const elapsed = now - this.scanStartTime;
+            const progress = elapsed / this.scanDuration;
+
+            if (progress < 1) {
+                // Scan in progress
+                const yPos = progress * 100;
+                this.scanLine.style.top = yPos + 'vh';
+                this.scanLine.style.opacity = '0.7';
+            } else {
+                // Scan complete
+                this.scanLine.style.opacity = '0';
+                this.scanLine.style.top = '-10px';
+                this.scanning = false;
+                this.nextScanTime = now + this.scanInterval;
+            }
+        }
+
+        this.animationId = requestAnimationFrame(() => this.animate());
+    }
+
+    destroy() {
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+        }
+        if (this.scanLine) {
+            this.scanLine.remove();
+            this.scanLine = null;
+        }
+        console.log('✓ Hacker scan removed');
+    }
+}
+
+// Glitch Effect - Pure JS
+class GlitchEffect {
+    constructor() {
+        this.element = null;
+        this.originalText = '';
+        this.animationId = null;
+        this.nextGlitchTime = Date.now() + 2000;
+        this.glitchDuration = 1000; // 1 second
+        this.glitchInterval = 5000; // Every 5 seconds
+        this.glitching = false;
+        this.glitchChars = '!<>-_\\/[]{}—=+*^?#01▓▒░█';
+    }
+
+    init() {
+        this.element = document.querySelector('.ascii-art');
+        if (this.element) {
+            this.originalText = this.element.textContent;
+            this.animate();
+            console.log('✓ Glitch effect initialized on ASCII art');
+        }
+    }
+
+    animate() {
+        const now = Date.now();
+
+        if (!this.glitching && now >= this.nextGlitchTime) {
+            this.glitching = true;
+            this.glitchStartTime = now;
+        }
+
+        if (this.glitching) {
+            const elapsed = now - this.glitchStartTime;
+
+            if (elapsed < this.glitchDuration) {
+                // Apply glitch - more intense
+                if (Math.random() > 0.5) {
+                    const glitched = this.originalText.split('').map(char => {
+                        if (Math.random() > 0.97) { // 3% chance per character
+                            return this.glitchChars[Math.floor(Math.random() * this.glitchChars.length)];
+                        }
+                        return char;
+                    }).join('');
+                    this.element.textContent = glitched;
+                }
+            } else {
+                // Restore original
+                this.element.textContent = this.originalText;
+                this.glitching = false;
+                this.nextGlitchTime = now + this.glitchInterval;
+            }
+        }
+
+        this.animationId = requestAnimationFrame(() => this.animate());
+    }
+
+    destroy() {
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+        }
+        if (this.element) {
+            this.element.textContent = this.originalText;
+        }
+        console.log('✓ Glitch effect removed');
+    }
+}
+
+// CRT Screen Effect - Static overlay
+class CRTEffect {
+    constructor() {
+        this.overlay = null;
+    }
+
+    init() {
+        this.overlay = document.createElement('div');
+        this.overlay.id = 'crt-overlay';
+        this.overlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            background-image: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 159, 0.08) 0px,
+                rgba(0, 255, 159, 0.08) 2px,
+                transparent 2px,
+                transparent 4px
+            );
+        `;
+        document.body.appendChild(this.overlay);
+        console.log('✓ CRT scanlines created - Top layer (z-index: 9999)');
+    }
+
+    destroy() {
+        if (this.overlay) {
+            this.overlay.remove();
+            this.overlay = null;
+        }
+        console.log('✓ CRT effect removed');
+    }
+}
+
+// Main Geek Effects Manager - Always Active
+class GeekEffects {
+    constructor() {
+        this.codeParticles = null;
+        this.hackerScan = null;
+        this.glitchEffect = null;
+        this.crtEffect = null;
+    }
+
+    init() {
+        console.log('🚀 Geek Effects - Always Active');
+
+        // Code particles disabled per user request
+        // this.codeParticles = new CodeParticles();
+        // this.codeParticles.init();
+
+        // Hacker scan disabled per user request
+        // this.hackerScan = new HackerScan();
+        // this.hackerScan.init();
+
+        this.glitchEffect = new GlitchEffect();
+        this.glitchEffect.init();
+
+        this.crtEffect = new CRTEffect();
+        this.crtEffect.init();
+
+        console.log('✓ Geek effects active! (glitch + CRT)');
     }
 }
 

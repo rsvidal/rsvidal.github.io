@@ -157,6 +157,8 @@ body {
     margin: 0 auto;
     padding: var(--spacing-lg);
     background: var(--terminal-window-bg);
+    position: relative;
+    z-index: 10;
 }
 
 /* ============================================
@@ -173,6 +175,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: var(--spacing-sm);
+    position: relative;
+    z-index: 10;
 }
 
 .terminal-nav .prompt {
@@ -200,6 +204,8 @@ body {
     background: var(--bg-tertiary);
     border-color: var(--accent-primary);
     color: var(--accent-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 159, 0.4);
+    transform: translateY(-2px);
 }
 
 /* ============================================
@@ -213,6 +219,8 @@ body {
     border-radius: var(--radius-md);
     border: 1px solid var(--terminal-border);
     animation: fadeIn var(--transition-slow);
+    position: relative;
+    z-index: 10;
 }
 
 .highlight-section {
@@ -317,10 +325,40 @@ body {
     transition: all var(--transition-base);
 }
 
+.tool-card {
+    background: var(--bg-tertiary);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--terminal-border);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 255, 159, 0.2) 50%,
+        transparent 100%
+    );
+    transition: left 0.6s ease;
+}
+
+.tool-card:hover::before {
+    left: 100%;
+}
+
 .tool-card:hover {
     transform: translateY(-4px);
     border-color: var(--accent-primary);
-    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.3), 0 0 30px rgba(0, 255, 159, 0.1);
 }
 
 .tool-name {
@@ -445,8 +483,9 @@ body {
 .tag:hover {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
-    box-shadow: 0 2px 8px rgba(0, 255, 159, 0.2);
-    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(0, 255, 159, 0.5), 0 2px 8px rgba(0, 255, 159, 0.3);
+    transform: translateY(-2px);
+    background: var(--bg-secondary);
 }
 
 /* ============================================
@@ -467,10 +506,40 @@ body {
     transition: all var(--transition-base);
 }
 
+.skill-category {
+    background: var(--bg-tertiary);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--terminal-border);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 255, 159, 0.2) 50%,
+        transparent 100%
+    );
+    transition: left 0.6s ease;
+}
+
+.skill-category:hover::before {
+    left: 100%;
+}
+
 .skill-category:hover {
     transform: translateY(-4px);
     border-color: var(--accent-primary);
-    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.3), 0 0 30px rgba(0, 255, 159, 0.1);
 }
 
 .category-header {
@@ -710,6 +779,37 @@ body {
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     border-left: 3px solid var(--accent-primary);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--terminal-border);
+    border-left: 3px solid var(--accent-primary);
+}
+
+.tech-col::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 255, 159, 0.2) 50%,
+        transparent 100%
+    );
+    transition: left 0.6s ease;
+}
+
+.tech-col:hover::before {
+    left: 100%;
+}
+
+.tech-col:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.3), 0 0 30px rgba(0, 255, 159, 0.1);
 }
 
 .tech-header {
