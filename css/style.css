@@ -382,6 +382,8 @@ body {
     border-radius: var(--radius-sm);
     font-size: var(--font-size-sm);
     border: 1px solid var(--terminal-border);
+    word-break: break-word;
+    max-width: 100%;
 }
 
 /* ============================================
@@ -399,6 +401,13 @@ body {
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     border: 1px solid var(--terminal-border);
+    transition: all var(--transition-base);
+}
+
+.skill-category:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 20px rgba(0, 255, 159, 0.15);
 }
 
 .category-header {
@@ -534,6 +543,37 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .tag {
+        font-size: 12px;
+        padding: 3px 6px;
+        margin: 3px 2px;
+        line-height: 1.4;
+        max-width: calc(100% - 40px);
+    }
+
+    .training-item .tag {
+        font-size: 11px;
+        padding: 2px 4px;
+        margin: 2px 1px;
+        max-width: 70%;
+        line-height: 1.2;
+    }
+
+    .training-item p {
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 4px;
+    }
+
+    .training-year {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -543,6 +583,30 @@ body {
 
     .terminal-title {
         font-size: 12px;
+    }
+
+    .tag {
+        font-size: 10px;
+        padding: 2px 5px;
+        margin: 2px 1px;
+        line-height: 1.3;
+        max-width: calc(100% - 30px);
+    }
+
+    .training-item .tag {
+        font-size: 9px;
+        padding: 2px 3px;
+        margin: 1px;
+        max-width: 65%;
+        line-height: 1.2;
+    }
+
+    .training-item p {
+        font-size: 11px;
+    }
+
+    .training-year {
+        font-size: 14px;
     }
 }
 
