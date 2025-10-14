@@ -75,7 +75,7 @@ Senior Software Developer with 25+ years of professional experience in enterpris
 - Nutrition and exercises in game mode for startup company
 
 **Technical Skills**
-- ASP.NET MVC, Razor, Thymeleaf, Entity Framework, LINQ
+- ASP.NET MVC, Razor, Entity Framework, LINQ
 - HTML5, CSS3, Bootstrap, JavaScript, jQuery, Microsoft Azure
 
 ---
@@ -136,7 +136,6 @@ Technologies: .NET, C#, SQL Server, Oracle
 - 🤖 Cursor Pro — AI-powered code editor with vibe coding practices — **INTEGRATED**
 - 🧠 Claude Code — CLI-based AI assistant for development — **INTEGRATED**
 - 🔮 Gemini CLI — Google's AI assistant for code generation — **INTEGRATED**
-- 🤖 GPT5 Codex — OpenAI's advanced AI coding assistant — **INTEGRATED**
 - 🚀 GitHub Copilot — AI pair programming assistant — **INTEGRATED**
 - 📚 NotebookLM — AI research and documentation tool — **RESEARCH TOOL**
 
@@ -154,78 +153,11 @@ Technologies: .NET, C#, SQL Server, Oracle
 - Node.js / Express
 - Python / Django
 - PHP / Laravel
-- Erlang / Haskell (Functional)
-
-### Frontend
-- React, Angular, TypeScript, Blazor WebAssembly, WPF / WinForms
-- Uno Platform / WinUI, HTML5 / CSS3, Vue.js
+- Erlang / Haskell
 
 ### Mobile Development
-- Kotlin
+- Kotlin (Android)
 - Android Studio
-
-### Databases
-- SQL Server, MySQL, PostgreSQL, Oracle, IBM DB2, MongoDB
-- Redis, Cassandra, InterSystems Caché, Informix Dynamic Server, CA Ingres
-
-### .NET Ecosystem
-- EF Core / Dapper / LINQ, NLog / Serilog, AutoMapper, Polly.NET
-- SignalR, xUnit / nUnit, Moq, Hangfire, MediatR, FluentValidation, MailKit
-
-### Java Ecosystem
-- Hibernate / JPA / Criteria API, Maven / Gradle, JUnit / Mockito
-- REST (Spring MVC/WebFlux, JAX-RS/Jersey)
-- SOAP (JAX-WS, Apache CXF)
-
-### Spring Boot Ecosystem
-- Spring Data JPA, Spring Security + OAuth2, Spring MVC / WebFlux, Thymeleaf
-- Spring AOP, Flyway Migrations, DevTools, Validation, Security Extensions, Spring Cloud
-
-### DevOps
-- Azure DevOps, Docker, Kubernetes, Terraform, Ansible
-- Git, GitHub, Jenkins, GitHub Actions
-
-### Cloud Platforms
-- Microsoft Azure, AWS
-
-### Application Servers
-- Apache Tomcat, Microsoft IIS, Oracle WebLogic, WildFly, IBM WebSphere
-
-### Testing Tools
-- Selenium WebDriver, Playwright, Jest, Vitest, Jasmine / Karma
-
-### Quality & Security
-- Fortify OnDemand (SAST), SonarQube, OWASP Top 10
-- Healthcare Security (HIPAA, GDPR), Penetration Testing, Code Coverage Analysis
-
-### AI Tools
-- Cursor, Claude Code, Gemini CLI, GPT5 Codex, GitHub Copilot
-- Azure OpenAI Services, Semantic Kernel, NotebookLM
-
-### Development Tools
-- Visual Studio Professional, Visual Studio Code, Cursor, Eclipse
-- IBM Rational Suite, Postman / Insomnia
-
-### Enterprise Systems
-- SAP R/3 (FI, CO, MM), AS/400 Systems
-
-### Microservices & Messaging
-- Apache Kafka, RabbitMQ, Spring Cloud (Eureka, Hystrix)
-- Microservices Architecture, Event-Driven Architecture
-
-### Big Data & Analytics
-- IBM Cognos, Talend ETL, Elasticsearch, Prometheus, Grafana
-
-### Specialized Technologies
-- Blockchain & Web3 (Solidity, Ethereum)
-- Game Development (Unity 3D, C#)
-- IoT (Arduino, Raspberry Pi)
-- Computer Vision (Infaimon CVB)
-- Document Recognition & Processing (Abbyy Technologies)
-- CMS Development (WordPress, Joomla)
-
-### Project Management
-- Jira, Confluence
 
 ### Soft Skills
 - Team Leadership
@@ -236,8 +168,74 @@ Technologies: .NET, C#, SQL Server, Oracle
 - Problem Solving & Analytical Thinking
 - Agile/Scrum Ceremonies
 
+### Development Tools
+- Visual Studio Professional, Visual Studio Code, Cursor, Eclipse
+- IBM Rational Suite, Postman, Insomnia
+
+### Application Servers
+- Apache Tomcat, Microsoft IIS, Oracle WebLogic, WildFly, IBM WebSphere
+
+### Spring Boot Ecosystem
+- Spring Data JPA, Spring Security + OAuth2, Spring MVC / WebFlux, Thymeleaf
+- Spring AOP, Flyway Migrations, DevTools, Validation, Security Extensions, Spring Cloud
+
+### Java Ecosystem
+- Hibernate / JPA / Criteria API, Maven / Gradle, JUnit / Mockito
+- Apache CXF / Jersey, HikariCP (Connection Pool)
+
+### .NET Ecosystem
+- EF Core / Dapper / LINQ, NLog / Serilog, AutoMapper, Polly.NET
+- SignalR (Real-time), xUnit / nUnit, Moq, Hangfire, FluentValidation, MailKit
+
 ### Historical Languages
 - ABAP IV (SAP), RPG (AS/400), 4GL (Ingres), COBOL, Pascal, C++
+
+### Frontend
+- React, Angular, TypeScript, Blazor WebAssembly, WPF / WinForms
+- Uno Platform / WinUI, HTML5 / CSS3, Vue.js
+
+### Cloud Platforms
+- Microsoft Azure, AWS
+
+### DevOps
+- Azure DevOps, Docker, Kubernetes, Terraform, Ansible
+- Git, GitHub, Jenkins, GitHub Actions, Subversion / CVS
+
+### Project Management
+- Jira, Confluence
+
+### Databases
+- SQL Server, MySQL, PostgreSQL, Oracle, IBM DB2, MongoDB
+- Redis, Cassandra, InterSystems Caché, Informix Dynamic Server, CA Ingres
+
+### AI Tools
+- Cursor, Claude Code, Gemini CLI, GitHub Copilot
+- Azure OpenAI Services, Semantic Kernel, NotebookLM
+
+### Testing Tools
+- Selenium WebDriver, Playwright, Jest, Vitest, Jasmine + Karma
+
+### Quality & Security
+- Fortify OnDemand (SAST), SonarQube, OWASP Top 10
+- Healthcare Security (HIPAA, GDPR), Penetration Testing, Code Coverage Analysis
+
+### Enterprise Systems
+- SAP R/3 (FI, CO, MM), ABAP IV Programming, Business Analysis, Project Management
+- AS/400 Systems, IBM AIX
+
+### Big Data & Analytics
+- IBM Cognos, Talend ETL, Elasticsearch, Prometheus, Grafana
+
+### Microservices & Messaging
+- Apache Kafka, RabbitMQ, Spring Cloud (Eureka, Hystrix)
+- Microservices Architecture, Event-Driven Architecture
+
+### Specialized Technologies
+- Blockchain & Web3 (Solidity, Ethereum)
+- Game Development (Unity 3D, C#)
+- IoT (Arduino, Raspberry Pi)
+- Computer Vision (Abbyy Technologies, Infaimon CVB)
+- Web Frameworks (WordPress, Joomla)
 
 ---
 
@@ -509,91 +507,92 @@ Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microser
 ## Training & Continuous Education (80+ Courses since 1998)
 
 ### 2024-2025 (AI-Assisted Development Era)
-- Formación Integral en Arquitectura Cloud, DDD, TDD e IA - AI-assisted development
-- Desarrollo con IA - AI-assisted development
-- Introducción a la IA y Prompt Engineering - AI fundamentals
+- Formación Integral en Arquitectura Cloud, DDD, TDD e IA (2024)
+- Desarrollo con IA - AI-assisted development (2024)
+- Introducción a la IA y Prompt Engineering - AI fundamentals (2024)
 - Claude Code CLI — AI assistant integration
 - Gemini CLI — Google AI code generation
 - NotebookLM — AI research and documentation
-- .NET 9 & C# 13 - Udemy
-- Blazor Development - YouTube, Dapper ORM - YouTube
+- .NET 9 & C# 13 (Udemy)
+- Blazor Development (YouTube), Dapper ORM (YouTube)
 - DDD Microsoft Microservices
-- Sistema de ventas real (C# + Angular + Xamarin) - YouTube
-- ASP.NET Core Advanced - Udemy
-- .NET MAUI Cross-platform - Udemy
+- Sistema de ventas real (C# + Angular + Xamarin, YouTube)
+- ASP.NET Core Advanced (Udemy)
+- .NET MAUI Cross-platform (Udemy)
 - Entity Framework Core
-- React & TypeScript - Udemy
+- React & TypeScript (Udemy)
 - Uno Platform Multi-platform
-- Azure DevOps Complete Guide - Udemy
+- Azure DevOps Complete Guide (Udemy)
 - Jira Advanced Administration
 
 ### 2023
-- Ionic (app) y Net Core (backend) - Udemy
-- Go / Golang desde las bases - Udemy
-- Big Data Fundamentals - Udemy
-- Dart & Flutter - Udemy
-- Vue.js avanzado - Udemy
+- Ionic (app) y Net Core (backend) (Udemy)
+- Go / Golang desde las bases (Udemy)
+- Big Data Fundamentals (Udemy)
+- Dart & Flutter (Udemy)
+- Laravel y vue.js avanzado (Udemy)
+- Vue.js (Udemy)
 
 ### 2022
-- React + Redux - Udemy
-- .NET MAUI con Visual Studio 2022 - Udemy
-- DevOps, Docker, Kubernetes, microservices y Azure .NET 6 - Udemy
-- Azure Devops - Udemy
-- AWS - Udemy
+- React + Redux (Udemy)
+- .NET MAUI con Visual Studio 2022 (Udemy)
+- DevOps, Docker, Kubernetes, microservices y Azure .NET 6 (Udemy)
+- Azure Devops (Udemy)
+- AWS (Udemy)
 
 ### 2021
-- Go / Golang - Udemy
-- TDD - Test driven development con Java y JUnit - Udemy
-- Patrones de Diseño y principios SOLID - Udemy
-- Refactorizar código Java - Udemy
+- Go / Golang (Udemy)
+- TDD - Test driven development con Java y JUnit (Udemy)
+- Patrones de Diseño y principios SOLID (Udemy)
+- Refactorizar código Java (Udemy)
 
 ### 2020
-- DevOps. Las artes marciales del software - Udemy
+- DevOps. Las artes marciales del software (Udemy)
 
 ### 2019
-- Java8 (Functional and lambda expr.) - Udemy
-- Microservicios con Spring Boot / Netflix Eureka - Udemy
-- Programación Python para Machine Learning - Udemy
-- Curso de Python 3 - Udemy
-- Desarrollo de videojuegos con Unity - Udemy
-- Mi primer videojuego con Unity - Udemy
-- API RestFul con Laravel - Udemy
-- Dominando Laravel. De principiante a expert - Udemy
-- Android con Kotlin + Firebase + Google - Udemy
-- Machine Learning - Udemy
-- Curso de Django - Udemy
+- Java8. (Funcional y lambda) (Udemy)
+- Microservicios con Spring Boot / Netflix Eureka (Udemy)
+- Programación Python para Machine Learning (Udemy)
+- Curso de Python 3 (Udemy)
+- Desarrollo de videojuegos con Unity (Udemy)
+- Mi primer videojuego con Unity (Udemy)
+- API RestFul con Laravel (Udemy)
+- Dominando Laravel. De principiante a expert (Udemy)
+- Android con Kotlin + Firebase + Google (Udemy)
+- Machine Learning (Udemy)
+- Curso de Django (Udemy)
 
 ### 2018
-- Implementación de soluciones en Microsoft Azure - Udemy
-- Python + Django - Udemy
-- Desarrollo de dApps en la blockchain de Ethereum - Udemy
-- Introducción a blockchain. criptomonedas y Ethereum - Udemy
-- Xamarin Forms y Azure - Udemy
-- Angular 6 avanzado - Udemy
-- Curso avanzado de Docker - Udemy
-- Spring Framework 5 - Udemy
-- Persistencia de datos con Java. Hibernate + Spring JPA - Udemy
+- Implementación de soluciones en Microsoft Azure (Udemy)
+- Python + Django (Udemy)
+- Desarrollo de dApps en la blockchain de Ethereum (Udemy)
+- Introducción a blockchain. criptomonedas y Ethereum (Udemy)
+- Xamarin Forms y Azure (Udemy)
+- Angular 6 avanzado (Udemy)
+- Curso avanzado de Docker (Udemy)
+- Spring Framework 5 (Udemy)
+- Persistencia de datos con Java. Hibernate + Spring JPA (Udemy)
 
 ### 2017
-- ASP.NET Core MVC - Udemy
-- Curso de iniciación a Haskell - Udemy
-- Xamarin. Build Android and IOS Apps - Udemy
-- Servicios con WCF - Udemy
+- ASP.NET Core MVC (Udemy)
+- Curso de iniciación a Haskell (Udemy)
+- Xamarin. Build Android and IOS Apps (Udemy)
+- Servicios con WCF (Udemy)
 
 ### 2016
-- Git + GitHub - Udemy
-- Desarrollo web Javascript, Angular, Node y MongoDB - Udemy
+- Git + GitHub (Udemy)
+- Desarrollo web Javascript, Angular, Node y MongoDB (Udemy)
 
 ### 2015
-- SEO para WordPress - Udemy
-- Aprende a triunfar con SEO - Udemy
+- SEO para WordPress (Udemy)
+- Aprende a triunfar con SEO (Udemy)
 
 ### 2014
-- Community Manager, Redes sociales - HP Formación
+- Community Manager, Redes sociales (HP Formación)
 
 ### 2013
-- Marketing 2.0 - Grupo Fides21
-- Team Building. Gestión de Liderazgo - Fides21
+- Marketing 2.0 (Grupo Fides21)
+- Team Building. Gestión de Liderazgo (Fides21)
 
 ### 2006
 - IBM Rational V7. Clearcase, SOA, Business Modeler
@@ -602,36 +601,36 @@ Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microser
 - Infaimon CVB. Vision Artificial
 
 ### 2005
-- Gestión De Proyectos - Oesia
+- Gestión De Proyectos (Oesia, 160h)
 
 ### 2004
-- Programación Visual C++ - Oesia
+- Programación Visual C++ (Oesia, 40h)
 
 ### 2003
-- Administración SQL Server - Sunion Gesfor
-- Programación Java - Oesia
-- Optimización Oracle 8i - MR Informática
-- PL/SQL - Dayfisa
-- Xml - IBM Learning
-- Administración Oracle - Dayfisa
-- Macromedia Flash - IBM Learning
-- Ingeniería De Software - Sunion Gesfor
+- Administración SQL Server (Sunion Gesfor, 40h)
+- Programación Java (Oesia, 40h)
+- Optimización Oracle 8i (MR Informática, 80h)
+- PL/SQL (Dayfisa, 40h)
+- Xml (IBM Learning, 30h)
+- Administración Oracle (Dayfisa, 40h)
+- Macromedia Flash (IBM Learning, 30h)
+- Ingeniería De Software (Sunion Gesfor)
 
 ### 2002
-- SAP MM. Verificación De Facturas - Sap España
-- Programación Avanzada Java - IBM Learning
-- Administración AIX - IBM Learning
-- Programación Avanzada RPG IV (AS/400) - IBM Learning
+- SAP MM. Verificación De Facturas (Sap España, 25h)
+- Programación Avanzada Java (IBM Learning, 25h)
+- Administración AIX (IBM Learning, 30h)
+- Programación Avanzada RPG IV (AS/400) (IBM Learning, 50h)
 
 ### 2001
-- Programación Java - Gesein
+- Programación Java (Gesein, 100h)
 
 ### 1999
-- Cobol – CICS – DB2 - Cap Gemini
+- Cobol – CICS – DB2 (Cap Gemini, 160h)
 
 ### 1998
-- Técnico En Sistemas Unix / Oracle - Sunion Gesfor
-- Microinformática - Academia Teide
+- Técnico En Sistemas Unix / Oracle (Sunion Gesfor, 350h)
+- Microinformática (Academia Teide, 300h)
 
 > Total courses completed: 80+ | Platforms: Udemy, IBM Learning, Oesia, Cap Gemini, Academia Teide, HP Formación, Fides21  
 > Active learner since 1998 (25+ years of continuous training)
