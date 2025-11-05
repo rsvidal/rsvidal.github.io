@@ -268,33 +268,6 @@ Technologies: .NET, C#, SQL Server, Oracle
 
 ---
 
-## Machine Learning & Data Science Projects
-
-### 🐍 Python Machine Learning
-- Scikit-learn, Pandas, NumPy projects
-- Data analysis and statistical modeling
-- Machine learning algorithms implementation
-- Data preprocessing and feature engineering
-
-Tech stack: Python 3, Scikit-learn, Pandas, NumPy, Jupyter
-
-### 🧠 Deep Learning
-- TensorFlow and neural networks
-- Neural network architecture design
-- Deep learning model training
-- Data preprocessing for ML
-
-Tech stack: TensorFlow, Keras, Neural Networks, Data Preprocessing
-
-### 📊 Data Analysis Projects
-- Statistical analysis and visualization
-- Data visualization and reporting
-- Business intelligence solutions
-
-Tech stack: Pandas, Matplotlib, Seaborn, Statistics
-
----
-
 ## Featured Professional Projects (Becton Dickinson - Healthcare)
 
 ### 🏥 BD Support System - Hospital Inventory Management
@@ -364,69 +337,15 @@ Tech stack: Java, Eclipse, HL7
 
 ## Learning & Experimental Projects
 
-### 🤖 AI/ML Projects
-- Azure AI Integration with OpenAI services
-- Prompt Engineering & AI Development techniques
-- LLM Evaluation Framework development
-- Semantic Kernel projects and plugins
+### 🤖 Azure AI Samples & Training
+- Microsoft official AI samples and courses
+- Microsoft official ai-samples repository (40+ examples)
+- Semantic Kernel tutorials: Hello SK, Chat History, Plugins, Logging
+- Quickstarts: Text Summary, Chat App, Function Calling
+- Local models: Phi, LLaMA examples
+- AI courses 2024: Prompt Engineering, AI Development
 
-Tech stack: Python, OpenAI API, Azure AI, LangChain, Semantic Kernel
-
-### 🐳 DevOps Practice
-- Container orchestration with Kubernetes
-- Cloud infrastructure automation
-- CI/CD pipeline implementation
-
-Tech stack: Docker, Kubernetes, AWS, Azure DevOps, Terraform
-
-### ☁️ Microservices Netflix
-- Spring Cloud Microservices implementation
-- Netflix stack implementation
-- Service discovery with Eureka
-- Circuit breaker pattern with Hystrix
-
-Tech stack: Spring Boot, Eureka, Hystrix, Docker, Kubernetes
-
-### ⚛️ React Full Stack
-- Complete React + Node.js + MongoDB
-- Full-stack web application development
-- State management with Redux
-- TypeScript integration
-
-Tech stack: React, TypeScript, Node.js, Express, MongoDB, Redux
-
-### 🔧 Testing Advanced
-- Playwright, Jest, Vitest, Testing Library, Selenium
-- End-to-end testing automation
-- Unit and integration testing
-- TDD/BDD methodologies
-
-Tech stack: Selenium, Playwright, Jest, Vitest, Testing Library, TDD/BDD
-
-### ☁️ Cloud Functions
-- Serverless Computing
-- Azure Functions development
-- AWS Lambda implementation
-- Serverless architecture patterns
-
-Tech stack: .NET 9, Azure Functions, AWS Lambda, Serverless
-
-
-### 📱 Kotlin Android
-- Native Android development
-- Mobile application development
-- Android Studio integration
-- Mobile UI design
-
-Tech stack: Kotlin, Android Studio, Mobile UI
-
-### 🤖 Azure AI Integration
-- Azure AI Services
-- OpenAI SDK integration
-- Semantic Kernel development
-- LLM evaluation frameworks
-
-Tech stack: .NET 8, Azure OpenAI, Semantic Kernel, Microsoft Extensions AI
+Tech stack: C#, Azure OpenAI, Semantic Kernel, Microsoft.Extensions.AI, LLM Evaluation, OpenAI API
 
 ### ☁️ Cloud Architecture
 - Azure + AWS deployment, DDD, TDD, IA integration
@@ -436,6 +355,50 @@ Tech stack: .NET 8, Azure OpenAI, Semantic Kernel, Microsoft Extensions AI
 - Cloud architecture patterns and best practices
 
 Tech stack: Azure, AWS, .NET 8, Spring Boot, DDD, TDD, Azure Functions, AWS Elastic Beanstalk
+
+### ☁️ Cloud Functions
+- Serverless Computing
+- Azure Functions development
+- AWS Lambda implementation
+- Serverless architecture patterns
+
+Tech stack: .NET 9, Azure Functions, AWS Lambda, Serverless
+
+### ☁️ Microservices with Kubernetes & Azure
+- Real deployed microservices architecture
+- 3 microservices deployed to Azure Kubernetes Service
+- Services: Gateway, Libreria (MongoDB), Seguridad (SQL Server)
+- Docker images published to Docker Hub
+- Kubernetes manifests (deploy.yml, service.yml)
+- JWT authentication and load balancing
+- GitHub: github.com/rsvidal/microservices-example1
+
+Tech stack: Kubernetes, Azure AKS, Docker, .NET Core, MongoDB, SQL Server, JWT
+
+### ⚛️ React Full Stack
+- Complete React + Node.js + MongoDB
+- Full-stack web application development
+- State management with Redux
+- TypeScript integration
+
+Tech stack: React, TypeScript, Node.js, Express, MongoDB, Redux
+
+### ☁️ Microservices Netflix
+- Spring Cloud Microservices implementation
+- Netflix stack implementation
+- Service discovery with Eureka
+- Circuit breaker pattern with Hystrix
+
+Tech stack: Spring Boot, Eureka, Hystrix, Docker, Kubernetes
+
+### 📱 Android Development with Kotlin
+- Native Android app development course
+- Complete Kotlin course with Android app structure
+- Firebase authentication with Google OAuth
+- Android UI/UX with ConstraintLayout
+- Testing with JUnit and Espresso
+
+Tech stack: Kotlin, Android Studio, Gradle, Firebase Auth, JUnit, Espresso
 
 ### 🔌 IoT & Embedded Systems Suite
 - Arduino, Ethernet Shield, Bluetooth, Web Services, Mobile Integration
@@ -457,15 +420,6 @@ Tech stack: Arduino, Netduino, C++, Ethernet Shield, Bluetooth HC-05, CoAP Proto
 
 Tech stack: Solidity, Web3.js, Truffle, Ethereum, Smart Contracts, JavaScript
 
-### 📱 Android/Kotlin Mobile Development
-- Native Android development with Kotlin
-- Native Android application development
-- Firebase authentication with Google OAuth
-- UI/UX with ConstraintLayout
-- Testing with JUnit and Espresso
-
-Tech stack: Kotlin, Android Studio, Firebase Auth, Google Sign-In, JUnit, Espresso
-
 ### 🎮 Unity Game Development
 - 2D game development with Unity 2020.3
 - Complete 2D game with Unity
@@ -475,18 +429,6 @@ Tech stack: Kotlin, Android Studio, Firebase Auth, Google Sign-In, JUnit, Espres
 - Custom assets and sprites
 
 Tech stack: Unity 2020.3, C#, Game Development, 2D Graphics
-
-### ☁️ DevOps & Microservices Architecture
-- Kubernetes, Docker, .NET Core, Ocelot Gateway
-- Complete microservices architecture
-- API Gateway with Ocelot
-- Docker containers for each service
-- Kubernetes orchestration
-- Multiple databases (MongoDB + SQL Server)
-- Services: Gateway, Library, Security
-
-Tech stack: Kubernetes, Docker, .NET Core, Ocelot, MongoDB, SQL Server, Microservices
-
 
 ---
 
