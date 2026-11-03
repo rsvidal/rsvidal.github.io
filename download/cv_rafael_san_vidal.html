@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Rafael San Vidal | Senior Software Developer</title>
     <style>
+        @page {
+            size: A4;
+            margin: 13mm 14mm;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,1220 +17,693 @@
         }
 
         body {
-            font-family: 'Arial', 'Helvetica', sans-serif;
-            line-height: 1.25;
-            color: #333;
-            background: white;
-            font-size: 8pt;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.4;
+            color: #222;
+            background: #fff;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #2980b9 100%);
-            color: white;
-            padding: 12px 15px;
-            text-align: center;
-            margin-bottom: 8px;
-            border-radius: 4px;
-        }
-
-        header h1 {
-            font-size: 14pt;
-            margin-bottom: 3px;
-            font-weight: 700;
-        }
-
-        header .subtitle {
-            font-size: 8pt;
-            margin-bottom: 3px;
-            font-weight: 500;
-        }
-
-        header .experience-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 6.5pt;
-            margin-top: 2px;
-            font-weight: 600;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-
-        .contact-info {
-            background: #ecf0f1;
-            padding: 5px 10px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            font-size: 6.5pt;
-            margin-bottom: 6px;
-            border-radius: 3px;
-            border-left: 2px solid #2980b9;
-        }
-
-        .contact-info a {
-            color: #2980b9;
+        a {
+            color: #1f4e79;
             text-decoration: none;
-            font-weight: 500;
         }
 
-        section {
-            margin-bottom: 8px;
-            page-break-inside: avoid;
-            background: white;
-            padding: 6px 8px;
-            border-radius: 3px;
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 24px;
         }
 
+        /* Header */
+        header {
+            border-bottom: 2px solid #1f4e79;
+            padding-bottom: 8px;
+            margin-bottom: 4px;
+        }
+
+        h1 {
+            font-size: 21pt;
+            letter-spacing: 0.5px;
+            color: #1f4e79;
+            line-height: 1.1;
+        }
+
+        .headline {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        .badge {
+            font-size: 9pt;
+            color: #555;
+            letter-spacing: 0.4px;
+            margin-top: 2px;
+        }
+
+        .contact {
+            font-size: 9pt;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .contact span + span::before {
+            content: "\00B7";
+            margin: 0 6px;
+            color: #999;
+        }
+
+        /* Sections */
         h2 {
-            color: #2c3e50;
-            font-size: 10pt;
-            margin-bottom: 5px;
-            padding-bottom: 3px;
-            border-bottom: 2px solid #2980b9;
-            page-break-after: avoid;
-            font-weight: 700;
+            font-size: 10.5pt;
             text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #1f4e79;
+            border-bottom: 1px solid #c8d3df;
+            padding-bottom: 2px;
+            margin: 14px 0 6px;
+            page-break-after: avoid;
         }
 
         h3 {
-            color: #333;
-            font-size: 8pt;
-            margin-bottom: 2px;
-            margin-top: 4px;
-            font-weight: 600;
+            font-size: 10pt;
             page-break-after: avoid;
         }
 
         h4 {
-            color: #2980b9;
-            font-size: 7.5pt;
-            margin-bottom: 2px;
-            margin-top: 3px;
-            font-weight: 600;
+            font-size: 9.5pt;
+            color: #1f4e79;
+            margin: 5px 0 1px;
+            page-break-after: avoid;
         }
 
         p {
-            margin-bottom: 3px;
-            text-align: justify;
+            margin-bottom: 4px;
         }
 
+        ul {
+            margin: 1px 0 4px 16px;
+        }
+
+        li {
+            margin-bottom: 1px;
+        }
+
+        .callout {
+            border-left: 3px solid #1f4e79;
+            background: #f2f6fa;
+            padding: 5px 9px;
+            margin-top: 6px;
+        }
+
+        /* Jobs */
         .job {
-            margin-bottom: 6px;
-            page-break-inside: avoid;
+            margin-bottom: 10px;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 3px;
-            background: #f8f9fa;
-            padding: 3px 6px;
-            border-radius: 3px;
-        }
-
-        .job-title {
-            font-weight: 600;
-            color: #333;
-            font-size: 7.5pt;
-        }
-
-        .job-date {
-            color: #666;
-            font-size: 6pt;
-            font-style: italic;
-            white-space: nowrap;
+            gap: 12px;
+            page-break-after: avoid;
         }
 
         .company {
-            color: #2980b9;
-            font-weight: 600;
-            font-size: 7pt;
+            font-weight: 700;
+            font-size: 10pt;
         }
 
-        .experience-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 6px;
-            margin-top: 4px;
+        .job-title {
+            color: #333;
         }
 
-        .experience-subsection {
-            background: #fafafa;
-            padding: 4px 6px;
-            border-radius: 3px;
-            border-left: 2px solid #2980b9;
+        .job-date {
+            color: #555;
+            font-size: 9pt;
+            white-space: nowrap;
         }
 
-        .experience-subsection h4 {
-            font-size: 7pt;
-            margin-bottom: 2px;
-            color: #2980b9;
-        }
-
-        .experience-subsection ul {
-            margin-left: 10px;
-            font-size: 6.5pt;
-        }
-
-        .experience-subsection li {
-            margin-bottom: 1px;
-            line-height: 1.15;
-        }
-
-        .experience-subsection p {
-            font-size: 6.5pt;
-            margin-bottom: 2px;
-        }
-
-        ul {
-            margin-left: 12px;
-            margin-top: 2px;
-            margin-bottom: 3px;
-        }
-
-        li {
-            margin-bottom: 1px;
-            line-height: 1.2;
-        }
-
-        .two-col {
+        .cols-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5px;
+            column-gap: 18px;
         }
 
-        .three-col {
+        .cols-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 4px;
+            column-gap: 16px;
         }
 
-        .four-col {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 4px;
-        }
-
-        .five-col {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 4px;
-        }
-
-        .skill-box {
-            background: #f8f9fa;
-            padding: 4px 5px;
-            border-radius: 2px;
-            border-left: 2px solid #2980b9;
+        .avoid-break {
             page-break-inside: avoid;
         }
 
-        .skill-box h4 {
-            color: #2980b9;
-            font-size: 7pt;
-            margin-bottom: 2px;
+        .tech {
+            font-size: 8.5pt;
+            color: #555;
+            margin-top: 3px;
         }
 
-        .skill-list {
-            font-size: 6.5pt;
-            line-height: 1.25;
+        .tech strong {
+            color: #333;
         }
 
-        .highlight {
-            background: #e8f4f8;
-            border-left: 2px solid #2980b9;
-            padding: 4px 8px;
-            margin: 4px 0;
-            font-size: 6.5pt;
-            border-radius: 3px;
-        }
-
-        .ai-tools-grid {
+        /* Label / value rows (skills, AI tools, training) */
+        .rows {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 4px;
-            margin: 5px 0;
+            grid-template-columns: 150px 1fr;
+            column-gap: 12px;
+            row-gap: 3px;
         }
 
-        .ai-tool-card {
-            background: #f8f9fa;
-            padding: 4px;
-            border-radius: 3px;
-            border-left: 2px solid #2980b9;
-        }
-
-        .ai-tool-card h4 {
-            color: #2c3e50;
-            font-size: 6.5pt;
-            margin-bottom: 2px;
+        .rows dt {
             font-weight: 600;
+            color: #1f4e79;
         }
 
-        .ai-tool-card p {
-            font-size: 5.5pt;
-            color: #666;
-            margin-bottom: 2px;
+        .rows.years {
+            grid-template-columns: 70px 1fr;
+            font-size: 9pt;
         }
 
-        .status-active {
-            color: #27ae60;
-            font-weight: 600;
-            font-size: 5.5pt;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #2980b9;
-            color: white;
-            padding: 1px 4px;
-            border-radius: 2px;
-            font-size: 6pt;
-            margin: 1px 1px;
-            font-weight: 500;
-        }
-
-        .project-box {
-            background: #fafafa;
-            padding: 3px 5px;
-            margin-bottom: 4px;
-            border-radius: 2px;
-            border-left: 2px solid #8e44ad;
+        /* Projects */
+        .project {
+            margin-bottom: 8px;
             page-break-inside: avoid;
         }
 
-        .project-box h3 {
-            color: #8e44ad;
-            font-size: 7.5pt;
-            margin-bottom: 2px;
-        }
-
-        .project-box p {
-            font-size: 6.5pt;
-            margin-bottom: 2px;
-        }
-
-        .project-box ul {
-            font-size: 6.5pt;
-            margin-left: 10px;
-        }
-
-        .project-box li {
-            margin-bottom: 1px;
-        }
-
-        .tech-stack {
-            font-size: 6pt;
-            color: #666;
+        .project .sub {
             font-style: italic;
-            margin-top: 2px;
-        }
-
-        .training-compact {
-            font-size: 6.5pt;
-            line-height: 1.25;
-        }
-
-        .training-year {
-            font-weight: 600;
-            color: #2980b9;
-            margin-top: 4px;
-            margin-bottom: 2px;
-            font-size: 7pt;
-        }
-
-        strong {
-            font-weight: 600;
+            color: #444;
         }
 
         .comment {
             font-style: italic;
             color: #666;
+            font-size: 9pt;
         }
 
         @media print {
-            body {
+            .page {
                 padding: 0;
-            }
-
-            .container {
-                padding: 8px;
-                max-width: 100%;
-            }
-
-            header {
-                padding: 8px 10px;
-                margin-bottom: 5px;
-            }
-
-            header h1 {
-                font-size: 13pt;
-            }
-
-            .contact-info {
-                padding: 4px 8px;
-                margin-bottom: 4px;
-                font-size: 6pt;
-            }
-
-            section {
-                page-break-inside: avoid;
-                margin-bottom: 6px;
-                padding: 4px 6px;
-            }
-
-            h2 {
-                page-break-after: avoid;
-                font-size: 9.5pt;
-                margin-bottom: 4px;
-            }
-
-            .job, .skill-box, .project-box, .ai-tool-card {
-                page-break-inside: avoid;
-            }
-
-            .ai-tools-grid {
-                gap: 3px;
+                max-width: none;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page">
         <header>
             <h1>RAFAEL SAN VIDAL</h1>
-            <div class="subtitle">Senior Software Developer | AI-Assisted Development Expert | Healthcare Domain Specialist</div>
-            <div class="experience-badge">25+ YEARS PROFESSIONAL EXPERIENCE | 19+ YEARS HEALTHCARE EXPERTISE</div>
+            <div class="headline">Senior Software Developer | AI-Assisted Development Expert | Healthcare Domain Specialist</div>
+            <div class="badge">25+ YEARS PROFESSIONAL EXPERIENCE | 20+ YEARS HEALTHCARE EXPERTISE</div>
+            <div class="contact">
+                <span><a href="mailto:sanvidal1@gmail.com">sanvidal1@gmail.com</a></span>
+                <span>Madrid, Spain (EU)</span>
+                <span><a href="https://linkedin.com/in/rsanvidal">linkedin.com/in/rsanvidal</a></span>
+                <span><a href="https://github.com/rsvidal">github.com/rsvidal</a></span>
+                <span><a href="https://rsvidal.github.io">rsvidal.github.io</a></span>
+            </div>
         </header>
 
-        <div class="contact-info">
-            <span>📧 <a href="mailto:sanvidal1@gmail.com">sanvidal1@gmail.com</a></span>
-            <span>📱 +34 650953905</span>
-            <span>📍 Madrid, Spain (EU)</span>
-            <span>💼 <a href="https://linkedin.com/in/rsanvidal">LinkedIn</a></span>
-            <span>🔗 <a href="https://github.com/rsvidal">GitHub</a></span>
-            <span>🌐 <a href="https://rsvidal.github.io">Web</a></span>
-        </div>
+        <section>
+            <h2>Professional Profile</h2>
+            <p>Senior Software Developer with 25+ years of professional experience in enterprise solutions development. My journey started with the first 8-bit personal computers, writing my first BASIC programs. Specialized in healthcare sector for 20+ years at Becton Dickinson. Full-stack developer expert in .NET, Java, Spring Boot, Angular, React. Pioneer in AI-assisted development workflows.</p>
+            <div class="callout">
+                <strong>Current Focus:</strong> Building enterprise applications with .NET 9 and Java 21. Embracing AI-assisted development with Cursor and Claude Code. Creating cross-platform solutions implementing Clean Architecture and DDD patterns. <strong>Vibe Coding Philosophy:</strong> Leveraging AI to focus on problem-solving and architecture while accelerating implementation without sacrificing code quality.
+            </div>
+        </section>
 
-            <section>
-                <h2>PROFESSIONAL PROFILE</h2>
-                <p>Senior Software Developer with 25+ years of professional experience in enterprise solutions development. My journey started at age 13 with first 8-bit personal computers, writing my first BASIC programs. Specialized in healthcare sector for 19+ years at Becton Dickinson. Full-stack developer expert in .NET, Java, Spring Boot, Angular, React. Pioneer in AI-assisted development workflows.</p>
-                <div class="highlight">
-                    <strong>Current Focus (2025):</strong> Building enterprise applications with .NET 9 and Java 21. Embracing AI-assisted development with Cursor, Claude Code and Gemini CLI. Creating cross-platform solutions implementing Clean Architecture and DDD patterns. <strong>Vibe Coding Philosophy:</strong> Leveraging AI to focus on problem-solving and architecture while accelerating implementation without sacrificing code quality.
+        <section>
+            <h2>AI-Assisted Development Tools (since 2024)</h2>
+            <dl class="rows">
+                <dt>Cursor Pro</dt><dd>AI-powered code editor &middot; Integrated</dd>
+                <dt>Claude Code</dt><dd>CLI-based AI assistant &middot; Integrated</dd>
+                <dt>NotebookLM</dt><dd>AI research tool &middot; Research</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><span class="company">Becton Dickinson and Company</span> &mdash; <span class="job-title">Senior Software Developer | Healthcare Solutions</span></div>
+                    <div class="job-date">2005 &ndash; Present (20+ years)</div>
                 </div>
-            </section>
-
-            <section>
-                <h2>AI-ASSISTED DEVELOPMENT TOOLS (2024-2025)</h2>
-                <div class="ai-tools-grid">
-                    <div class="ai-tool-card">
-                        <h4>🤖 Cursor Pro</h4>
-                        <p>AI-powered code editor</p>
-                        <span class="status-active">● INTEGRATED</span>
-                    </div>
-                    <div class="ai-tool-card">
-                        <h4>🧠 Claude Code</h4>
-                        <p>CLI-based AI assistant</p>
-                        <span class="status-active">● INTEGRATED</span>
-                    </div>
-                    <div class="ai-tool-card">
-                        <h4>🔮 Gemini CLI</h4>
-                        <p>Google's AI assistant</p>
-                        <span class="status-active">● INTEGRATED</span>
-                    </div>
-                    <div class="ai-tool-card">
-                        <h4>🚀 GitHub Copilot</h4>
-                        <p>AI pair programming</p>
-                        <span class="status-active">● INTEGRATED</span>
-                    </div>
-                    <div class="ai-tool-card">
-                        <h4>📚 NotebookLM</h4>
-                        <p>AI research tool</p>
-                        <span class="status-active">● RESEARCH</span>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>PROFESSIONAL EXPERIENCE</h2>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="company">Becton Dickinson and Company</div>
-                            <div class="job-title">Senior Software Developer | Healthcare Solutions</div>
-                        </div>
-                        <div class="job-date">2005 - Present (19+ years)</div>
-                    </div>
-
-                    <div class="experience-grid">
-                        <div class="experience-subsection">
-                            <h4>Key Responsibilities</h4>
-                            <ul>
-                                <li>Full-stack development (EMEA region)</li>
-                                <li>Architecture design, UI/UX, security</li>
-                                <li>CI/CD, DevOps, database management</li>
-                                <li>Team mentoring and code review</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-subsection">
-                            <h4>Healthcare Domain (19+ years)</h4>
-                            <ul>
-                                <li>HL7/HL7-FHIR protocol implementation</li>
-                                <li>ASTM standards, RFID integration</li>
-                                <li>Real-time data processing</li>
-                                <li>Mirth Connect integration platform</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-subsection">
-                            <h4>Quality & Security</h4>
-                            <ul>
-                                <li>Fortify OnDemand (SAST), SonarQube</li>
-                                <li>OWASP Top 10, vulnerability assessment</li>
-                                <li>HIPAA, GDPR compliance</li>
-                                <li>Penetration testing, code coverage</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-subsection">
-                            <h4>Multi-Database Expertise</h4>
-                            <ul>
-                                <li>MySQL, MariaDB, SQL Server, Oracle, DB2</li>
-                                <li>Flyway, Entity Framework migrations</li>
-                                <li>Cross-database compatibility</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 3px;"><span class="tag">.NET 9</span> <span class="tag">C# 13</span> <span class="tag">Java 21</span> <span class="tag">Spring Boot</span> <span class="tag">Spring Data JPA</span> <span class="tag">Spring Security</span> <span class="tag">React</span> <span class="tag">Angular</span> <span class="tag">TypeScript</span> <span class="tag">Blazor</span> <span class="tag">Thymeleaf</span> <span class="tag">Bootstrap</span> <span class="tag">Tailwind</span> <span class="tag">SQL Server</span> <span class="tag">MySQL</span> <span class="tag">Oracle</span> <span class="tag">IBM DB2</span> <span class="tag">MariaDB</span> <span class="tag">Azure DevOps</span> <span class="tag">Docker</span> <span class="tag">Git</span> <span class="tag">Jira</span> <span class="tag">SignalR</span> <span class="tag">WebSockets</span> <span class="tag">Socket.io</span> <span class="tag">WPF</span> <span class="tag">WinUI</span> <span class="tag">Uno Platform</span> <span class="tag">RCP / RAP</span></p>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="company">Omnibona S.L</div>
-                            <div class="job-title">Software Developer (Part-time) | Multi-platform Health Application</div>
-                        </div>
-                        <div class="job-date">2014 - 2015</div>
-                    </div>
-                    <p style="font-size: 6.5pt; margin: 2px 0;">Design and development of multi-platform application about healthy habits. Nutrition and exercises in game mode for startup company.</p>
-                    <p><span class="tag">ASP.NET MVC</span> <span class="tag">Razor</span> <span class="tag">Entity Framework</span> <span class="tag">LINQ</span> <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">Bootstrap</span> <span class="tag">JavaScript</span> <span class="tag">jQuery</span> <span class="tag">Microsoft Azure</span></p>
-                </div>
-
-                <div class="experience-grid" style="margin-bottom: 6px;">
-                    <div class="job" style="margin-bottom: 0;">
-                        <div class="job-header">
-                            <div>
-                                <div class="company">Oesia</div>
-                                <div class="job-title">Software Developer</div>
-                            </div>
-                            <div class="job-date">2003 - 2005</div>
-                        </div>
-                        <p style="font-size: 6.5pt; margin: 2px 0;">Healthcare, Telecom, Public Services. Clients: Telefónica, HP, Siemens</p>
-                        <p><span class="tag">.NET</span> <span class="tag">C#</span> <span class="tag">SQL Server</span> <span class="tag">Oracle</span></p>
-                    </div>
-
-                    <div class="job" style="margin-bottom: 0;">
-                        <div class="job-header">
-                            <div>
-                                <div class="company">Easynet España S.A.</div>
-                                <div class="job-title">Support Technical</div>
-                            </div>
-                            <div class="job-date">2003</div>
-                        </div>
-                        <p style="font-size: 6.5pt; margin: 2px 0;">Technical support and customer service</p>
-                    </div>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="company">L'Oréal Spain</div>
-                            <div class="job-title">SAP Key Business | Business Analyst</div>
-                        </div>
-                        <div class="job-date">1998 - 2003 (5 years)</div>
-                    </div>
-
-                    <div class="experience-grid">
-                        <div class="experience-subsection">
-                            <h4>SAP R/3 Project Leadership</h4>
-                            <ul>
-                                <li>Business Key for SAP R/3 (FI, CO, MM)</li>
-                                <li>Project planning, design, implementation</li>
-                                <li>ABAP IV programming, reports development</li>
-                                <li>Business requirements, stakeholder mgmt</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-subsection">
-                            <h4>Historical Projects</h4>
-                            <ul>
-                                <li>Y2K and Euro currency conversion</li>
-                                <li>Accounts and Purchasing systems</li>
-                                <li>AS/400 and IBM AIX integrations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 3px;"><span class="tag">SAP R/3</span> <span class="tag">ABAP IV</span> <span class="tag">C++</span> <span class="tag">RPG</span> <span class="tag">4GL</span> <span class="tag">AS/400</span> <span class="tag">IBM AIX</span> <span class="tag">Oracle</span> <span class="tag">CA Ingres</span></p>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="company">Ministerio de Asuntos Exteriores</div>
-                            <div class="job-title">Software Developer | Diplomatic Passports Management</div>
-                        </div>
-                        <div class="job-date">1998</div>
-                    </div>
-                    <p style="font-size: 6.5pt; margin: 2px 0;">Design and development of application to manage diplomatic passports</p>
-                    <p><span class="tag">4GL</span> <span class="tag">CA Ingres</span></p>
-                </div>
-            </section>
-
-            <section>
-                <h2>COMPLETE TECHNOLOGY STACK</h2>
-
-                <div class="five-col">
-                    <div class="skill-box">
-                        <h4>Backend/Languages</h4>
-                        <div class="skill-list">
-                            .NET 9 / C# 13<br>
-                            Java 21<br>
-                            Spring Boot 3.x<br>
-                            ASP.NET Core 9<br>
-                            Node.js / Express<br>
-                            Python / Django<br>
-                            PHP / Laravel
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Frontend</h4>
-                        <div class="skill-list">
-                            React<br>
-                            Angular<br>
-                            TypeScript<br>
-                            Blazor WebAssembly<br>
-                            WPF / WinForms<br>
-                            Uno Platform<br>
-                            HTML5 / CSS3<br>
-                            Vue.js
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Databases</h4>
-                        <div class="skill-list">
-                            SQL Server<br>
-                            MySQL / MariaDB<br>
-                            PostgreSQL<br>
-                            Oracle<br>
-                            IBM DB2<br>
-                            MongoDB<br>
-                            Redis<br>
-                            Cassandra
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Cloud & DevOps</h4>
-                        <div class="skill-list">
-                            Azure / AWS<br>
-                            Azure DevOps<br>
-                            Docker<br>
-                            Kubernetes<br>
-                            Terraform<br>
-                            Git / GitHub<br>
-                            Jenkins<br>
-                            CI/CD Pipelines
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Testing</h4>
-                        <div class="skill-list">
-                            JUnit / Mockito<br>
-                            xUnit / Moq<br>
-                            Selenium<br>
-                            Playwright<br>
-                            Jest / Vitest<br>
-                            TDD / BDD
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Spring Ecosystem</h4>
-                        <div class="skill-list">
-                            Spring Data JPA<br>
-                            Spring Security<br>
-                            Spring MVC<br>
-                            Thymeleaf<br>
-                            Flyway<br>
-                            Spring Cloud
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>.NET Ecosystem</h4>
-                        <div class="skill-list">
-                            EF Core / Dapper<br>
-                            NLog / Serilog<br>
-                            AutoMapper<br>
-                            Polly.NET<br>
-                            SignalR<br>
-                            FluentValidation
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Architecture</h4>
-                        <div class="skill-list">
-                            Clean Architecture<br>
-                            DDD<br>
-                            CQRS<br>
-                            Microservices<br>
-                            Event-Driven<br>
-                            SOA
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Methodologies</h4>
-                        <div class="skill-list">
-                            Scrum / Kanban<br>
-                            XP<br>
-                            TDD / BDD<br>
-                            SOLID Principles<br>
-                            Clean Code<br>
-                            Design Patterns
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Quality & Security</h4>
-                        <div class="skill-list">
-                            Fortify (SAST)<br>
-                            SonarQube<br>
-                            OWASP Top 10<br>
-                            HIPAA / GDPR<br>
-                            Penetration Testing
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Mobile Development</h4>
-                        <div class="skill-list">
-                            Kotlin<br>
-                            Android Studio
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Historical Languages</h4>
-                        <div class="skill-list">
-                            ABAP IV (SAP)<br>
-                            RPG (AS/400)<br>
-                            4GL (Ingres)<br>
-                            COBOL<br>
-                            Pascal<br>
-                            C++
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Enterprise Systems</h4>
-                        <div class="skill-list">
-                            SAP R/3 (FI, CO, MM)<br>
-                            ABAP IV Programming<br>
-                            Business Analysis<br>
-                            AS/400 Systems<br>
-                            IBM AIX
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Big Data & Analytics</h4>
-                        <div class="skill-list">
-                            IBM Cognos<br>
-                            Talend ETL<br>
-                            Elasticsearch<br>
-                            Prometheus<br>
-                            Grafana
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Microservices & Messaging</h4>
-                        <div class="skill-list">
-                            Apache Kafka<br>
-                            RabbitMQ<br>
-                            Spring Cloud (Eureka, Hystrix)<br>
-                            Event-Driven Architecture
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Specialized Technologies</h4>
-                        <div class="skill-list">
-                            Blockchain & Web3 (Solidity, Ethereum)<br>
-                            Game Development (Unity 3D, C#)<br>
-                            IoT (Arduino, Raspberry Pi)<br>
-                            Computer Vision (Abbyy Technologies)<br>
-                            Web Frameworks (WordPress, Joomla)
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Application Servers</h4>
-                        <div class="skill-list">
-                            Apache Tomcat<br>
-                            Microsoft IIS<br>
-                            Oracle WebLogic<br>
-                            WildFly<br>
-                            IBM WebSphere
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Project Management</h4>
-                        <div class="skill-list">
-                            Jira<br>
-                            Confluence
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>AI Tools</h4>
-                        <div class="skill-list">
-                            Cursor<br>
-                            Claude Code<br>
-                            Gemini CLI<br>
-                            GitHub Copilot<br>
-                            Azure OpenAI Services<br>
-                            Semantic Kernel<br>
-                            NotebookLM
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <h4>Development Tools</h4>
-                        <div class="skill-list">
-                            Visual Studio Professional<br>
-                            Visual Studio Code<br>
-                            Cursor<br>
-                            Eclipse<br>
-                            IBM Rational Suite<br>
-                            Postman<br>
-                            Insomnia
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>METHODOLOGIES & SOFTWARE ENGINEERING PRINCIPLES</h2>
-                <div class="three-col">
-                    <div>
-                        <h4>Agile Methodologies</h4>
+                <div class="cols-2">
+                    <div class="avoid-break">
+                        <h4>Key Responsibilities</h4>
                         <ul>
-                            <li>Scrum (Sprint Planning, Daily Standups, Retrospectives)</li>
-                            <li>Kanban (Continuous Flow, WIP limits)</li>
-                            <li>XP (Extreme Programming)</li>
-                            <li>Lean Software Development</li>
+                            <li>Full-stack development (EMEA region)</li>
+                            <li>Architecture design, UI/UX, security</li>
+                            <li>CI/CD, DevOps, database management</li>
+                            <li>Team mentoring and code review</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>Architecture Patterns</h4>
+                    <div class="avoid-break">
+                        <h4>Healthcare Domain (20+ years)</h4>
                         <ul>
-                            <li>Clean Architecture</li>
-                            <li>Domain-Driven Design (DDD)</li>
-                            <li>CQRS (Command Query Responsibility Segregation)</li>
-                            <li>Repository Pattern</li>
-                            <li>Microservices Architecture</li>
-                            <li>Event-Driven Architecture</li>
-                            <li>SOA (Service Oriented Architecture)</li>
+                            <li>HL7/HL7-FHIR protocol implementation</li>
+                            <li>ASTM standards, RFID integration</li>
+                            <li>Real-time data processing</li>
+                            <li>Mirth Connect integration platform</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>SOLID Principles</h4>
+                    <div class="avoid-break">
+                        <h4>Quality &amp; Security</h4>
                         <ul>
-                            <li>Single Responsibility Principle</li>
-                            <li>Open/Closed Principle</li>
-                            <li>Liskov Substitution Principle</li>
-                            <li>Interface Segregation Principle</li>
-                            <li>Dependency Inversion Principle</li>
+                            <li>Fortify OnDemand (SAST), SonarQube</li>
+                            <li>OWASP Top 10, vulnerability assessment</li>
+                            <li>HIPAA, GDPR compliance</li>
+                            <li>Penetration testing, code coverage</li>
+                        </ul>
+                    </div>
+                    <div class="avoid-break">
+                        <h4>Multi-Database Expertise</h4>
+                        <ul>
+                            <li>MySQL, MariaDB, SQL Server, Oracle, DB2</li>
+                            <li>Flyway, Entity Framework migrations</li>
+                            <li>Cross-database compatibility</li>
                         </ul>
                     </div>
                 </div>
-                <div class="three-col" style="margin-top: 6px;">
-                    <div>
-                        <h4>Testing Methodologies</h4>
+                <p class="tech"><strong>Technologies:</strong> .NET 9, C# 13, Java 21, Spring Boot, Spring Data JPA, Spring Security, React, Angular, TypeScript, Blazor, Thymeleaf, Bootstrap, Tailwind, SQL Server, MySQL, Oracle, IBM DB2, MariaDB, Azure DevOps, Docker, Git, Jira, SignalR, WebSockets, Socket.io, WPF, WinUI, Uno Platform, RCP / RAP</p>
+            </div>
+
+            <div class="job avoid-break">
+                <div class="job-header">
+                    <div><span class="company">Omnibona S.L</span> &mdash; <span class="job-title">Software Developer (Part-time) | Multi-platform Health Application</span></div>
+                    <div class="job-date">2014 &ndash; 2015</div>
+                </div>
+                <p>Design and development of multi-platform application about healthy habits. Nutrition and exercises in game mode for startup company.</p>
+                <p class="tech"><strong>Technologies:</strong> ASP.NET MVC, Razor, Entity Framework, LINQ, HTML5, CSS3, Bootstrap, JavaScript, jQuery, Microsoft Azure</p>
+            </div>
+
+            <div class="job avoid-break">
+                <div class="job-header">
+                    <div><span class="company">Oesia</span> &mdash; <span class="job-title">Software Developer</span></div>
+                    <div class="job-date">2003 &ndash; 2005</div>
+                </div>
+                <p>Healthcare, Telecom, Public Services. Clients: Telef&oacute;nica, HP, Siemens</p>
+                <p class="tech"><strong>Technologies:</strong> .NET, C#, SQL Server, Oracle</p>
+            </div>
+
+            <div class="job avoid-break">
+                <div class="job-header">
+                    <div><span class="company">Easynet Espa&ntilde;a S.A.</span> &mdash; <span class="job-title">Support Technical</span></div>
+                    <div class="job-date">2003</div>
+                </div>
+                <p>Technical support and customer service</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><span class="company">L'Or&eacute;al Spain</span> &mdash; <span class="job-title">SAP Key Business | Business Analyst</span></div>
+                    <div class="job-date">1998 &ndash; 2003 (5 years)</div>
+                </div>
+                <div class="cols-2">
+                    <div class="avoid-break">
+                        <h4>SAP R/3 Project Leadership</h4>
                         <ul>
-                            <li>TDD (Test-Driven Development)</li>
-                            <li>BDD (Behavior-Driven Development)</li>
-                            <li>ATDD (Acceptance Test-Driven Development)</li>
-                            <li>Unit Testing / Integration Testing</li>
+                            <li>Business Key for SAP R/3 (FI, CO, MM)</li>
+                            <li>Project planning, design, implementation</li>
+                            <li>ABAP IV programming, reports development</li>
+                            <li>Business requirements, stakeholder mgmt</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>Design Patterns (GoF)</h4>
+                    <div class="avoid-break">
+                        <h4>Historical Projects</h4>
                         <ul>
-                            <li>Creational: Factory, Builder, Singleton</li>
-                            <li>Structural: Adapter, Decorator, Facade</li>
-                            <li>Behavioral: Observer, Strategy, Command</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Code Quality</h4>
-                        <ul>
-                            <li>Clean Code Principles</li>
-                            <li>Code Review Practices</li>
-                            <li>Refactoring Techniques</li>
-                            <li>Technical Debt Management</li>
-                            <li>Documentation Standards</li>
+                            <li>Y2K and Euro currency conversion</li>
+                            <li>Accounts and Purchasing systems</li>
+                            <li>AS/400 and IBM AIX integrations</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+                <p class="tech"><strong>Technologies:</strong> SAP R/3, ABAP IV, C++, RPG, 4GL, AS/400, IBM AIX, Oracle, CA Ingres</p>
+            </div>
 
-            <section>
-                <h2>FEATURED PROFESSIONAL PROJECTS (Healthcare)</h2>
-
-                <div class="two-col">
-                    <div>
-                        <div class="project-box">
-                            <h3>🏥 BD Support System - Hospital Inventory Management</h3>
-                            <p><strong>Clean Architecture + DDD enterprise platform</strong></p>
-                            <ul>
-                                <li>Hospital equipment tracking and location management system</li>
-                                <li>Clean Architecture with Domain-Driven Design (4 layers)</li>
-                                <li>29 architectural patterns implemented (Repository, Specification, Unit of Work, etc.)</li>
-                                <li>Multi-database support (SQLite, MySQL/MariaDB, SQL Server, Oracle, DB2)</li>
-                                <li>JWT authentication with refresh tokens + Role-Based Access Control</li>
-                                <li>Cross-platform UI: React (Web) + Uno Platform (6 platforms)</li>
-                                <li>115+ comprehensive tests (Unit + Integration + E2E with Playwright)</li>
-                                <li>Complete technical documentation (30+ detailed docs)</li>
-                                <li>Background jobs with Hangfire + Real-time notifications with SignalR</li>
-                            </ul>
-                            <div class="tech-stack">.NET 9, C# 13, Clean Architecture, DDD, CQRS, MediatR, Multi-DB, JWT, RBAC, Entity Framework Core 9, Minimal APIs, Swagger, AutoMapper, FluentValidation, Hangfire, SignalR, Uno Platform, React, TypeScript, XAML, Android, iOS, WebAssembly, Windows, macOS, Linux, Vitest, Playwright, xUnit, Moq</div>
-                        </div>
-
-                        <div class="project-box">
-                            <h3>📄 ScanBatch OCR - Document Processing System</h3>
-                            <p><strong>Batch scanning with OCR and barcode recognition</strong></p>
-                            <ul>
-                                <li>Abbyy SDK integration for high-quality OCR</li>
-                                <li>Barcode recognition library for automated processing</li>
-                                <li>TWAIN scanner driver support for hardware integration</li>
-                                <li>Windows Service daemon for background processing</li>
-                                <li>In production across 40+ hospitals</li>
-                            </ul>
-                            <div class="tech-stack">WPF, C#, Abbyy OCR, TWAIN, WIA, Windows Services</div>
-                        </div>
-
-                        <div class="project-box">
-                            <h3>🔄 DB Transfer Client - Database Migration Tool</h3>
-                            <p><strong>Cross-database data transfer utility</strong></p>
-                            <ul>
-                                <li>Transfer data between different database engines</li>
-                                <li>Support for SQL Server, Oracle, MySQL, DB2</li>
-                                <li>ETL processes and data transformation</li>
-                            </ul>
-                            <div class="tech-stack">.NET, C#, Multi-DB, ETL</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="project-box">
-                            <h3>🏥 BD RFID System - Healthcare RFID Management</h3>
-                            <p><strong>Full-stack enterprise platform for hospital sample tracking</strong></p>
-                            <ul>
-                                <li>Tag Manage: RFID tag management interface</li>
-                                <li>Tag Backend: REST API with multi-database support</li>
-                                <li>SSTSDaemon: Background service for sample tracking</li>
-                                <li>Tag Shipping: PHP/Laravel shipping module</li>
-                                <li>Clean Architecture with Domain-Driven Design</li>
-                                <li>Real-time dashboard with WebSockets (Stomp.js)</li>
-                                <li>JWT authentication & session management</li>
-                                <li>WinUI 3 desktop application</li>
-                                <li>RFID reader integration (CAEN, Impinj)</li>
-                                <li>Distributed caching & high availability</li>
-                                <li>In production across 40+ hospitals</li>
-                            </ul>
-                            <div class="tech-stack">Spring Boot, Thymeleaf, Angular, TypeScript, .NET, C#, PHP, Laravel, Node.js, Express, Oracle, SQL Server, IBM DB2, MySQL, WebSockets, RFID, DDD, REST API, JWT, Swagger</div>
-                        </div>
-
-                        <div class="project-box">
-                            <h3>🧩 BD Components - Cross-Platform Component Library</h3>
-                            <p><strong>Reusable UI components with Uno Platform</strong></p>
-                            <ul>
-                                <li>Single codebase: Android, iOS, Web, Windows, macOS, Linux</li>
-                                <li>XAML-based declarative UI</li>
-                                <li>Custom controls library for consistent design</li>
-                            </ul>
-                            <div class="tech-stack">Uno Platform, .NET, XAML, Android, iOS, WebAssembly, Windows, macOS, Linux</div>
-                        </div>
-
-                        <div class="project-box">
-                            <h3>🏥 BD WiderLab System - Phlebotomy Room Management</h3>
-                            <p><strong>Integral management of extraction rooms with HL7 messaging broker</strong></p>
-                            <ul>
-                                <li>End-to-end workflow for phlebotomy room operations</li>
-                                <li>HL7 messaging broker for interoperability with hospital systems</li>
-                                <li>Integration with diagnostic devices</li>
-                                <li>In production across 40+ hospitals</li>
-                            </ul>
-                            <div class="tech-stack">Java, Eclipse, HL7</div>
-                        </div>
-                    </div>
+            <div class="job avoid-break">
+                <div class="job-header">
+                    <div><span class="company">Spanish Ministry of Foreign Affairs</span> &mdash; <span class="job-title">Software Developer | Diplomatic Passports Management</span></div>
+                    <div class="job-date">1998</div>
                 </div>
-            </section>
+                <p>Design and development of application to manage diplomatic passports</p>
+                <p class="tech"><strong>Technologies:</strong> 4GL, CA Ingres</p>
+            </div>
+        </section>
 
-            <section>
-                <h2>LEARNING & EXPERIMENTAL PROJECTS</h2>
-                <div class="two-col">
-                    <div class="project-box">
-                        <h3>🤖 Azure AI Samples & Training</h3>
-                        <p><strong>Microsoft official AI samples and courses</strong></p>
-                        <ul>
-                            <li>Microsoft official ai-samples repository (40+ examples)</li>
-                            <li>Semantic Kernel tutorials: Hello SK, Chat History, Plugins, Logging</li>
-                            <li>Quickstarts: Text Summary, Chat App, Function Calling</li>
-                            <li>Local models: Phi, LLaMA examples</li>
-                            <li>AI courses 2024: Prompt Engineering, AI Development</li>
-                        </ul>
-                        <div class="tech-stack">C#, Azure OpenAI, Semantic Kernel, Microsoft.Extensions.AI, LLM Evaluation, OpenAI API</div>
-                    </div>
+        <section>
+            <h2>Complete Technology Stack</h2>
+            <dl class="rows">
+                <dt>Backend / Languages</dt><dd>.NET 9 / C# 13, Java 21, Spring Boot 3.x, ASP.NET Core 9, Node.js / Express, Python / Django, PHP / Laravel, Erlang / Haskell</dd>
+                <dt>Frontend</dt><dd>React, Next.js, Angular, TypeScript, Blazor WebAssembly, WPF / WinForms, Uno Platform / WinUI, HTML5 / CSS3, Tailwind / Bootstrap, Vue.js</dd>
+                <dt>Databases</dt><dd>SQL Server, MySQL / MariaDB, PostgreSQL, Oracle, IBM DB2, SQLite, MongoDB, Redis, Cassandra, InterSystems Caché, Informix Dynamic Server, CA Ingres</dd>
+                <dt>Cloud &amp; DevOps</dt><dd>Azure / AWS, Azure DevOps, Docker, Kubernetes, Terraform, Ansible, Git / GitHub, GitHub Actions, Jenkins, Subversion / CVS, CI/CD Pipelines</dd>
+                <dt>Testing</dt><dd>JUnit / Mockito, xUnit / nUnit / Moq, Selenium, Playwright, Jest / Vitest, Jasmine / Karma, TDD / BDD</dd>
+                <dt>Spring Ecosystem</dt><dd>Spring Data JPA, Spring Security + OAuth2, Spring MVC / WebFlux, Spring AOP, Spring Validation, Spring Boot DevTools, Thymeleaf + Security Extensions, Flyway, Spring Cloud</dd>
+                <dt>Java Ecosystem</dt><dd>Hibernate / JPA / Criteria API, Maven / Gradle, Apache CXF / Jersey, HikariCP</dd>
+                <dt>.NET Ecosystem</dt><dd>EF Core / Dapper / LINQ, Minimal APIs, Swagger / OpenAPI, MediatR, NLog / Serilog, AutoMapper, Polly.NET, SignalR, Hangfire, FluentValidation, MailKit, QuestPDF</dd>
+                <dt>Architecture</dt><dd>Clean Architecture, DDD, CQRS, Microservices, Event-Driven, SOA</dd>
+                <dt>Methodologies</dt><dd>Scrum / Kanban, XP, TDD / BDD, SOLID Principles, Clean Code, Design Patterns</dd>
+                <dt>Quality &amp; Security</dt><dd>Fortify OnDemand (SAST), SonarQube, OWASP Top 10, HIPAA / GDPR, Penetration Testing, Code Coverage Analysis</dd>
+                <dt>Mobile Development</dt><dd>Kotlin, Android Studio</dd>
+                <dt>Historical Languages</dt><dd>ABAP IV (SAP), RPG (AS/400), 4GL (Ingres), COBOL, Pascal, C++</dd>
+                <dt>Enterprise Systems</dt><dd>SAP R/3 (FI, CO, MM), ABAP IV Programming, Business Analysis, AS/400 Systems, IBM AIX</dd>
+                <dt>Big Data &amp; Analytics</dt><dd>IBM Cognos, Talend ETL, Elasticsearch, Prometheus, Grafana</dd>
+                <dt>Microservices &amp; Messaging</dt><dd>Apache Kafka, RabbitMQ, Spring Cloud (Eureka, Hystrix), Event-Driven Architecture</dd>
+                <dt>Specialized Technologies</dt><dd>Blockchain &amp; Web3 (Solidity, Ethereum), Game Development (Unity 3D, C#), IoT (Arduino, Raspberry Pi), Computer Vision (Infaimon CVB), Document Recognition &amp; Processing (Abbyy Technologies), CMS Development (WordPress, Joomla)</dd>
+                <dt>Application Servers</dt><dd>Apache Tomcat, Microsoft IIS, Oracle WebLogic, WildFly, IBM WebSphere</dd>
+                <dt>Project Management</dt><dd>Jira, Confluence</dd>
+                <dt>AI Tools</dt><dd>Cursor, Claude Code, Azure OpenAI Services, Semantic Kernel, NotebookLM</dd>
+                <dt>Development Tools</dt><dd>Visual Studio Professional, Visual Studio Code, Cursor, Eclipse, IBM Rational Suite, Postman, Insomnia</dd>
+            </dl>
+        </section>
 
-                    <div class="project-box">
-                        <h3>☁️ Cloud Architecture</h3>
-                        <p><strong>Azure + AWS deployment, DDD, TDD, IA integration</strong></p>
-                        <ul>
-                            <li>Azure deployment with .NET 8</li>
-                            <li>Azure Functions serverless</li>
-                            <li>AWS deployment with Spring Boot</li>
-                            <li>Cloud architecture patterns and best practices</li>
-                        </ul>
-                        <div class="tech-stack">Azure, AWS, .NET 8, Spring Boot, DDD, TDD, Azure Functions, AWS Elastic Beanstalk</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>☁️ Cloud Functions</h3>
-                        <p><strong>Serverless Computing</strong></p>
-                        <ul>
-                            <li>Azure Functions development</li>
-                            <li>AWS Lambda implementation</li>
-                            <li>Serverless architecture patterns</li>
-                        </ul>
-                        <div class="tech-stack">.NET 9, Azure Functions, AWS Lambda, Serverless</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>☁️ Microservices with Kubernetes & Azure</h3>
-                        <p><strong>Real deployed microservices architecture</strong></p>
-                        <ul>
-                            <li>3 microservices deployed to Azure Kubernetes Service</li>
-                            <li>Services: Gateway, Libreria (MongoDB), Seguridad (SQL Server)</li>
-                            <li>Docker images published to Docker Hub</li>
-                            <li>Kubernetes manifests (deploy.yml, service.yml)</li>
-                            <li>JWT authentication and load balancing</li>
-                            <li>GitHub: github.com/rsvidal/microservices-example1</li>
-                        </ul>
-                        <div class="tech-stack">Kubernetes, Azure AKS, Docker, .NET Core, MongoDB, SQL Server, JWT</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>⚛️ React Full Stack</h3>
-                        <p><strong>Complete React + Node.js + MongoDB</strong></p>
-                        <ul>
-                            <li>Full-stack web application development</li>
-                            <li>State management with Redux</li>
-                            <li>TypeScript integration</li>
-                        </ul>
-                        <div class="tech-stack">React, TypeScript, Node.js, Express, MongoDB, Redux</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>☁️ Microservices Netflix</h3>
-                        <p><strong>Spring Cloud Microservices implementation</strong></p>
-                        <ul>
-                            <li>Netflix stack implementation</li>
-                            <li>Service discovery with Eureka</li>
-                            <li>Circuit breaker pattern with Hystrix</li>
-                        </ul>
-                        <div class="tech-stack">Spring Boot, Eureka, Hystrix, Docker, Kubernetes</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>📱 Android Development with Kotlin</h3>
-                        <p><strong>Native Android app development course</strong></p>
-                        <ul>
-                            <li>Complete Kotlin course with Android app structure</li>
-                            <li>Firebase authentication with Google OAuth</li>
-                            <li>Android UI/UX with ConstraintLayout</li>
-                            <li>Testing with JUnit and Espresso</li>
-                        </ul>
-                        <div class="tech-stack">Kotlin, Android Studio, Gradle, Firebase Auth, JUnit, Espresso</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>🔌 IoT & Embedded Systems Suite</h3>
-                        <p><strong>Arduino, Ethernet Shield, Bluetooth, Web Services, Mobile Integration</strong></p>
-                        <ul>
-                            <li>IoT system with Arduino and Ethernet Shield</li>
-                            <li>Web Services for remote communication</li>
-                            <li>CoAP and REST protocols for IoT</li>
-                            <li>Bluetooth integration for mobile devices</li>
-                            <li>Xamarin mobile app for remote control</li>
-                        </ul>
-                        <div class="tech-stack">Arduino, Netduino, C++, Ethernet Shield, Bluetooth HC-05, CoAP Protocol, aREST API, Xamarin, Android, Web Services</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>🚀 Blockchain/Web3 Development Suite</h3>
-                        <p><strong>Solidity, Web3.js, Truffle, Ethereum, Smart Contracts</strong></p>
-                        <ul>
-                            <li>Token ICO (Deka Token) with complete functionality</li>
-                            <li>Smart contracts for token management</li>
-                            <li>Ethereum testnet integration</li>
-                            <li>Web3 frontend for contract interaction</li>
-                            <li>Wallet integration system</li>
-                        </ul>
-                        <div class="tech-stack">Solidity, Web3.js, Truffle, Ethereum, Smart Contracts, JavaScript</div>
-                    </div>
-
-                    <div class="project-box">
-                        <h3>🎮 Unity Game Development</h3>
-                        <p><strong>2D game development with Unity 2020.3</strong></p>
-                        <ul>
-                            <li>Complete 2D game with Unity</li>
-                            <li>Interactive text adventure game</li>
-                            <li>Dialogue and narrative system</li>
-                            <li>Game mechanics implementation</li>
-                            <li>Custom assets and sprites</li>
-                        </ul>
-                        <div class="tech-stack">Unity 2020.3, C#, Game Development, 2D Graphics</div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>SOFT SKILLS</h2>
-                <div class="three-col">
+        <section>
+            <h2>Methodologies &amp; Software Engineering Principles</h2>
+            <div class="cols-3">
+                <div class="avoid-break">
+                    <h4>Agile Methodologies</h4>
                     <ul>
-                        <li>Team Leadership & Mentoring Junior Developers</li>
-                        <li>Code Review & Quality Assurance</li>
-                        <li>Technical Documentation</li>
-                    </ul>
-                    <ul>
-                        <li>Stakeholder Communication</li>
-                        <li>Problem Solving & Analytical Thinking</li>
-                        <li>Agile/Scrum Ceremonies</li>
-                    </ul>
-                    <ul>
-                        <li>Project Management</li>
-                        <li>Business Requirements Analysis</li>
-                        <li>Continuous Learning & Adaptability</li>
+                        <li>Scrum (Sprint Planning, Daily Standups, Retrospectives)</li>
+                        <li>Kanban (Continuous Flow, WIP limits)</li>
+                        <li>XP (Extreme Programming)</li>
+                        <li>Lean Software Development</li>
                     </ul>
                 </div>
-            </section>
-
-            <section>
-                <h2>TRAINING & CONTINUOUS EDUCATION (80+ Courses since 1998)</h2>
-                <div class="training-compact">
-                    <div class="training-year">📅 2024-2025 (AI-Assisted Development Era)</div>
-                    <p><strong>Formación Integral en Arquitectura Cloud, DDD, TDD e IA</strong> • <strong>Desarrollo con IA</strong> • <strong>Introducción a la IA y Prompt Engineering</strong> • <strong>Claude Code CLI</strong> • <strong>Gemini CLI</strong> • <strong>NotebookLM</strong> • <strong>.NET 9 & C# 13</strong> • <strong>Blazor Development</strong> • <strong>Dapper ORM</strong> • <strong>DDD Microsoft Microservices</strong> • <strong>Sistema de ventas real</strong> (C# + Angular + Xamarin) • <strong>React & TypeScript</strong> • <strong>Uno Platform</strong> • <strong>Azure DevOps Complete</strong> • <strong>Jira Advanced</strong></p>
-
-                    <div class="training-year">📅 2023</div>
-                    <p><strong>Ionic (app) y Net Core (backend)</strong> (Udemy) • <strong>Go / Golang desde las bases</strong> (Udemy) • <strong>Big Data Fundamentals</strong> (Udemy) • <strong>Dart & Flutter</strong> (Udemy) • <strong>Vue.js avanzado</strong> (Udemy)</p>
-
-                    <div class="training-year">📅 2022</div>
-                    <p><strong>React + Redux</strong> (Udemy, Jul 2022) • <strong>.NET MAUI con Visual Studio 2022</strong> (Udemy, Jul 2022) • <strong>DevOps, Docker, Kubernetes, microservices y Azure .NET 6</strong> (Udemy, Jul 2022) • <strong>Azure Devops</strong> (Udemy, Jun 2022) • <strong>AWS</strong> (Udemy, Jun 2022)</p>
-
-                    <div class="training-year">📅 2021</div>
-                    <p><strong>Go / Golang</strong> (Udemy, Ago 2021) • <strong>TDD - Test driven development con Java y JUnit</strong> (Udemy, Dic 2021) • <strong>Patrones de Diseño y principios SOLID</strong> (Udemy, May 2021) • <strong>Refactorizar código Java</strong> (Udemy, Mar 2021)</p>
-
-                    <div class="training-year">📅 2020</div>
-                    <p><strong>DevOps. Las artes marciales del software</strong> (Udemy, Jun 2020)</p>
-
-                    <div class="training-year">📅 2019</div>
-                    <p><strong>Java8. (Funcional y lambda)</strong> (Udemy, Sep 2019) • <strong>Microservicios con Spring Boot / Netflix Eureka</strong> (Udemy, Sep 2019) • <strong>Programación Python para Machine Learning</strong> (Udemy, Sep 2019) • <strong>Curso de Python 3</strong> (Udemy, Ago 2019) • <strong>Desarrollo de videojuegos con Unity</strong> (Udemy, Jun 2019) • <strong>Mi primer videojuego con Unity</strong> (Udemy, Jun 2019) • <strong>API RestFul con Laravel</strong> (Udemy, May 2019) • <strong>Dominando Laravel. De principiante a expert</strong> (Udemy, May 2019) • <strong>Android con Kotlin + Firebase + Google</strong> (Udemy, Abr 2019) • <strong>Machine Learning</strong> (Udemy, Mar 2019) • <strong>Curso de Django</strong> (Udemy, Ene 2019)</p>
-
-                    <div class="training-year">📅 2018</div>
-                    <p><strong>Implementación de soluciones en Microsoft Azure</strong> (Udemy, Nov 2018) • <strong>Python + Django</strong> (Udemy, Jul 2018) • <strong>Desarrollo de dApps en la blockchain de Ethereum</strong> (Udemy, Jun 2018) • <strong>Introducción a blockchain. criptomonedas y Ethereum</strong> (Udemy, Jun 2018) • <strong>Xamarin Forms y Azure</strong> (Udemy, Mar 2018) • <strong>Angular 6 avanzado</strong> (Udemy, Ene 2018) • <strong>Curso avanzado de Docker</strong> (Udemy, Ene 2018) • <strong>Spring Framework 5</strong> (Udemy, Ene 2018) • <strong>Persistencia de datos con Java. Hibernate + Spring JPA</strong> (Udemy, Ene 2018)</p>
-
-                    <div class="training-year">📅 2017</div>
-                    <p><strong>ASP.NET Core MVC</strong> (Udemy, Nov 2017) • <strong>Curso de iniciación a Haskell</strong> (Udemy, Sep 2017) • <strong>Xamarin. Build Android and IOS Apps</strong> (Udemy, May 2017) • <strong>Servicios con WCF</strong> (Udemy, Apr 2017)</p>
-
-                    <div class="training-year">📅 2016</div>
-                    <p><strong>Git + GitHub</strong> (Udemy, Mar 2016) • <strong>Desarrollo web Javascript, Angular, Node y MongoDB</strong> (Udemy, Apr 2016)</p>
-
-                    <div class="training-year">📅 2015</div>
-                    <p><strong>SEO para WordPress</strong> (Udemy, Feb 2015) • <strong>Aprende a triunfar con SEO</strong> (Udemy, Feb 2015)</p>
-
-                    <div class="training-year">📅 2014</div>
-                    <p><strong>Community Manager, Redes sociales</strong> (HP Formación, May 2014)</p>
-
-                    <div class="training-year">📅 2013</div>
-                    <p><strong>Marketing 2.0</strong> (Grupo Fides21, Mar 2013) • <strong>Team Building. Gestión de Liderazgo</strong> (Fides21, Dec 2013)</p>
-
-                    <div class="training-year">📅 2006</div>
-                    <p><strong>IBM Rational V7. Clearcase, SOA, Business Modeler</strong> (Sep 2006) • <strong>IBM DB2</strong> (Sep 2006) • <strong>Infaimon Sherlock. Vision Artificial</strong> (May 2006) • <strong>Infaimon CVB. Vision Artificial</strong> (May 2006)</p>
-
-                    <div class="training-year">📅 2005</div>
-                    <p><strong>Gestión De Proyectos</strong> (Oesia, 160h, Jan 2005)</p>
-
-                    <div class="training-year">📅 2004</div>
-                    <p><strong>Programación Visual C++</strong> (Oesia, 40h, May 2004)</p>
-
-                    <div class="training-year">📅 2003</div>
-                    <p><strong>Administración SQL Server</strong> (Sunion Gesfor, 40h, Nov 2003) • <strong>Programación Java</strong> (Oesia, 40h, Oct 2003) • <strong>Optimización Oracle 8i</strong> (MR Informática, 80h, Jun 2003) • <strong>PL/SQL</strong> (Dayfisa, 40h, Apr 2003) • <strong>Xml</strong> (IBM Learning, 30h, May 2003) • <strong>Administración Oracle</strong> (Dayfisa, 40h, May 2003) • <strong>Macromedia Flash</strong> (IBM Learning, 30h, Mar 2003) • <strong>Ingeniería De Software</strong> (Sunion Gesfor, Jan-Mar 2003)</p>
-
-                    <div class="training-year">📅 2002</div>
-                    <p><strong>SAP MM. Verificación De Facturas</strong> (Sap España, 25h, Oct 2002) • <strong>Programación Avanzada Java</strong> (IBM Learning, 25h, Apr 2002) • <strong>Administración AIX</strong> (IBM Learning, 30h, Apr 2002) • <strong>Programación Avanzada RPG IV (AS/400)</strong> (IBM Learning, 50h, Feb 2002)</p>
-
-                    <div class="training-year">📅 2001</div>
-                    <p><strong>Programación Java</strong> (Gesein, 100h, Feb-Abr 2001)</p>
-
-                    <div class="training-year">📅 1999</div>
-                    <p><strong>Cobol – CICS – DB2</strong> (Cap Gemini, 160h, 1999)</p>
-
-                    <div class="training-year">📅 1998</div>
-                    <p><strong>Técnico En Sistemas Unix / Oracle</strong> (Sunion Gesfor, 350h, 1998) • <strong>Microinformática</strong> (Academia Teide, 300h, 1998)</p>
-
-                    <br>
-                    <p class="comment"># Total courses completed: 80+ | Platforms: Udemy, IBM Learning, Oesia, Cap Gemini, Academia Teide, HP Formación, Fides21</p>
-                    <p class="comment"># Active learner since 1998 (25+ years of continuous training)</p>
+                <div class="avoid-break">
+                    <h4>Architecture Patterns</h4>
+                    <ul>
+                        <li>Clean Architecture</li>
+                        <li>Domain-Driven Design (DDD)</li>
+                        <li>CQRS (Command Query Responsibility Segregation)</li>
+                        <li>Repository Pattern</li>
+                        <li>Microservices Architecture</li>
+                        <li>Event-Driven Architecture</li>
+                        <li>SOA (Service Oriented Architecture)</li>
+                    </ul>
                 </div>
-            </section>
+                <div class="avoid-break">
+                    <h4>SOLID Principles</h4>
+                    <ul>
+                        <li>Single Responsibility Principle</li>
+                        <li>Open/Closed Principle</li>
+                        <li>Liskov Substitution Principle</li>
+                        <li>Interface Segregation Principle</li>
+                        <li>Dependency Inversion Principle</li>
+                    </ul>
+                </div>
+                <div class="avoid-break">
+                    <h4>Testing Methodologies</h4>
+                    <ul>
+                        <li>TDD (Test-Driven Development)</li>
+                        <li>BDD (Behavior-Driven Development)</li>
+                        <li>ATDD (Acceptance Test-Driven Development)</li>
+                        <li>Unit Testing / Integration Testing</li>
+                    </ul>
+                </div>
+                <div class="avoid-break">
+                    <h4>Design Patterns (GoF)</h4>
+                    <ul>
+                        <li>Creational: Factory, Builder, Singleton</li>
+                        <li>Structural: Adapter, Decorator, Facade</li>
+                        <li>Behavioral: Observer, Strategy, Command</li>
+                    </ul>
+                </div>
+                <div class="avoid-break">
+                    <h4>Code Quality</h4>
+                    <ul>
+                        <li>Clean Code Principles</li>
+                        <li>Code Review Practices</li>
+                        <li>Refactoring Techniques</li>
+                        <li>Technical Debt Management</li>
+                        <li>Documentation Standards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <section>
-                <h2>ADDITIONAL INFORMATION</h2>
+        <section>
+            <h2>Featured Professional Projects (Healthcare)</h2>
+
+            <div class="project">
+                <h3>BD Healthcare Platform &mdash; BDWiderlab &middot; BDSupport &middot; BDForms</h3>
+                <p class="sub">Modular monolith rebuilding BD's hospital software on .NET 9, since 2025</p>
                 <ul>
-                    <li><strong>Portfolio:</strong> <a href="https://rsvidal.github.io">https://rsvidal.github.io</a> - Terminal-style interactive portfolio</li>
-                    <li><strong>Philosophy:</strong> 25+ years applying software engineering best practices. Expert in modern development methodologies and architectural patterns. Strong advocate for clean code and quality engineering. Pioneer in AI-assisted development (Cursor, Claude Code, Gemini CLI, GitHub Copilot)</li>
-                    <li><strong>Healthcare Domain:</strong> 19+ years specialized experience including HL7/HL7-FHIR protocols, ASTM standards, RFID integration, real-time data processing for critical systems</li>
-                    <li><strong>Work Arrangements:</strong> Available for new opportunities and collaborations. Open to remote/hybrid work arrangements in EU</li>
+                    <li>Three products on one shared framework: medical backend for lab requests (BDWiderlab), support &amp; equipment inventory (BDSupport), and digital lab request forms with PDF417 barcodes replacing OMR paper forms (BDForms)</li>
+                    <li>Clean Architecture + DDD, CQRS with MediatR, Specifications, Outbox pattern, optimistic concurrency; REST endpoints as Minimal APIs documented with Swagger/OpenAPI</li>
+                    <li>Security: JWT with refresh tokens + MFA (TOTP), RBAC with row-level authorization and token revocation, AES-GCM column encryption, signed audit trail</li>
+                    <li>Five database providers from one codebase (SQLite, SQL Server, MySQL, Oracle, DB2), with per-provider EF Core migrations</li>
+                    <li>Web: Next.js 15 / React 19 / TypeScript with a shared component library; BDForms on Uno Platform (WinUI 3, WebAssembly, Android) with TWAIN scanning and QuestPDF printing</li>
+                    <li>~11,500 unit/integration tests (xUnit, Moq) + Vitest frontend tests + Playwright E2E; 83 ADRs; Azure DevOps CI/CD</li>
+                    <li>Built with an AI-assisted workflow (Claude Code agent teams guided by project rules and ADRs)</li>
                 </ul>
-            </section>
-    </div>
+                <p class="tech"><strong>Tech stack:</strong> .NET 9, C# 12, EF Core 9, Minimal APIs, Swagger/OpenAPI, MediatR, FluentValidation, Serilog, Polly, QuestPDF, Next.js 15, React 19, TypeScript, Tailwind, Uno Platform, SQL Server, Oracle, DB2, MySQL, SQLite, xUnit, Moq, Vitest, Playwright, Azure DevOps</p>
+            </div>
 
-    <script>
-        window.onload = function() {
-            console.log('CV loaded. To save as PDF: Ctrl+P / Cmd+P and select "Save as PDF"');
-            console.log('For best results: Set margins to minimum, enable background graphics');
-        };
-    </script>
+            <div class="project">
+                <h3>BD RFID System &mdash; Healthcare RFID Management</h3>
+                <p class="sub">Full-stack enterprise platform for hospital sample tracking</p>
+                <ul>
+                    <li>Tag Manage: RFID tag management interface</li>
+                    <li>Tag Backend: REST API with multi-database support</li>
+                    <li>SSTSDaemon: Background service for sample tracking</li>
+                    <li>Tag Shipping: PHP/Laravel shipping module</li>
+                    <li>Clean Architecture with Domain-Driven Design</li>
+                    <li>Real-time dashboard with WebSockets (Stomp.js)</li>
+                    <li>JWT authentication &amp; session management</li>
+                    <li>WinUI 3 desktop application</li>
+                    <li>RFID reader integration (CAEN, Impinj)</li>
+                    <li>Distributed caching &amp; high availability</li>
+                    <li>In production across 40+ hospitals</li>
+                </ul>
+                <p class="tech"><strong>Tech stack:</strong> Spring Boot, Thymeleaf, Angular, TypeScript, .NET, C#, PHP, Laravel, Node.js, Express, Oracle, SQL Server, IBM DB2, MySQL, WebSockets, RFID, DDD, REST API, JWT, Swagger</p>
+            </div>
+
+            <div class="project">
+                <h3>BD WiderLab Legacy System &mdash; Phlebotomy Room Management</h3>
+                <p class="sub">Integral management of extraction rooms with HL7 messaging broker</p>
+                <ul>
+                    <li>End-to-end workflow for phlebotomy room operations</li>
+                    <li>HL7 messaging broker for interoperability with hospital systems</li>
+                    <li>Integration with diagnostic devices</li>
+                    <li>In production across 40+ hospitals</li>
+                </ul>
+                <p class="tech"><strong>Tech stack:</strong> Java, Eclipse, HL7</p>
+            </div>
+
+            <div class="project">
+                <h3>ScanBatch OCR &mdash; Document Processing System</h3>
+                <p class="sub">Batch scanning with OCR and barcode recognition</p>
+                <ul>
+                    <li>Abbyy SDK integration for high-quality OCR</li>
+                    <li>Barcode recognition library for automated processing</li>
+                    <li>TWAIN scanner driver support for hardware integration</li>
+                    <li>Windows Service daemon for background processing</li>
+                    <li>In production across 40+ hospitals</li>
+                </ul>
+                <p class="tech"><strong>Tech stack:</strong> WPF, C#, Abbyy OCR, TWAIN, WIA, Windows Services</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Learning &amp; Experimental Projects</h2>
+            <div class="cols-2">
+                <div class="project">
+                    <h3>Azure AI Samples &amp; Training</h3>
+                    <p class="sub">Microsoft official AI samples and courses</p>
+                    <ul>
+                        <li>Microsoft official ai-samples repository (40+ examples)</li>
+                        <li>Semantic Kernel tutorials (Build 2024): Hello SK, Chat History, Plugins, Logging</li>
+                        <li>Quickstarts: Text Summary, Chat App, Function Calling</li>
+                        <li>Local models: Phi, LLaMA examples</li>
+                        <li>AI courses 2024: Prompt Engineering, AI Development, Claude Code integration</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> C#, Azure OpenAI, Semantic Kernel, Microsoft.Extensions.AI, LLM Evaluation, OpenAI API</p>
+                </div>
+
+                <div class="project">
+                    <h3>Microservices with Kubernetes &amp; Azure</h3>
+                    <p class="sub">Real deployed microservices architecture</p>
+                    <ul>
+                        <li>3 microservices deployed to Azure Kubernetes Service</li>
+                        <li>Services: Gateway, Library (MongoDB), Security (SQL Server)</li>
+                        <li>Docker images published to Docker Hub</li>
+                        <li>Kubernetes manifests (deploy.yml, service.yml)</li>
+                        <li>JWT authentication and load balancing</li>
+                        <li>GitHub: <a href="https://github.com/rsvidal/microservices-example1">github.com/rsvidal/microservices-example1</a></li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Kubernetes, Azure AKS, Docker, .NET Core, MongoDB, SQL Server, JWT</p>
+                </div>
+
+                <div class="project">
+                    <h3>Cloud Architecture</h3>
+                    <p class="sub">Azure + AWS deployment, DDD, TDD, IA integration</p>
+                    <ul>
+                        <li>Azure deployment with .NET 8</li>
+                        <li>Azure Functions serverless</li>
+                        <li>AWS deployment with Spring Boot</li>
+                        <li>Cloud architecture patterns and best practices</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Azure, AWS, .NET 8, Spring Boot, DDD, TDD, Azure Functions, AWS Elastic Beanstalk</p>
+                </div>
+
+                <div class="project">
+                    <h3>Cloud Functions</h3>
+                    <p class="sub">Serverless Computing</p>
+                    <ul>
+                        <li>Azure Functions development</li>
+                        <li>AWS Lambda implementation</li>
+                        <li>Serverless architecture patterns</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> .NET 9, Azure Functions, AWS Lambda, Serverless</p>
+                </div>
+
+                <div class="project">
+                    <h3>React Full Stack</h3>
+                    <p class="sub">Complete React + Node.js + MongoDB</p>
+                    <ul>
+                        <li>Full-stack web application development</li>
+                        <li>State management with Redux</li>
+                        <li>TypeScript integration</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> React, TypeScript, Node.js, Express, MongoDB, Redux</p>
+                </div>
+
+                <div class="project">
+                    <h3>Microservices Netflix</h3>
+                    <p class="sub">Spring Cloud Microservices implementation</p>
+                    <ul>
+                        <li>Netflix stack implementation</li>
+                        <li>Service discovery with Eureka</li>
+                        <li>Circuit breaker pattern with Hystrix</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Spring Boot, Eureka, Hystrix, Docker, Kubernetes</p>
+                </div>
+
+                <div class="project">
+                    <h3>Android Development with Kotlin</h3>
+                    <p class="sub">Native Android app development course</p>
+                    <ul>
+                        <li>Complete Kotlin course with Android app structure</li>
+                        <li>Firebase authentication with Google OAuth</li>
+                        <li>Android UI/UX with ConstraintLayout</li>
+                        <li>Testing with JUnit and Espresso</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Kotlin, Android Studio, Gradle, Firebase Auth, JUnit, Espresso</p>
+                </div>
+
+                <div class="project">
+                    <h3>IoT &amp; Embedded Systems Suite</h3>
+                    <p class="sub">Arduino, Ethernet Shield, Bluetooth, Web Services, Mobile Integration</p>
+                    <ul>
+                        <li>IoT system with Arduino and Ethernet Shield</li>
+                        <li>Web Services for remote communication</li>
+                        <li>CoAP and REST protocols for IoT</li>
+                        <li>Bluetooth integration for mobile devices</li>
+                        <li>Xamarin mobile app for remote control</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Arduino, Netduino, C++, Ethernet Shield, Bluetooth HC-05, CoAP Protocol, aREST API, Xamarin, Android, Web Services</p>
+                </div>
+
+                <div class="project">
+                    <h3>Blockchain/Web3 Development Suite</h3>
+                    <p class="sub">Solidity, Web3.js, Truffle, Ethereum, Smart Contracts</p>
+                    <ul>
+                        <li>Token ICO (Deka Token) with complete functionality</li>
+                        <li>Smart contracts for token management</li>
+                        <li>Ethereum testnet integration</li>
+                        <li>Web3 frontend for contract interaction</li>
+                        <li>Wallet integration system</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Solidity, Web3.js, Truffle, Ethereum, Smart Contracts, JavaScript</p>
+                </div>
+
+                <div class="project">
+                    <h3>Unity Game Development</h3>
+                    <p class="sub">2D game development with Unity 2020.3</p>
+                    <ul>
+                        <li>Complete 2D game with Unity</li>
+                        <li>Interactive text adventure game</li>
+                        <li>Dialogue and narrative system</li>
+                        <li>Game mechanics implementation</li>
+                        <li>Custom assets and sprites</li>
+                    </ul>
+                    <p class="tech"><strong>Tech stack:</strong> Unity 2020.3, C#, Game Development, 2D Graphics</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="avoid-break">
+            <h2>Soft Skills</h2>
+            <div class="cols-3">
+                <ul>
+                    <li>Team Leadership &amp; Mentoring Junior Developers</li>
+                    <li>Code Review &amp; Quality Assurance</li>
+                    <li>Technical Documentation</li>
+                </ul>
+                <ul>
+                    <li>Stakeholder Communication</li>
+                    <li>Problem Solving &amp; Analytical Thinking</li>
+                    <li>Agile/Scrum Ceremonies</li>
+                </ul>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Business Requirements Analysis</li>
+                    <li>Continuous Learning &amp; Adaptability</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Training &amp; Continuous Education (80+ Courses since 1998)</h2>
+            <dl class="rows years">
+                <dt>2024-2025</dt><dd><em>AI-Assisted Development Era:</em> Comprehensive Training in Cloud Architecture, DDD, TDD and AI &middot; AI-Assisted Development &middot; Introduction to AI and Prompt Engineering &middot; Claude Code CLI &middot; NotebookLM &middot; .NET 9 &amp; C# 13 &middot; Blazor Development &middot; Dapper ORM &middot; DDD Microsoft Microservices &middot; Real-World Sales System (C# + Angular + Xamarin) &middot; React &amp; TypeScript &middot; Uno Platform &middot; Azure DevOps Complete &middot; Jira Advanced</dd>
+                <dt>2023</dt><dd>Ionic (App) and .NET Core (Backend) (Udemy) &middot; Go / Golang from the Ground Up (Udemy) &middot; Big Data Fundamentals (Udemy) &middot; Dart &amp; Flutter (Udemy) &middot; Advanced Vue.js (Udemy)</dd>
+                <dt>2022</dt><dd>React + Redux (Udemy, Jul 2022) &middot; .NET MAUI with Visual Studio 2022 (Udemy, Jul 2022) &middot; DevOps, Docker, Kubernetes, Microservices and Azure .NET 6 (Udemy, Jul 2022) &middot; Azure DevOps (Udemy, Jun 2022) &middot; AWS (Udemy, Jun 2022)</dd>
+                <dt>2021</dt><dd>Go / Golang (Udemy, Aug 2021) &middot; TDD - Test-Driven Development with Java and JUnit (Udemy, Dec 2021) &middot; Design Patterns and SOLID Principles (Udemy, May 2021) &middot; Refactoring Java Code (Udemy, Mar 2021)</dd>
+                <dt>2020</dt><dd>DevOps: The Martial Arts of Software (Udemy, Jun 2020)</dd>
+                <dt>2019</dt><dd>Java 8 (Functional Programming and Lambdas) (Udemy, Sep 2019) &middot; Microservices with Spring Boot / Netflix Eureka (Udemy, Sep 2019) &middot; Python Programming for Machine Learning (Udemy, Sep 2019) &middot; Python 3 Course (Udemy, Aug 2019) &middot; Video Game Development with Unity (Udemy, Jun 2019) &middot; My First Video Game with Unity (Udemy, Jun 2019) &middot; RESTful API with Laravel (Udemy, May 2019) &middot; Mastering Laravel: From Beginner to Expert (Udemy, May 2019) &middot; Android with Kotlin + Firebase + Google (Udemy, Apr 2019) &middot; Machine Learning (Udemy, Mar 2019) &middot; Django Course (Udemy, Jan 2019)</dd>
+                <dt>2018</dt><dd>Implementing Solutions on Microsoft Azure (Udemy, Nov 2018) &middot; Python + Django (Udemy, Jul 2018) &middot; dApp Development on the Ethereum Blockchain (Udemy, Jun 2018) &middot; Introduction to Blockchain, Cryptocurrencies and Ethereum (Udemy, Jun 2018) &middot; Xamarin Forms and Azure (Udemy, Mar 2018) &middot; Advanced Angular 6 (Udemy, Jan 2018) &middot; Advanced Docker Course (Udemy, Jan 2018) &middot; Spring Framework 5 (Udemy, Jan 2018) &middot; Java Data Persistence: Hibernate + Spring JPA (Udemy, Jan 2018)</dd>
+                <dt>2017</dt><dd>ASP.NET Core MVC (Udemy, Nov 2017) &middot; Introduction to Haskell (Udemy, Sep 2017) &middot; Xamarin: Build Android and iOS Apps (Udemy, May 2017) &middot; WCF Services (Udemy, Apr 2017)</dd>
+                <dt>2016</dt><dd>Git + GitHub (Udemy, Mar 2016) &middot; Web Development with JavaScript, Angular, Node and MongoDB (Udemy, Apr 2016)</dd>
+                <dt>2015</dt><dd>SEO for WordPress (Udemy, Feb 2015) &middot; Succeed with SEO (Udemy, Feb 2015)</dd>
+                <dt>2014</dt><dd>Community Manager, Social Media (HP Training, May 2014)</dd>
+                <dt>2013</dt><dd>Marketing 2.0 (Grupo Fides21, Mar 2013) &middot; Team Building: Leadership Management (Fides21, Dec 2013)</dd>
+                <dt>2006</dt><dd>IBM Rational V7: ClearCase, SOA, Business Modeler (Sep 2006) &middot; IBM DB2 (Sep 2006) &middot; Infaimon Sherlock: Machine Vision (May 2006) &middot; Infaimon CVB: Machine Vision (May 2006)</dd>
+                <dt>2005</dt><dd>Project Management (Oesia, 160h, Jan 2005)</dd>
+                <dt>2004</dt><dd>Visual C++ Programming (Oesia, 40h, May 2004)</dd>
+                <dt>2003</dt><dd>SQL Server Administration (Sunion Gesfor, 40h, Nov 2003) &middot; Java Programming (Oesia, 40h, Oct 2003) &middot; Oracle 8i Optimization (MR Informática, 80h, Jun 2003) &middot; PL/SQL (Dayfisa, 40h, Apr 2003) &middot; XML (IBM Learning, 30h, May 2003) &middot; Oracle Administration (Dayfisa, 40h, May 2003) &middot; Macromedia Flash (IBM Learning, 30h, Mar 2003) &middot; Software Engineering (Sunion Gesfor, Jan-Mar 2003)</dd>
+                <dt>2002</dt><dd>SAP MM: Invoice Verification (SAP Spain, 25h, Oct 2002) &middot; Advanced Java Programming (IBM Learning, 25h, Apr 2002) &middot; AIX Administration (IBM Learning, 30h, Apr 2002) &middot; Advanced RPG IV Programming (AS/400) (IBM Learning, 50h, Feb 2002)</dd>
+                <dt>2001</dt><dd>Java Programming (Gesein, 100h, Feb-Apr 2001)</dd>
+                <dt>1999</dt><dd>COBOL &ndash; CICS &ndash; DB2 (Cap Gemini, 160h, 1999)</dd>
+                <dt>1998</dt><dd>Unix / Oracle Systems Technician (Sunion Gesfor, 350h, 1998) &middot; Computer Technician (Academia Teide, 300h, 1998)</dd>
+            </dl>
+            <p class="comment" style="margin-top: 6px;">Total courses completed: 80+ | Platforms: Udemy, IBM Learning, Oesia, Cap Gemini, Academia Teide, HP Training, Fides21 &middot; Active learner since 1998 (25+ years of continuous training)</p>
+        </section>
+
+        <section class="avoid-break">
+            <h2>Languages</h2>
+            <dl class="rows">
+                <dt>Spanish</dt><dd>Native</dd>
+                <dt>English</dt><dd>B1</dd>
+            </dl>
+        </section>
+
+        <section class="avoid-break">
+            <h2>Additional Information</h2>
+            <ul>
+                <li><strong>Portfolio:</strong> <a href="https://rsvidal.github.io">https://rsvidal.github.io</a> - Terminal-style interactive portfolio</li>
+                <li><strong>Philosophy:</strong> 25+ years applying software engineering best practices. Expert in modern development methodologies and architectural patterns. Strong advocate for clean code and quality engineering. Pioneer in AI-assisted development (Cursor, Claude Code)</li>
+                <li><strong>Healthcare Domain:</strong> 20+ years specialized experience including HL7/HL7-FHIR protocols, ASTM standards, RFID integration, real-time data processing for critical systems</li>
+                <li><strong>Work Arrangements:</strong> Available for new opportunities and collaborations. Open to remote/hybrid work arrangements in EU</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

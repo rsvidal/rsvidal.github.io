@@ -13,12 +13,12 @@ Portfolio estático moderno con estética de terminal/código para desarrollador
 - **♿ Accesible**: WCAG 2.1 compliant
 - **🎨 CSS Moderno**: Variables CSS, Grid, Flexbox
 - **🧩 JavaScript ES6+**: Sin jQuery, vanilla JS moderno
-- **🤖 Sección AI Tools**: Destacada con Cursor, Claude Code, GitHub Copilot
+- **🤖 Sección AI Tools**: Destacada con Cursor, Claude Code y NotebookLM
 
 ### CV HTML Mejorado
 - **📄 Optimizado para PDF**: Estilos de impresión profesionales
 - **🎨 Diseño moderno**: Colores y tipografía actualizados
-- **📊 Contenido actualizado**: 25+ años de experiencia, 19+ años en healthcare
+- **📊 Contenido actualizado**: 25+ años de experiencia, 20+ años en healthcare
 - **🤖 AI Tools destacados**: Sección especial para herramientas de IA
 - **📱 Responsive**: Se adapta a diferentes tamaños de pantalla
 - **🖨️ Print-friendly**: Configuración optimizada para impresión
@@ -33,7 +33,9 @@ portfolio-terminal/
 ├── js/
 │   └── main.js                  # JavaScript vanilla ES6+
 ├── download/
-│   └── cv_rafael_san_vidal.html # CV HTML optimizado para PDF
+│   ├── cv_rafael_san_vidal.html # CV vigente (HTML fuente del PDF)
+│   ├── cv_rafael_san_vidal.pdf  # CV que descarga la web
+│   └── OLD/                     # Versiones anteriores del CV
 ├── assets/
 │   └── images/                  # Imágenes (opcional)
 └── README.md                    # Este archivo
@@ -41,16 +43,14 @@ portfolio-terminal/
 
 ## 🎯 Tecnologías Destacadas
 
-### AI-Assisted Development (2024-2025)
+### AI-Assisted Development (since 2024)
 - 🤖 **Cursor Pro** - AI-powered code editor con vibe coding
 - 🧠 **Claude Code** - CLI-based AI assistant
-- 🔮 **Gemini CLI** - Google AI code generation
-- 🚀 **GitHub Copilot** - AI pair programming
 - 📚 **NotebookLM** - AI research and documentation
 
 ### Stack Principal
 - **Backend**: .NET 9 / C# 13, Java 21 (Virtual Threads), Spring Boot 3.x
-- **Frontend**: React 18 / TypeScript, Angular, Blazor WebAssembly
+- **Frontend**: React 19 / Next.js 15 / TypeScript, Angular, Blazor WebAssembly
 - **Mobile**: Uno Platform, .NET MAUI, Kotlin Android
 - **Cloud**: Azure DevOps, AWS, Docker, Kubernetes
 - **Databases**: SQL Server, MySQL, Oracle, IBM DB2, PostgreSQL, MongoDB
@@ -125,12 +125,12 @@ php -S localhost:8000
 ## 📝 CV y Documentación
 
 ### CV HTML Mejorado
-- **Ubicación**: `download/cv_rafael_san_vidal.html`
+- **Ubicación**: `download/cv_rafael_san_vidal.html` (y su PDF, `cv_rafael_san_vidal.pdf`)
 - **Características**:
   - ✨ Diseño moderno optimizado para PDF
-  - 🤖 Sección destacada de AI Tools (2024-2025)
+  - 🤖 Sección destacada de AI Tools (since 2024)
   - 📊 Contenido actualizado con 25+ años de experiencia
-  - 🏥 Experiencia especializada en healthcare (19+ años)
+  - 🏥 Experiencia especializada en healthcare (20+ años)
   - 🎨 Estilos de impresión optimizados
   - 📱 Diseño responsive y profesional
 
@@ -170,7 +170,7 @@ php -S localhost:8000
 
 ## 📄 Licencia
 
-© 2025 Rafael San Vidal. Uso personal.
+© 2026 Rafael San Vidal. Uso personal.
 
 ## 🤝 Contacto
 
@@ -178,14 +178,14 @@ php -S localhost:8000
 - 💼 LinkedIn: [linkedin.com/in/rsanvidal](https://www.linkedin.com/in/rsanvidal/)
 - 🌐 GitHub: [github.com/rsvidal](https://github.com/rsvidal)
 
-## 🎨 Mejoras Recientes (2025)
+## 🎨 Mejoras Recientes
 
 ### CV HTML Actualizado
 - ✅ **Contenido sincronizado** con el portfolio web
-- ✅ **Sección AI Tools** destacada (2024-2025)
+- ✅ **Sección AI Tools** destacada (since 2024)
 - ✅ **Diseño moderno** con colores profesionales
 - ✅ **Estilos de impresión** optimizados para PDF
-- ✅ **Experiencia actualizada** (25+ años, 19+ en healthcare)
+- ✅ **Experiencia actualizada** (25+ años, 20+ en healthcare)
 - ✅ **Proyectos destacados** con descripciones detalladas
 - ✅ **Formación completa** (80+ cursos desde 1998)
 
@@ -197,4 +197,4 @@ php -S localhost:8000
 
 ---
 
-**Construido con ❤️ y asistencia de AI** (Cursor Pro, Claude Code, Gemini CLI)
+**Construido con ❤️ y asistencia de AI** (Cursor Pro, Claude Code)
